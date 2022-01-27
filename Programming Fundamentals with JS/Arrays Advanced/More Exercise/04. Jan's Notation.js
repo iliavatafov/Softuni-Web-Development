@@ -37,11 +37,3 @@ function janNotation(arr) {
         return result;
     }
 }
-
-janNotation([5,
-    3,
-    4,
-    '*',
-    '-']
-   
-)

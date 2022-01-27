@@ -16,5 +16,5 @@ function calculators(num1, operator, num2) {
             sum = num1 / num2;
             break;
     }
-    console.log(sum.toFixed(2))
+    console.log(sum.toFixed(2));
 }

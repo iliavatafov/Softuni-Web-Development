@@ -18,5 +18,5 @@ function spiceMustFlow(startingYield) {
         totalYeild = 0;
     }
     console.log(days);
-    console.log(totalYeild)
+    console.log(totalYeild);
 }

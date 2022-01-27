@@ -15,6 +15,6 @@ function numberSearch(nums1, nums2) {
             counter++;
         }
     }
-    console.log(`Number ${nums2[2]} occurs ${counter} times.`)
+    console.log(`Number ${nums2[2]} occurs ${counter} times.`);
 }
 

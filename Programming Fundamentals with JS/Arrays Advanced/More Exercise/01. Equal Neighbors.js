@@ -2,7 +2,7 @@ function equalNeighbors(arr) {
     let rows = arr.length;
     let columns = arr[0].length;
     let result = 0;
-    
+
     for (let i = 0; i < rows; i++) {
         let currentArr = arr[i];
         let temp = 0;
@@ -21,8 +21,8 @@ function equalNeighbors(arr) {
         let counter = 0;
         let temp = -1;
         while (counter !== columns) {
-            
-            if( counterRows === rows) {
+
+            if (counterRows === rows) {
                 break;
             }
             let currentArr = arr[counterRows]
@@ -35,17 +35,5 @@ function equalNeighbors(arr) {
             counterRows++;
         }
     }
-    console.log(result)
+    console.log(result);
 }
-
-equalNeighbors(
-[['2', '2', '4', '7', '0'],
-['4', '0', '5', '3', '4'],
-['2', '3', '5', '4', '2'],
-['9', '8', '7', '5', '4']]
-)
-
-equalNeighbors([['test', 'yes', 'yo', 'ho'],
-['well', 'done', 'yo', '6'],
-['not', 'done', 'yet', '5']]
-)

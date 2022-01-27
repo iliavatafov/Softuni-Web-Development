@@ -21,5 +21,5 @@ function arrayToNums(array) {
 
         }
     }
-    console.log(sum)
+    console.log(sum);
 }

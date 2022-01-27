@@ -17,5 +17,5 @@ function maxSeqOfElements(arr) {
             biggestSequance = currentSequance;
         }
     }
-    console.log(biggestSequance)
+    console.log(biggestSequance);
 }

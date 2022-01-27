@@ -6,8 +6,8 @@ function sorting(nums) {
     for (let i = 0; i < numbers.length; i++) {
         let lastNum = numbers.pop();
         result
-            .push(lastNum, numbers[i])
+            .push(lastNum, numbers[i]);
     }
 
-    console.log(result.join(` `))
+    console.log(result.join(` `));
 }

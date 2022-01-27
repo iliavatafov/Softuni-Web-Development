@@ -1,8 +1,8 @@
-function workDayOrNot(input){
+function workDayOrNot(input) {
 
     let day = (input[0]);
 
-    switch(day){
+    switch (day) {
         case "Monday":
         case "Tuesday":
         case "Wednesday":
@@ -17,5 +17,5 @@ function workDayOrNot(input){
         default:
             console.log("Error");
             break;
-    }    
+    }
 }

@@ -4,7 +4,7 @@ function solve(string) {
 
     for (let word of listOfWords) {
         word = word.toLowerCase();
-        if(!words.hasOwnProperty(word)) {
+        if (!words.hasOwnProperty(word)) {
             words[word] = 1;
         } else {
             words[word]++;
@@ -19,7 +19,5 @@ function solve(string) {
         }
     }
 
-    console.log(result.join(` `))
-}
-
-solve('Java C# Php PHP Java PhP 3 C# 3 1 5 C#')
+    console.log(result.join(` `));
+} 

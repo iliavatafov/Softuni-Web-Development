@@ -12,6 +12,6 @@ function addAndRemove(arr) {
     if (newArray.length >= 1) {
         console.log(newArray.join(` `));
     } else {
-        console.log(`Empty`)
+        console.log(`Empty`);
     }
 }

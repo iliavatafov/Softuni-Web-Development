@@ -40,5 +40,3 @@ function solve(arr) {
             });
     }
 }
-
-solve(['JavaBasics: 2', 'user10[25] with email user1@user.com joins JavaBasics', 'user2[26] with email user1@user.com joins JavaBasics', 'user3[27] with email user1@user.com joins JavaBasics'])

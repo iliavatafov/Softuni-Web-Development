@@ -1,5 +1,7 @@
 function solve(arr) {
+
     let listOfArmies = {};
+
     for (let element of arr) {
         if (element.includes(`arrives`)) {
             element = element.split(` `);
@@ -47,9 +49,7 @@ function solve(arr) {
         console.log(`${generalName}: ${totalSoldiers}`)
         let sortedArmies = Object.entries(element[0])
             .sort((a, b) => b[1] - a[1])
-            .forEach(x => console.log(`>>> ${x[0]} - ${x[1]}`))
+            .forEach(x => console.log(`>>> ${x[0]} - ${x[1]}`));
     }
 
 }
-
-solve(['Gosho arrives', 'Rick Burr arrives', 'Fergus: Wexamp, 30245', 'Rick Burr: Juard, 50000', 'Findlay arrives', 'Findlay: Britox, 34540', 'Wexamp + 6000', 'Juard + 1350', 'Britox + 4500', 'Porter arrives', 'Porter: Legion, 55000', 'Legion + 302', 'Rick Burr defeated', 'Porter: Retix, 3205'])

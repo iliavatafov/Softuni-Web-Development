@@ -21,13 +21,3 @@ function solve(arr) {
         });
     }
 }
-
-solve([
-    'SoftUni -> AA12345',
-    'SoftUni -> CC12344',
-    'Lenovo -> XX23456',
-    'SoftUni -> AA12345',
-    'Movement -> DD11111'
-]
-
-)

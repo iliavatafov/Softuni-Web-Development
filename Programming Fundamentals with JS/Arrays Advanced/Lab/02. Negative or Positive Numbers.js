@@ -9,5 +9,5 @@ function postitiveNegative(arr) {
             newArr.push(i);
         }
     }
-    console.log(newArr.join(`\n`))
+    console.log(newArr.join(`\n`));
 }

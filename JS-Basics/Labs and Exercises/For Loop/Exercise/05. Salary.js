@@ -1,26 +1,24 @@
-function salary(input){
+function salary(input) {
 
     let numOpenTabs = Number(input[0]);
     let salaryAmonut = Number(input[1]);
 
     let inputL = input.length;
 
-    for(let i = 0; i < inputL; i++){
+    for (let i = 0; i < inputL; i++) {
 
         let currentTab = input[i];
 
-        switch(currentTab){
+        switch (currentTab) {
             case `Facebook`: salaryAmonut -= 150; break;
             case `Instagram`: salaryAmonut -= 100; break;
             case `Reddit`: salaryAmonut -= 50; break;
         }
     }
-    if(salaryAmonut <= 0){
+    if (salaryAmonut <= 0) {
         console.log(`You have lost your salary.`);
     }
-    else{
+    else {
         console.log(salaryAmonut);
-    }    
+    }
 }
-
-salary(["3", "500", "Github.com", "Stackoverflow.com", "softuni.bg"])

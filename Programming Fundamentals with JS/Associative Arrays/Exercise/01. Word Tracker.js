@@ -20,12 +20,6 @@ function solve(arr) {
 
     let sorted = Object.entries(wordsTracker).sort((a, b) => b[1] - a[1]);
 
-    sorted.forEach(x => console.log(`${x[0]} - ${x[1]}`))
+    sorted.forEach(x => console.log(`${x[0]} - ${x[1]}`));
 
 }
-
-solve([
-    'this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the'
-    , 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task'
-]
-)

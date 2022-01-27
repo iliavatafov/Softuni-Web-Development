@@ -1,4 +1,4 @@
-function accountBanalance(input){
+function accountBanalance(input) {
 
     let index = 0;
 
@@ -7,16 +7,16 @@ function accountBanalance(input){
 
     let total = 0;
 
-    while(depostiAmount !== "NoMoreMoney"){
+    while (depostiAmount !== "NoMoreMoney") {
         let deposti = Number(depostiAmount);
-        if(deposti < 0){
+        if (deposti < 0) {
             console.log("Invalid operation!")
             break;
         }
         console.log(`Increase: ${deposti.toFixed(2)}`);
         total += deposti;
         depostiAmount = input[index];
-        index++;        
+        index++;
     }
     console.log(`Total: ${total.toFixed(2)}`);
 }

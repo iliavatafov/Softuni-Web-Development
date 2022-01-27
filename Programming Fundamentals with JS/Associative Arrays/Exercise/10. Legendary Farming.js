@@ -53,7 +53,5 @@ function solve(input) {
     sortedMaterials.forEach(x => console.log(`${x[0]}: ${x[1]}`));
     let sortedJunk = Object.entries(junk)
         .sort((a, b) => a[0].localeCompare(b[0]));
-    sortedJunk.forEach(x => console.log(`${x[0]}: ${x[1]}`))
+    sortedJunk.forEach(x => console.log(`${x[0]}: ${x[1]}`));
 }
-
-solve('3 Motes 5 stones 5 stones 6 leathers 255 fragments 7 Shards')

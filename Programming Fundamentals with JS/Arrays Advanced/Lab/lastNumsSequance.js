@@ -13,5 +13,5 @@ function lastNumSequance(n, k) {
         arr.push(result);
         result = 0;
     }
-    console.log(arr.join(` `))
+    console.log(arr.join(` `));
 }

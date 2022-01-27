@@ -1,22 +1,22 @@
-function personalTitles(input){
+function personalTitles(input) {
 
     let age = Number(input[0]);
     let gender = input[1];
 
-    switch(gender){
+    switch (gender) {
         case "m":
-            if(age < 16){
+            if (age < 16) {
                 console.log("Master");
             }
-            else{
+            else {
                 console.log("Mr.")
             }
             break;
         case "f":
-            if(age < 16){
+            if (age < 16) {
                 console.log("Miss");
             }
-            else{
+            else {
                 console.log("Ms.")
             }
             break;

@@ -1,4 +1,4 @@
-function cinema(input){
+function cinema(input) {
 
     let typeProjection = input[0];
     let countRows = Number(input[1]);
@@ -6,7 +6,7 @@ function cinema(input){
 
     let ticketPrice = 0;
 
-    switch(typeProjection){
+    switch (typeProjection) {
         case "Premiere":
             ticketPrice = 12;
             break;
@@ -21,5 +21,3 @@ function cinema(input){
     let income = ticketPrice * totalTickets;
     console.log(`${income} leva`)
 }
-
-cinema(["Premiere", "10", "12"])

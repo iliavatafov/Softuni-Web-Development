@@ -1,4 +1,4 @@
-function graduation(input){
+function graduation(input) {
 
     let index = 0;
 
@@ -12,13 +12,13 @@ function graduation(input){
     let counter = 0;
     let grade = 0;
 
-    while(index <= 13){
+    while (index <= 13) {
 
-        sumGrades += Number(currentGrade);        
-        if(currentGrade < 4){
+        sumGrades += Number(currentGrade);
+        if (currentGrade < 4) {
             counter++;
-            if(counter >= 2){
-                console.log(`${name} has been excluded at ${grade} grade`)
+            if (counter >= 2) {
+                console.log(`${name} has been excluded at ${grade} grade`);
                 break;
             }
         }
@@ -27,8 +27,8 @@ function graduation(input){
         index++;
     }
     let averageGrade = sumGrades / Number(grade);
-    if(grade === 12){
-        console.log(`${name} graduated. Average grade: ${averageGrade.toFixed(2)}`)
+    if (grade === 12) {
+        console.log(`${name} graduated. Average grade: ${averageGrade.toFixed(2)}`);
     }
 }
 

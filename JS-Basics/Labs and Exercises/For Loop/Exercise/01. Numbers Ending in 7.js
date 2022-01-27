@@ -1,12 +1,10 @@
-function numbers7(){
+function numbers7() {
 
-    for(let i = 7; i <= 997; i++){
+    for (let i = 7; i <= 997; i++) {
 
-        if(i % 10 === 7){
+        if (i % 10 === 7) {
 
             console.log(i);
         }
     }
 }
-
-numbers7()

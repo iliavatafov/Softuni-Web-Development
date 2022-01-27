@@ -13,5 +13,5 @@ function evenAndOdd(array) {
         }
     }
     let result = sumEven - sumOdd;
-    console.log(result)
+    console.log(result);
 }

@@ -18,5 +18,5 @@ function login(input) {
         console.log(`Incorrect password. Try again.`);
         currentPass = input.shift();
     }
-    console.log(`User ${username} logged in.`)
+    console.log(`User ${username} logged in.`);
 }

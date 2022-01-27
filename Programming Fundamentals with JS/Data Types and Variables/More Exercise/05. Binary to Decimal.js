@@ -13,5 +13,5 @@ function binaryToDecimal(binary) {
         currentResult = Number(binary[i]) * Math.pow(2, i)
         sum += currentResult;
     }
-    console.log(sum)
+    console.log(sum);
 }

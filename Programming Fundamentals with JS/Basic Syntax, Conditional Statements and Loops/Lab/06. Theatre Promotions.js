@@ -14,7 +14,7 @@ function theaterPromotions(day, age) {
                 console.log(`12$`);
             }
             else {
-                console.log(`Error!`)
+                console.log(`Error!`);
             }
             break;
 
@@ -46,7 +46,7 @@ function theaterPromotions(day, age) {
                 console.log(`10$`);
             }
             else {
-                console.log(`Error!`)
+                console.log(`Error!`);
             }
             break;
     }

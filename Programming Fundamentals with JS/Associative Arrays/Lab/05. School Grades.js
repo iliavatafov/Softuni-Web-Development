@@ -27,10 +27,3 @@ function solve(data) {
         .sort((a, b) => a[0].localeCompare(b[0]))
         .forEach(x => console.log(`${x[0]}: ${x[1].toFixed(2)}`));
 }
-
-solve(['Steven 3 5 6 4',
-    'George 4 6',
-    'Tammy 2 5 3',
-    'Steven 6 3']
-
-)

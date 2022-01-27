@@ -17,5 +17,5 @@ function bombNumbers(numbers, bombNum) {
     let finalResult = numbers.reduce((a, b) => {
         return a + b;
     }, 0);
-    console.log(finalResult)
+    console.log(finalResult);
 }

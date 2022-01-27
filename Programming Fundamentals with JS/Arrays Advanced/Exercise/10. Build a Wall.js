@@ -1,4 +1,5 @@
 function wallBuild(arr) {
+
     let parsedArr = arr.map(Number);
     let dailyConcrete = [];
     let totalConcrete = 0;

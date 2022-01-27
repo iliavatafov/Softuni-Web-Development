@@ -6,5 +6,5 @@ function sortTwoCriteria(strings) {
 
         return firstCriteria || secondCriteria;
     });
-    console.log(strings.join(`\n`))
+    console.log(strings.join(`\n`));
 }

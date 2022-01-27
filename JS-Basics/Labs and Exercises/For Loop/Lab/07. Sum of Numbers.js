@@ -1,10 +1,10 @@
-function sumOfNumbers(input){
+function sumOfNumbers(input) {
 
     let number = input[0];
 
     let result = 0;
 
-    for(let i = 0; i < number.length; i++){
+    for (let i = 0; i < number.length; i++) {
         let num1 = Number(number[i]);
         result += num1;
     }

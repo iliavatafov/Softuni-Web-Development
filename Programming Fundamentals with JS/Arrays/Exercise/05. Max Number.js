@@ -15,5 +15,5 @@ function topNumber(array) {
         counter = 0;
     }
     result.push(array[array.length - 1]);
-    console.log(result.join(` `))
+    console.log(result.join(` `));
 }

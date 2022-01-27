@@ -12,5 +12,5 @@ function password(input){
         currentPass = input[index];
         index++;
     }
-    console.log(`Welcome ${username}!`)
+    console.log(`Welcome ${username}!`);
 }

@@ -1,4 +1,4 @@
-function maxNumber(input){
+function maxNumber(input) {
 
     let index = 0;
 
@@ -7,9 +7,9 @@ function maxNumber(input){
 
     let maxNum = Number.MIN_SAFE_INTEGER;
 
-    while(currentNum !== "Stop"){
+    while (currentNum !== "Stop") {
         let current = Number(currentNum);
-        if(current > maxNum){
+        if (current > maxNum) {
             maxNum = current;
         }
         currentNum = input[index];

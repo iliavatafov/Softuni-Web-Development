@@ -1,4 +1,4 @@
-function solve(input){
+function solve(input) {
 
     let destination = input.shift();
     let minBuget = input.shift();
@@ -9,9 +9,9 @@ function solve(input){
 
         while (totalSaved < minBuget) {
             totalSaved += Number(deposit);
-            if(totalSaved >= minBuget){
-            console.log(`Going to ${destination}!`);
-            break;
+            if (totalSaved >= minBuget) {
+                console.log(`Going to ${destination}!`);
+                break;
             }
             deposit = input.shift();
         }

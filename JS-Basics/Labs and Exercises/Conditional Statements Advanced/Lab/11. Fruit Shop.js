@@ -1,4 +1,4 @@
-function fruitShops(input){
+function fruitShops(input) {
 
     let product = input[0];
     let dayOfTheWeek = input[1];
@@ -6,16 +6,16 @@ function fruitShops(input){
 
     let price = 0;
 
-    switch(dayOfTheWeek){
+    switch (dayOfTheWeek) {
         default:
-            console.log("error");                
-            return; 
+            console.log("error");
+            return;
         case "Monday":
         case "Tuesday":
         case "Wednesday":
         case "Thursday":
         case "Friday":
-            switch(product){
+            switch (product) {
                 case "banana":
                     price = 2.50;
                     break;
@@ -38,13 +38,13 @@ function fruitShops(input){
                     price = 3.85;
                     break;
                 default:
-                    console.log("error");                
-                    return;                
+                    console.log("error");
+                    return;
             }
             break;
         case "Saturday":
         case "Sunday":
-            switch(product){
+            switch (product) {
                 case "banana":
                     price = 2.70;
                     break;
@@ -67,10 +67,10 @@ function fruitShops(input){
                     price = 4.20;
                     break;
                 default:
-                    console.log("error");                
-                    break;                
-            }                 
-                      
+                    console.log("error");
+                    break;
+            }
+
     }
     let total = quantity * price;
     console.log(total.toFixed(2));

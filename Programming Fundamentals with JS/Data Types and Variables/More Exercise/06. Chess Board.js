@@ -2,7 +2,7 @@ function chessBoard(arg) {
     let size = Number(arg)
     let currentColour = 'black'
     let previousColour = ''
-    console.log('<div class="chessboard">')
+    console.log('<div class="chessboard">');
 
     for (let rows = 1; rows <= size; rows++) {
         console.log('  <div>')
@@ -10,7 +10,7 @@ function chessBoard(arg) {
         for (let columns = 1; columns <= size; columns++) {
             console.log(`    <span class="${currentColour}"></span>`);
 
-            previousColour = currentColour
+            previousColour = currentColour;
             currentColour = previousColour === 'black' ? 'white' : 'black'
         }
 
@@ -21,5 +21,5 @@ function chessBoard(arg) {
         }
     }
 
-    console.log('</div>')
+    console.log('</div>');
 }

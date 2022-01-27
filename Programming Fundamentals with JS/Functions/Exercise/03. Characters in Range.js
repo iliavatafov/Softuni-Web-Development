@@ -1,4 +1,4 @@
-function charInRange (firstCharactar, secondCharactar) {
+function charInRange(firstCharactar, secondCharactar) {
 
     let min = firstCharactar;
     let max = secondCharactar;
@@ -17,6 +17,6 @@ function charInRange (firstCharactar, secondCharactar) {
     }
     return result
 }
-let result = charInRange('C','#');
-console.log(result)
+let result = charInRange('C', '#');
+console.log(result);
 

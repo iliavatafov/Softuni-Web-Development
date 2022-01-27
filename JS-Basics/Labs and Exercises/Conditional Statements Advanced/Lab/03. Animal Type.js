@@ -1,8 +1,8 @@
-function animalType(input){
+function animalType(input) {
 
     let animal = input[0];
 
-    switch(animal){
+    switch (animal) {
         case "dog":
             console.log("mammal");
             break;

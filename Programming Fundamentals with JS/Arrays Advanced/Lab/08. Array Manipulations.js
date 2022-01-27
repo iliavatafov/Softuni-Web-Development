@@ -37,5 +37,5 @@ function arrayManipulation(commands) {
     function insert(num, index) {
         arr.splice(index, 0, num);
     }
-    console.log(arr.join(' '))
+    console.log(arr.join(' '));
 }

@@ -16,15 +16,15 @@ function houseParty(operations) {
                     }
                 }
             } else {
-                console.log(`${currentElement[0]} is not in the list!`)
+                console.log(`${currentElement[0]} is not in the list!`);
             }
         } else {
             if (!listOfGuests.includes(currentElement[0])) {
                 listOfGuests.push(currentElement[0]);
             } else {
-                console.log(`${currentElement[0]} is already in the list!`)
+                console.log(`${currentElement[0]} is already in the list!`);
             }
         }
     }
-    console.log(listOfGuests.join(`\n`))
+    console.log(listOfGuests.join(`\n`));
 }

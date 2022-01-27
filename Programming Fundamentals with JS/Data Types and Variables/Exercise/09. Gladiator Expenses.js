@@ -32,5 +32,5 @@ function gladiatorExpencess(lostFights, helmetPrice, swordPrice, shieldPrice, ar
     shild *= shieldPrice;
     armour *= armourPrice;
     let total = helmet + sword + shild + armour;
-    console.log(`Gladiator expenses: ${total.toFixed(2)} aureus`)
+    console.log(`Gladiator expenses: ${total.toFixed(2)} aureus`);
 }

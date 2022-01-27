@@ -1,4 +1,4 @@
-function vacation(input){
+function vacation(input) {
 
     let index = 0;
 
@@ -17,27 +17,27 @@ function vacation(input){
     let counterSpend = 0;
     let counterDays = 0;
 
-    while(neededAmount > money){
+    while (neededAmount > money) {
 
         counterDays++;
 
-        if(typeOperation === "spend"){
+        if (typeOperation === "spend") {
 
-            counterSpend++;  
+            counterSpend++;
 
-            money -= amount; 
+            money -= amount;
 
-            if(money < 0){
+            if (money < 0) {
                 money = 0;
-            }      
+            }
 
-            if(counterSpend >= 5){
+            if (counterSpend >= 5) {
                 console.log("You can't save the money.")
                 console.log(counterDays);
                 break;
             }
-        }        
-        else if(typeOperation === "save"){
+        }
+        else if (typeOperation === "save") {
             money += amount;
         }
 
@@ -47,8 +47,8 @@ function vacation(input){
         amount = Number(input[index]);
         index++;
     }
-    if(money >= neededAmount){
-        console.log(`You saved the money for ${counterDays} days.`)
+    if (money >= neededAmount) {
+        console.log(`You saved the money for ${counterDays} days.`);
     }
 }
 

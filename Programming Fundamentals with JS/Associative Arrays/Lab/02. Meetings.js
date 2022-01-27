@@ -13,8 +13,3 @@ function solve(data) {
         console.log(`${key} -> ${calendar[key]}`);
     }
 }
-solve(['Monday Peter',
-'Wednesday Bill',
-'Monday Tim',
-'Friday Tim']
-)

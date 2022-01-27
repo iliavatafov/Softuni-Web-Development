@@ -23,9 +23,8 @@ function equalSumsEvenOddPosition(input){
             printLine += `${currentNum} `;
         }
     }
-    console.log(printLine)
+    console.log(printLine);
 }
 
-equalSumsEvenOddPosition(["123456",
-"124000"])
+
 

@@ -38,17 +38,17 @@ function tseamAccount(arr) {
                 for (l = 0; l < listOfGame.length; l++) {
                     let expansionGame = currentGame.split(`-`);
                     if (listOfGame[l] === expansionGame[0]) {
-                        listOfGame.splice(l + 1, 0, `${expansionGame[0]}:${expansionGame[1]}`)
+                        listOfGame.splice(l + 1, 0, `${expansionGame[0]}:${expansionGame[1]}`);
                         break;
                     }
                 }
                 break;
             case `Play`:
-                console.log(listOfGame)
+                console.log(listOfGame);
                 break;
         }
     }
-    console.log(listOfGame.join(` `))
+    console.log(listOfGame.join(` `));
 }
 
 

@@ -9,5 +9,5 @@ function arrayRotation(array, n) {
         }
         array[array.length - 1] = temp;
     }
-    console.log(array.join(` `))
+    console.log(array.join(` `));
 }

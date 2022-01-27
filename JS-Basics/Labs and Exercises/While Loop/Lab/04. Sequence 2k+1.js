@@ -1,10 +1,10 @@
-function sequance2k(input){
+function sequance2k(input) {
 
-    let number = Number(input[0]);    
+    let number = Number(input[0]);
 
-    let currentNum = 1;    
+    let currentNum = 1;
 
-    while(number >= currentNum){
+    while (number >= currentNum) {
         console.log(currentNum);
         currentNum = currentNum * 2 + 1;
     }

@@ -14,4 +14,3 @@ function solve(num) {
         sum = 0;
     }
 }
-solve(15)

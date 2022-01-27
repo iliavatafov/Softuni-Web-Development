@@ -1,4 +1,4 @@
-function sumNumbers(input){
+function sumNumbers(input) {
 
     let index = 0;
 
@@ -10,7 +10,7 @@ function sumNumbers(input){
 
     let sum = 0;
 
-    while(sum < targetNum){
+    while (sum < targetNum) {
         sum += Number(currentNum);
         currentNum = input[index];
         index++;

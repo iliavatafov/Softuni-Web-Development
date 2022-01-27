@@ -7,4 +7,5 @@ function smallestOfThreeNums(a, b, c) {
     } else {
         return c;
     }
+    
 }

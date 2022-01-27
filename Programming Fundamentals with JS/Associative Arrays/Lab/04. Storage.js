@@ -10,12 +10,6 @@ function solve(data) {
     }
     let iterable = storageMap.keys();
     for (let key of iterable) {
-        console.log(`${key} -> ${storageMap.get(key)}`)
+        console.log(`${key} -> ${storageMap.get(key)}`);
     }
 }
-
-solve(['apple 50',
-    'apple 61',
-    'coffee 115',
-    'coffee 40']
-)

@@ -8,6 +8,6 @@ function sumEvenNumbers(array) {
             sum += currentNum;
         }
     }
-    console.log(sum)
+    console.log(sum);
 }
 

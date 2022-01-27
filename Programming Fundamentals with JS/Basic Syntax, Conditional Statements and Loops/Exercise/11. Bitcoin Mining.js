@@ -29,5 +29,5 @@ function bitcoin(input) {
     if (firstDayBitcoin) {
         console.log(`Day of the first purchased bitcoin: ${firstDayBitcoin}`);
     }
-    console.log(`Left money: ${currentMoney.toFixed(2)} lv.`)
+    console.log(`Left money: ${currentMoney.toFixed(2)} lv.`);
 }

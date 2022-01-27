@@ -1,11 +1,11 @@
-function interval(input){
+function interval(input) {
 
     let number = Number(input[0]);
 
-    if(number <= 100 && number >= -100 && number != 0){
+    if (number <= 100 && number >= -100 && number != 0) {
         console.log("Yes");
     }
-    else{
+    else {
         console.log("No");
     }
 }

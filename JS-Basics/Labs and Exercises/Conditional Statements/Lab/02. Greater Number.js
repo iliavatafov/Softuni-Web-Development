@@ -1,15 +1,13 @@
-function number(input){
+function number(input) {
 
     let num1 = Number(input[0])
     let num2 = Number(input[1])
 
-    if(num1 > num2){
+    if (num1 > num2) {
         console.log(num1)
     }
-    else{
+    else {
         console.log(num2)
     }
 
 }
-
-number(["-5", "5"])

@@ -13,6 +13,6 @@ function add(array) {
         sumModifiedArray += array[i];
     }
     console.log(array);
-    console.log(sumArray)
-    console.log(sumModifiedArray)
+    console.log(sumArray);
+    console.log(sumModifiedArray);
 }

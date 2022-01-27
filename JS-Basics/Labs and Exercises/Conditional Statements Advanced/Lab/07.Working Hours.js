@@ -1,10 +1,10 @@
-function hour(input){
+function hour(input) {
 
     let currentHour = Number(input[0]);
     let day = input[1];
 
-    if(currentHour >= 10 && currentHour <= 18){
-        switch(day){
+    if (currentHour >= 10 && currentHour <= 18) {
+        switch (day) {
             case "Monday":
             case "Tuesday":
             case "Wednesday":
@@ -18,7 +18,7 @@ function hour(input){
                 break;
         }
     }
-    else{
+    else {
         console.log("closed");
     }
 }

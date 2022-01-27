@@ -39,6 +39,6 @@ function monthPrinter(month) {
             console.log("December");
             break;
         default:
-            console.log(`Error!`)
+            console.log(`Error!`);
     }
 }

@@ -35,7 +35,7 @@ function megicMetrics(arr) {
     if (sum === v1 && sum === v2 && sum === v3) {
         console.log(true);
     } else {
-        console.log(false)
+        console.log(false);
     }
 }
 

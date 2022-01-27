@@ -1,8 +1,8 @@
-function dayOfTheWeek1(input){
+function dayOfTheWeek1(input) {
 
     let day = input[0];
 
-    switch(day){
+    switch (day) {
         case "Monday":
         case "Tuesday":
             console.log(12);

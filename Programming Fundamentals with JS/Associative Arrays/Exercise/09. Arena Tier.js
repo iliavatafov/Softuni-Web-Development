@@ -1,6 +1,6 @@
 function solve(arr) {
 
-    let gladiatorsList = {}; 
+    let gladiatorsList = {};
 
     for (let list of arr) {
 
@@ -13,7 +13,7 @@ function solve(arr) {
 
             let arrayGladiatorScor = Object.entries(gladiatorsList);
             let sorted = arrayGladiatorScor.sort((a, b) => a[0].localeCompare(b[0])).sort((a, b) => b[1].totalSkill - a[1].totalSkill);
-            
+
             for (let player of sorted) {
 
                 let currentResult = Object.entries(player[1]);
@@ -22,7 +22,7 @@ function solve(arr) {
                 console.log(`${player[0]}: ${totalSkill} skill`)
 
                 let sortedTechniques = currentResult.sort((a, b) => a[0].localeCompare(b[0])).sort((a, b) => b[1] - (a[1]));
-                
+
                 for (let technique of sortedTechniques) {
                     let [tech, skill] = technique.toString().split(`,`);
                     console.log(`- ${tech} <!> ${skill}`)
@@ -42,12 +42,12 @@ function solve(arr) {
 
                         let glad1TotalSkills = Object.values(gladiatorsList[gladiator1]).reduce((a, b) => a + b);
                         let glad2TotalSkills = Object.values(gladiatorsList[gladiator2]).reduce((a, b) => a + b);
-                        
+
                         if (glad1TotalSkills > glad2TotalSkills) {
                             delete gladiatorsList[gladiator2];
-                        } else if (glad2TotalSkills > glad1TotalSkills){
+                        } else if (glad2TotalSkills > glad1TotalSkills) {
                             delete gladiatorsList[gladiator1]
-                        } 
+                        }
                     }
                 }
             }
@@ -67,18 +67,3 @@ function solve(arr) {
 
     }
 }
-
-solve([
-    'Pesho -> Duck -> 400',
-    'Julius -> Shield -> 150',
-    'Gladius -> Heal -> 200',
-    'Gladius -> Support -> 250',
-    'Gladius -> Shield -> 250',
-    'Peter vs Gladius',
-    'Gladius vs Julius',
-    'Gladius vs Maximilian',
-    'Ave Cesar'
-    ]
-    
-    
-)

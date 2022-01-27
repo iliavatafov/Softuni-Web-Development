@@ -1,4 +1,4 @@
-function pyramideNumbers(input){
+function pyramideNumbers(input) {
 
     let number = input[0];
 
@@ -6,9 +6,9 @@ function pyramideNumbers(input){
     let currentNum = 1;
     let isBigger = false;
 
-    for(i = 1; i <= number; i++){
-        for(j = 1; j <= i; j++){
-            if(currentNum > number){
+    for (i = 1; i <= number; i++) {
+        for (j = 1; j <= i; j++) {
+            if (currentNum > number) {
                 isBigger = true;
                 break;
             }
@@ -17,11 +17,8 @@ function pyramideNumbers(input){
         }
         console.log(printLine);
         printLine = "";
-        if(isBigger){
+        if (isBigger) {
             break;
         }
     }
-    
 }
-
-pyramideNumbers(["15"])

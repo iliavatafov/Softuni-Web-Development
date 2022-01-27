@@ -4,5 +4,3 @@ function devisable() {
         console.log(i);
     }
 }
-
-devisable(0)

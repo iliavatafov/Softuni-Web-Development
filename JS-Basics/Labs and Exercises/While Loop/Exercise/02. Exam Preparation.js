@@ -1,4 +1,4 @@
-function examPreparation(input){
+function examPreparation(input) {
 
     let index = 0;
 
@@ -16,13 +16,13 @@ function examPreparation(input){
     let sumGrades = Number(0);
     let nameLastTask = "";
 
-    while( currentProblemName !== "Enough"){
+    while (currentProblemName !== "Enough") {
 
-        if(grade <= 4){
+        if (grade <= 4) {
 
             counter++;
-            
-            if(counter >= numberBadMarks){
+
+            if (counter >= numberBadMarks) {
                 console.log(`You need a break, ${counter} poor grades.`);
                 break;
             }
@@ -37,11 +37,11 @@ function examPreparation(input){
         index++
     }
     let averageGrade = sumGrades / counterProblems;
-    
-    if(currentProblemName === "Enough"){
-    console.log(`Average score: ${averageGrade.toFixed(2)}`);
-    console.log(`Number of problems: ${counterProblems}`);
-    console.log(`Last problem: ${nameLastTask}`);
+
+    if (currentProblemName === "Enough") {
+        console.log(`Average score: ${averageGrade.toFixed(2)}`);
+        console.log(`Number of problems: ${counterProblems}`);
+        console.log(`Last problem: ${nameLastTask}`);
     }
 }
 

@@ -3,7 +3,7 @@ function partyTime(input) {
         regular: [],
         vip: [],
     };
-    
+
     let indexOfParty = input.indexOf(`PARTY`);
     let invited = input.slice(0, indexOfParty);
     let coming = input.slice(indexOfParty + 1);
@@ -13,7 +13,7 @@ function partyTime(input) {
         if (isNaN(isVip)) {
             guestList.regular.push(person);
         } else if (!isNaN(isVip)) {
-            guestList.vip.push(person)
+            guestList.vip.push(person);
         }
     }
 
@@ -34,36 +34,3 @@ function partyTime(input) {
         console.log(guestList.regular.join(`\n`));
     }
 }
-
-partyTime(['m8rfQBvl',
-'fc1oZCE0',
-'UgffRkOn',
-'7ugX7bm0',
-'9CQBGUeJ',
-'2FQZT3uC',
-'dziNz78I',
-'mdSGyQCJ',
-'LjcVpmDL',
-'fPXNHpm1',
-'HTTbwRmM',
-'B5yTkMQi',
-'8N0FThqG',
-'xys2FYzn',
-'MDzcM9ZK',
-'PARTY',
-'2FQZT3uC',
-'dziNz78I',
-'mdSGyQCJ',
-'LjcVpmDL',
-'fPXNHpm1',
-'HTTbwRmM',
-'B5yTkMQi',
-'8N0FThqG',
-'m8rfQBvl',
-'fc1oZCE0',
-'UgffRkOn',
-'7ugX7bm0',
-'9CQBGUeJ'
-]
-
-)
