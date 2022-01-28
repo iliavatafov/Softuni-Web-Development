@@ -20,6 +20,6 @@ function numberModification(num) {
             arr.push(9);
         }
         arr.toString();
-        console.log(arr.join(``))
+        console.log(arr.join(``));
     }
 }

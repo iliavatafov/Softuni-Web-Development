@@ -52,5 +52,3 @@ function solve(string) {
         }
     }
 }
-
-solve('a1A')

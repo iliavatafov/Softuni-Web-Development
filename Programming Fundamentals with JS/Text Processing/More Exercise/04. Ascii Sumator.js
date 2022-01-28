@@ -10,12 +10,5 @@ function solve(arr) {
             result += char;
         }
     }
-    console.log(result)
+    console.log(result);
 }
-
-solve(["a",
-"1",
-"jfe392$#@j24ui9ne#@$"]
-
-
-)

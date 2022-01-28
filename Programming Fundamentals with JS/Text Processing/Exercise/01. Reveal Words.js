@@ -1,6 +1,9 @@
 function solve(words, text) {
+
     words = words.split(`, `);
     text = text.split(` `);
+    
+    
     for (let wordFromText of text) {
         if (wordFromText.includes(`*`)) {
             for (let word of words) {
@@ -11,15 +14,7 @@ function solve(words, text) {
             }
         }
     }
-    console.log(text.join(` `))
+
+    console.log(text.join(` `));
+
 }
-
-solve(
-    'great, learning',
-    'softuni is ***** place for ******** new programming languages'
-);
-
-solve(
-    'great',
-    'softuni is ***** place for learning new programming languages'
-);

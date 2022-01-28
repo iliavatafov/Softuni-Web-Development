@@ -13,16 +13,14 @@ function solve(input) {
     }
 
     let uniqueChars = []
-    
+
     print.join(``).split(``).forEach(x => {
         if (!uniqueChars.includes(x)) {
             uniqueChars.push(x);
         }
     });
 
-    console.log(`Unique symbols used: ${uniqueChars.length}`)
-    console.log(print.join(``))
+    console.log(`Unique symbols used: ${uniqueChars.length}`);
+    console.log(print.join(``));
 
 }
-
-solve(`aSd12&5s@14`)

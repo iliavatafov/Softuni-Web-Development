@@ -7,4 +7,5 @@ function towns(arr) {
         let newTown = { town, latitude, longitude };
         console.log(newTown);
     }
+    
 }

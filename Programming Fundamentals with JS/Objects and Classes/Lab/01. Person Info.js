@@ -6,8 +6,3 @@ function fisrtObject(firstName, lastName, age) {
     };
     return obj;
 }
-
-fisrtObject("Peter", 
-"Pan",
-"20"
-)

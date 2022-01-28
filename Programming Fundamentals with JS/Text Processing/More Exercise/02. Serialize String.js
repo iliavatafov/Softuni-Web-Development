@@ -13,7 +13,5 @@ function solve(arr) {
         }
     }
     let entriesFromList = Object.entries(serililizedList);
-    entriesFromList.forEach(x => console.log(`${x[0]}:${x[1].join(`/`)}`))
+    entriesFromList.forEach(x => console.log(`${x[0]}:${x[1].join(`/`)}`));
 }
-
-solve(["avjavamsdmcalsdm"])

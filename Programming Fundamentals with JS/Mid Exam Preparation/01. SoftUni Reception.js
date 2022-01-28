@@ -12,7 +12,5 @@ function softuniReception(arr) {
         }
     }
 
-    console.log(`Time needed: ${hours}h.`)
+    console.log(`Time needed: ${hours}h.`);
 }
-
-softuniReception(['3','2','5','40'])

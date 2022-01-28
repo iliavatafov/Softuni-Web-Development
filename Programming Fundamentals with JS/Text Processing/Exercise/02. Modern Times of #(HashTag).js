@@ -14,7 +14,5 @@ function solve(text) {
             }
         }
     });
-    console.log(result.join(`\n`))
+    console.log(result.join(`\n`));
 }
-
-solve('Nowadays everyone uses # to tag a #special word in #socialMedia')

@@ -36,12 +36,3 @@ function theLift(arr) {
     console.log(cabins.join(` `));
 
 }
-
-
-theLift([
-    "8",
-    "0 0 0"
-]
-
-)
-

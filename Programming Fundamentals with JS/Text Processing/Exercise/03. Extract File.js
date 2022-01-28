@@ -18,5 +18,3 @@ function solve(pathToFile) {
         console.log(`File extension: ${extension}`);
     }
 }
-
-solve('C:\\Internal\\training-internal\\template.bak.pptx')

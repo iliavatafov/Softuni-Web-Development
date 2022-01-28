@@ -17,13 +17,5 @@ function bonusScore(arr) {
         }
     }
     console.log(`Max Bonus: ${Math.ceil(higherBonus)}.`);
-    console.log(`The student has attended ${bestStudentAttendance} lectures.`)
+    console.log(`The student has attended ${bestStudentAttendance} lectures.`);
 }
-
-bonusScore([
-    '10', '30', '14', '8',
-    '23', '27', '28', '15',
-    '17', '25', '26', '5',
-    '18'
-]
-)

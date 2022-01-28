@@ -1,12 +1,12 @@
-function shoppingList(arr){
+function shoppingList(arr) {
     let list = arr.shift().split(`!`)
-    
+
     for (let i = 0; i < arr.length; i++) {
         let temp = arr[i].split(` `);
         let operation = temp[0];
         let item = temp[1];
 
-        if (operation === `Go Shopping!`){
+        if (operation === `Go Shopping!`) {
             break;
         }
 
@@ -19,33 +19,24 @@ function shoppingList(arr){
             case `Unnecessary`:
                 if (list.includes(item)) {
                     let index = list.indexOf(item);
-                    list.splice(index, 1);                    
+                    list.splice(index, 1);
                 }
                 break;
             case `Correct`:
                 if (list.includes(item)) {
                     let index = list.indexOf(item);
                     let newItem = temp[2];
-                    list.splice(index, 1, newItem);                    
+                    list.splice(index, 1, newItem);
                 }
                 break;
             case `Rearrange`:
                 if (list.includes(item)) {
                     let index = list.indexOf(item);
                     let temp = list.splice(index, 1);
-                    list.push(temp);                    
+                    list.push(temp);
                 }
                 break;
         }
     }
-    console.log(list.join(`, `))
+    console.log(list.join(`, `));
 }
-
-shoppingList((["Milk!Pepper!Salt!Water!Banana",
-"Urgent Salt",
-"Unnecessary Grapes",
-"Correct Pepper Onion",
-"Rearrange Grapes",
-"Correct Tomatoes Potatoes",
-"Go Shopping!"])
-)

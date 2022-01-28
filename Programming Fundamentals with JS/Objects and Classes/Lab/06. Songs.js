@@ -13,7 +13,7 @@ function songs(arr) {
     let typeSong = arr.pop();
 
 
-    for (let i = 0; i < numberOfSongs; i++) {        
+    for (let i = 0; i < numberOfSongs; i++) {
         let [typeList, name, time] = arr[i].split(`_`)
         let song = new Song(typeList, name, time);
         songs.push(song)
@@ -26,10 +26,3 @@ function songs(arr) {
         filtered.forEach((i) => console.log(i.name))
     }
 }
-
-songs([3,
-    'favourite_DownTown_3:14',
-    'favourite_Kiss_4:16',
-    'favourite_Smooth Criminal_4:01',
-    'favourite']
-    )

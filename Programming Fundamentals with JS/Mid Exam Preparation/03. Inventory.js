@@ -55,15 +55,3 @@ function inventory(arr) {
         }
     }
 }
-
-inventory([
-    'Iron, Sword',
-    'Drop - Bronze',
-    'Combine Items - Sword:Bow',
-    'Renew - Iron',
-    'Craft!'
-]
-
-
-
-)

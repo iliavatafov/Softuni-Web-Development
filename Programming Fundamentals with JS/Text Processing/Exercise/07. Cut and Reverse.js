@@ -6,8 +6,7 @@ function solve(text) {
     let secondText = text.slice(eachTextLength).split(``).reverse().join(``);
 
     console.log(firstText);
-    console.log(secondText)
+    console.log(secondText);
+    
 
 }
-
-solve('sihToDtnaCuoYteBIboJsihTtAdooGoSmI')

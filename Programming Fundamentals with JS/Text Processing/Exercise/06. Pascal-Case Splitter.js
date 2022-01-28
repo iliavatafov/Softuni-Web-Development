@@ -14,8 +14,6 @@ function solve(text) {
     }
     result.push(currentWord);
 
-    let deleteFirstElement = result.shift()
-    console.log(result.join(`, `))
+    let deleteFirstElement = result.shift();
+    console.log(result.join(`, `));
 }
-
-solve('SplitMeIfYouCanHaHaYouCantOrYouCan')

@@ -27,7 +27,3 @@ function solve(arr) {
         console.log(base);
     }
 }
-
-solve(["##mtm!!mm.mm*mtm.#",
-"mm"]
-)

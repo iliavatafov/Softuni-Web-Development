@@ -11,16 +11,14 @@ function numbers(list) {
             result.push(arr[i]);
             flag = true;
             counter++;
-            if(counter === 5){
+            if (counter === 5) {
                 break;
             }
         }
     }
     if (flag) {
-        console.log(result.join(` `))
+        console.log(result.join(` `));
     } else {
-        console.log(`No`)
+        console.log(`No`);
     }
 }
-
-numbers('5 2 3 4 -10 30 40 50 20 50 60 60 51')

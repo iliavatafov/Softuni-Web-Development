@@ -35,9 +35,3 @@ function solve(arr) {
         return result;
     }
 }
-
-solve(
-    ["AC/DC",
-        "UPPERCASE"]
-
-)

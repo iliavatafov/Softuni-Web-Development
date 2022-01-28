@@ -30,11 +30,11 @@ function muOnline(arr) {
                 health -= value;
                 if (health > 0) {
                     bestRoom++;
-                    console.log(`You slayed ${operation}.`);                                       
+                    console.log(`You slayed ${operation}.`);
                 } else {
                     bestRoom++;
                     console.log(`You died! Killed by ${operation}.`);
-                    console.log(`Best room: ${bestRoom}`); 
+                    console.log(`Best room: ${bestRoom}`);
                     return;
                 }
                 break;
@@ -46,5 +46,3 @@ function muOnline(arr) {
     console.log(`Health: ${health}`);
 
 }
-
-muOnline("cat 10|potion 30|orc 10|chest 10|snake 25|chest 110");

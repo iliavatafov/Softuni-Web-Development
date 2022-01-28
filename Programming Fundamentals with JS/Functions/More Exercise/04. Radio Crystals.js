@@ -67,7 +67,7 @@ function radioCristal(arr) {
                 currentThickness = Math.floor(currentThickness);
             }
         }
-        console.log(`Finished crystal ${currentThickness} microns`)
+        console.log(`Finished crystal ${currentThickness} microns`);
     }
 }
 

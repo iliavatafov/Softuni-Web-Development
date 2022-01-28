@@ -6,5 +6,6 @@ function mathPower(number, power) {
         result *= number;
     }
 
-    console.log(result)
+    console.log(result);
+    
 }

@@ -9,8 +9,3 @@ function solve(word, text) {
     }
     console.log(`${word} not found!`);
 }
-
-solve(
-    'javascript',
-    'JavaScript is the best programming language'
-)

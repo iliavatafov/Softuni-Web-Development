@@ -19,5 +19,5 @@ function carWash(commands) {
                 break;
         }
     }
-    console.log(`The car is ${pracentageClean.toFixed(2)}% clean.`)
+    console.log(`The car is ${pracentageClean.toFixed(2)}% clean.`);
 }

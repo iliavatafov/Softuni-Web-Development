@@ -31,18 +31,5 @@ function arrayModifire(arr) {
 
         index++;
     }
-    console.log(result.join(`, `))
+    console.log(result.join(`, `));
 }
-
-arrayModifire([
-    '1 2 3 4',
-    'swap 0 1',
-    'swap 1 2',
-    'swap 2 3',
-    'multiply 1 2',
-    'decrease',
-    'end'
-  ]
-  
-  
-)

@@ -22,15 +22,13 @@ function solve(inp) {
                     console.log(`ticket "${line}" - ${matchOne[0].length}${matchTwo[1]}`)
                 }
             } else {
-                if(matchOne[0].length < matchTwo[0].length) {
+                if (matchOne[0].length < matchTwo[0].length) {
                     console.log(`ticket "${line}" - ${matchOne[0].length}${matchOne[1]}`)
                 } else {
                     console.log(`ticket "${line}" - ${matchTwo[0].length}${matchTwo[1]}`)
                 }
-                
+
             }
         }
     }
 }
-
-solve(`@@1@@@@@@@@@@@@@@@@@,  aabb   , th@@@@@@e@emo@@@@@@ey`)

@@ -52,7 +52,3 @@ function solve(input) {
         }
     }
 }
-
-solve(["2", "CDoghudd4=63333$D$053333", "EHfsytsnhf?8555&I&2C9555SR"]
-
-)

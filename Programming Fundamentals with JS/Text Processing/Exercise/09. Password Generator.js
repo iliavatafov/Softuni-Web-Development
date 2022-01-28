@@ -19,9 +19,3 @@ function solve(arr) {
     }
     console.log(`Your generated password is ${rawPassword.reverse().join(``)}`);
 }
-
-solve([
-    'ilovepizza', 'ihatevegetables',
-    'orange'
-]
-)

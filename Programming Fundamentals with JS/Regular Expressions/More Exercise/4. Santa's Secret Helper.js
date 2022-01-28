@@ -24,15 +24,8 @@ function solve(input) {
         let match = pattern.exec(decryptedMessages);
         if (match !== null && match[3] === `G`) {
             listOfGoodKids.push(match[1])
-        }      
+        }
     }
 
-    console.log(listOfGoodKids.join(`\n`))
+    console.log(listOfGoodKids.join(`\n`));
 }
-
-solve([`3`,
-`N}eideidmk$'(mnyenmCNlpamnin$J$`,
-`ddddkkkkmvkvmCFrqqru-nvevek$J$nmgievnge`,
-`ppqmkkkmnolmnnCEhq/vkievk$Q$`,
-`yyegiivoguCYdohqwlqh/kguimhk$J$`,
-`end`])

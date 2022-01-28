@@ -17,7 +17,7 @@ function solve(arr) {
                 result.push(newElement);
             }
             let startIndex = result.indexOf(`&`);
-            let sliceFromFirstIndex = result.slice(startIndex + 1); 
+            let sliceFromFirstIndex = result.slice(startIndex + 1);
             let endIndex = sliceFromFirstIndex.indexOf(`&`) + startIndex + 1;
             let type = result.slice(startIndex + 1, endIndex).join(``);
             startIndex = result.indexOf(`<`);
@@ -31,10 +31,3 @@ function solve(arr) {
         }
     }
 }
-
-solve(["1 2 1 3",
-"ikegfp'jpne)bv=41P83X@",
-"ujfufKt)Tkmyft'duEprsfjqbvfv=53V55XA",
-"find"]
-
-)

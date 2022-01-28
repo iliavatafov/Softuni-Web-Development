@@ -3,10 +3,10 @@ function cat(arr) {
     class Cat {
         constructor(catName, age) {
             this.catName = catName,
-            this.age = age,
-            this.speak = () => {
-                console.log(`${catName}, age ${age} says Meow`);
-            };
+                this.age = age,
+                this.speak = () => {
+                    console.log(`${catName}, age ${age} says Meow`);
+                };
         }
     }
 
@@ -16,5 +16,3 @@ function cat(arr) {
         newCat.speak();
     }
 }
-
-cat(['Mellow 2', 'Tom 5'])

@@ -2,7 +2,7 @@ function solve(text) {
     text = text.split(``);
     let result = [];
 
-    while(text.length > 0) {
+    while (text.length > 0) {
         let currentChar = text.shift();
         let check = text[0];
         if (currentChar !== check) {
@@ -10,7 +10,5 @@ function solve(text) {
         }
     }
 
-    console.log(result.join(``))
+    console.log(result.join(``));
 }
-
-solve('qqqwerqwecccwd')

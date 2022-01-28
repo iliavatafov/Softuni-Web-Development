@@ -5,11 +5,9 @@ function solve(input) {
 
     while (namesFromPattern !== null) {
         result.push(namesFromPattern[0]);
-        namesFromPattern = pattern.exec(input)
+        namesFromPattern = pattern.exec(input);
     }
 
-    console.log(result.join(` `))
+    console.log(result.join(` `));
 
 }
-
-solve("Ivan Ivanov, Ivan ivanov, ivan Ivanov, IVan Ivanov, Test Testov, Ivan	Ivanov")

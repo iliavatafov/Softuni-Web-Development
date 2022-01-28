@@ -60,7 +60,4 @@ function solve(input) {
             }
         });
     }
-
 }
-
-solve([`Urgent"Message.TO$%POAML*|readData79:05:79:0!2reme80:03--23:11{79:05}tak{65:11:65:11ar}!77:!23--)77:05ACCSS76:05ad|Remedy Por Ostream :Istream Post Prost Offices Office Of Ankh-Morpork MR.LIPWIG Mister Lipwig`])

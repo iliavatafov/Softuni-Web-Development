@@ -28,6 +28,6 @@ function browserHistory(object, arr) {
     console.log(browserData["Browser Name"]);
     console.log(`Open Tabs: ${browserData[`Open Tabs`].join(`, `)}`);
     console.log(`Recently Closed: ${browserData[`Recently Closed`].join(`, `)}`);
-    console.log(`Browser Logs: ${browserData[`Browser Logs`].join(`, `)}`)
+    console.log(`Browser Logs: ${browserData[`Browser Logs`].join(`, `)}`);
 }
 

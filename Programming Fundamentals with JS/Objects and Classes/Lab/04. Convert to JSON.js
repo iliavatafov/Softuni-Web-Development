@@ -7,10 +7,6 @@ function toJSON(name, lastName, hairColor) {
 
     let result = JSON.stringify(obj);
 
-    console.log(result)
+    console.log(result);
+    
 }
-
-toJSON('George',
-'Jones',
-'Brown'
-)

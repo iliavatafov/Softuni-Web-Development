@@ -21,8 +21,6 @@ function solve(input) {
         console.log(furniture.join(`\n`));
     }
 
-    console.log(`Total money spend: ${total.toFixed(2)}`)
+    console.log(`Total money spend: ${total.toFixed(2)}`);
 
 }
-
-solve([">>Sofa<<312.23!3", ">>TV<<300!5", ">Invalid<<!5", "Purchase"])
