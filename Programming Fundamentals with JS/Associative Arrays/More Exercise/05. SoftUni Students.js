@@ -1,13 +1,14 @@
 function solve(arr) {
-    let listOfCourses = {};
 
+    let listOfCourses = {};
+ 
     for (let element of arr) {
         if (!element.includes(`[`)) {
             let [courseName, capacity] = element.split(`: `);
             if (!listOfCourses.hasOwnProperty(courseName)) {
                 listOfCourses[courseName] = {
                     capacity: Number(capacity),
-                    students: {},
+                    students: [],
                 }
             } else {
                 listOfCourses[courseName].capacity += Number(capacity);
@@ -21,10 +22,11 @@ function solve(arr) {
             let email = temp[3];
             let courseName = element[0].split(` joins `)[1];
             if (listOfCourses.hasOwnProperty(courseName) && listOfCourses[courseName].capacity > 0) {
-                listOfCourses[courseName].students[userName] = {
+                listOfCourses[courseName].students.push({
+                    userName: userName,
                     creditCount: creditCount,
                     email: email,
-                }
+                })
                 listOfCourses[courseName].capacity--;
             }
         }
@@ -33,10 +35,6 @@ function solve(arr) {
         .sort((a, b) => Object.keys(b[1].students).length - Object.keys(a[1].students).length);
     for (let element of sortedByCapacity) {
         console.log(`${element[0]}: ${element[1].capacity} places left`);
-        Object.entries(element[1].students)
-            .sort((a, b) => b[1].creditCount - a[1].creditCount)
-            .forEach(x => {
-                console.log(`--- ${x[1].creditCount}: ${x[0]}, ${x[1].email}`)
-            });
+        element[1].students.sort((a, b) => b.creditCount - a.creditCount).forEach(x => console.log(`--- ${x.creditCount}: ${x.userName}, ${x.email}`));
     }
 }
