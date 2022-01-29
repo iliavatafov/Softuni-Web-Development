@@ -9,7 +9,7 @@ function solve([input]) {
     let mirrorWords = validPairs.filter(pair => isMirrorPair(pair));
     if (mirrorWords.length) {
         console.log('The mirror words are:');
-        console.log(mirrorWords.map(pair => `${pair.word1} <=> ${pair.word2}`).join(', '))
+        console.log(mirrorWords.map(pair => `${pair.word1} <=> ${pair.word2}`).join(', '));
     } else {
         console.log('No mirror words!');
     }
@@ -18,5 +18,3 @@ function solve([input]) {
         return pair.word1 === pair.word2.split('').reverse().join('');
     }
 }
-
-solve(['@mix#tix3dj#poOl##loOp#wl@@bong&song%4very$long@thong#Part##traP##@@leveL@@Level@##car#rac##tu@pack@@ckap@#rr#sAw##wAs#r#@w1r'])

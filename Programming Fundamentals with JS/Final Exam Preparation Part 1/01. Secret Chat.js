@@ -49,15 +49,3 @@ function solve(input) {
         return resultToString.split(``);
     }
 }
-
-solve([
-    'Hiware?uiy',
-    'ChangeAll:|:i:|:o',
-    'Reverse:|:?uoy',
-    'Reverse:|:jd',
-    'InsertSpace:|:3',
-    'InsertSpace:|:7',
-    'Reveal'
-]
-
-)
