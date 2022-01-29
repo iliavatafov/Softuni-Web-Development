@@ -30,10 +30,3 @@ function solve(input) {
 
     console.log(listOfGoodKids.join(`\n`));
 }
-
-solve(['3',
-'CNdwhamigyenumje$J$',
-'CEreelh-nmguuejnW$J$',
-'CVwdq&gnmjkvng$Q$',
-'end']
-)
