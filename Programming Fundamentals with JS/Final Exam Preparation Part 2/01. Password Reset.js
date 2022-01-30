@@ -52,12 +52,4 @@ function solve(input) {
             return rawPassword;
         }
     }
-
 }
-
-solve(["up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy",
-"TakeOdd",
-"Cut 18 2",
-"Substitute ! ***",
-"Substitute ? .!.",
-"Done"])
