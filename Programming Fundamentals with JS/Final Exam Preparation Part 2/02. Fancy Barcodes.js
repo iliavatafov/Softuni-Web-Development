@@ -16,12 +16,6 @@ function solve(input) {
             } else {
                 console.log(`Product group: ${group}`);
             }
-
         }
     }
 }
-
-solve(["3",
-    "@#FreshFisH@#",
-    "@###Brea0D@###",
-    "@##Che4s6E@##"])
