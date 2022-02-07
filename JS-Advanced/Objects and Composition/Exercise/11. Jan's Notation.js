@@ -33,22 +33,27 @@ function solve(input) {
     let operands = [];
 
     while (elementOfInput) {
+
         if (isNaN(elementOfInput)) {
             operators.push(elementOfInput);
         } else {
             operands.push(elementOfInput);
         }
+
         if (operands.length > 1 && operators.length > 0) {
+
             let b = operands.pop();
             let a = operands.pop();
-
             let operator = operators.shift();
             let calcMehod = operations.calculationMethod(operator);
+
             let result = calcMehod(a, b);
+
             operands.push(result);
         }
         elementOfInput = input.shift();
     }
+
     if (operands.length === 1 && operators.length === 0) {
         console.log(operands[0]);
         return;
@@ -60,15 +65,3 @@ function solve(input) {
         return;
     }
 }
-
-solve([
-    -1,
-    1,
-    `+`,
-    101,
-    `*`,
-    18,
-    `+`,
-    3,
-    `/`
-])

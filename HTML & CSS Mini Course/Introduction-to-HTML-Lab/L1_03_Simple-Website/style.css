@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background: #234467;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+main section h1{
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+ 
+main section header p{
+    font-size: 14px;
+    text-align: justify;
+    font-style: italic;
+}
+
+main {
+    tab-size: initial;
+}
