@@ -14,10 +14,13 @@ function generateReport() {
         for (let heading of colsHeaderData) {
 
             if (heading.checked) {
+
                 let trChaildNumber = colsHeaderData.indexOf(heading) + 1;
                 let colData = document.querySelectorAll(`tbody tr td:nth-child(${trChaildNumber}`);
+
                 let propertyName = heading.name;
                 let propertyValue = colData[i].textContent;
+
                 currentObject[propertyName] = propertyValue;
             }
         }
