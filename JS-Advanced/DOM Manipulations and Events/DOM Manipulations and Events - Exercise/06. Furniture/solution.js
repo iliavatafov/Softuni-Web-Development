@@ -17,6 +17,56 @@ function solve() {
 
     buyButtonElement.addEventListener(`click`, buy);
 
+
+    function createNewProduct(e) {
+
+        let inputValue = e.target.parentNode.querySelector(`textarea`).value;
+        let input = JSON.parse(inputValue);
+
+        for (let currentObject of input) {
+
+            let name = currentObject.name;
+            let imgLink = currentObject.img;
+            let price = Number(currentObject.price);
+            let decFactor = Number(currentObject.decFactor);
+
+            let newRow = document.createElement(`tr`);
+
+            let imgLinkTd = document.createElement(`td`);
+            let img = document.createElement(`img`);
+            img.src = imgLink;
+            imgLinkTd.appendChild(img);
+            newRow.appendChild(imgLinkTd)
+
+            let nameTd = document.createElement(`td`);
+            let nameP = document.createElement(`p`);
+            nameP.textContent = name;
+            nameTd.appendChild(nameP);
+            newRow.appendChild(nameTd)
+
+            let priceTd = document.createElement(`td`);
+            let priceP = document.createElement(`p`);
+            priceP.textContent = price;
+            priceTd.appendChild(priceP)
+            newRow.appendChild(priceTd)
+
+            let decFactorTd = document.createElement(`td`);
+            let decP = document.createElement(`p`);
+            decP.textContent = decFactor;
+            decFactorTd.appendChild(decP);
+            newRow.appendChild(decFactorTd);
+
+            let checkBox = document.createElement(`td`);
+            let input = document.createElement(`input`);
+            input.type = `checkbox`;
+            checkBox.appendChild(input);
+            newRow.appendChild(checkBox);
+
+            tbodyElement.appendChild(newRow);
+
+        }
+    }
+
     function buy(e) {
 
         let checkBoxElements = document.querySelectorAll(`input[type="checkbox"]`);
@@ -43,55 +93,5 @@ function solve() {
 
         resultTextAreaElement.textContent = `Bought furniture: ${products.join(`, `)}\n` + `Total price: ${totalPrice.toFixed(2)}\n` + `Average decoration factor: ${averageDecorationFactor}`;
 
-    }
-
-    function createNewProduct(e) {
-
-        let inputValue = e.target.parentNode.querySelector(`textarea`).value;
-        let input = JSON.parse(inputValue);
-
-        for (let currentObject of input) {
-
-          let name = currentObject.name;
-          let imgLink = currentObject.img;
-          let price = Number(currentObject.price);
-          let decFactor = Number(currentObject.decFactor);
-  
-          let newRow = document.createElement(`tr`);
-  
-          let imgLinkTd = document.createElement(`td`);
-          let img = document.createElement(`img`);
-          img.src = imgLink;
-          imgLinkTd.appendChild(img);
-          newRow.appendChild(imgLinkTd)
-  
-          let nameTd = document.createElement(`td`);
-          let nameP = document.createElement(`p`);
-          nameP.textContent = name;
-          nameTd.appendChild(nameP);
-          newRow.appendChild(nameTd)
-  
-          let priceTd = document.createElement(`td`);
-          let priceP = document.createElement(`p`);
-          priceP.textContent = price;
-          priceTd.appendChild(priceP)
-          newRow.appendChild(priceTd)
-  
-          let decFactorTd = document.createElement(`td`);
-          let decP = document.createElement(`p`);
-          decP.textContent = decFactor;
-          decFactorTd.appendChild(decP);
-          newRow.appendChild(decFactorTd);
-  
-          let checkBox = document.createElement(`td`);
-          let input = document.createElement(`input`);
-          input.type = `checkbox`;
-          checkBox.appendChild(input);
-          newRow.appendChild(checkBox);
-  
-          tbodyElement.appendChild(newRow);
-
-        }
-    }
-
+  }
 }
