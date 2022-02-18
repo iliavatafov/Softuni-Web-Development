@@ -1,4 +1,5 @@
 function attachEventsListeners() {
+
     let convertButtonElement = document.querySelector(`#convert`);
 
     convertButtonElement.addEventListener(`click`, convert)
