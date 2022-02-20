@@ -1,3 +1,5 @@
 function solve() {
-  //TODO...
+
+    let answerTextElements = document.querySelectorAll(`.answer-text`);
+    console.log(answerTextElements)
 }
