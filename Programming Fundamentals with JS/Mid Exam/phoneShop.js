@@ -41,9 +41,3 @@ function solve(input) {
 
     console.log(phonesArray.join(`, `));
 }
-
-solve(["SamsungA50, MotorolaG5, HuaweiP10",
-    "Last - SamsungA50",
-    "Add - MotorolaG5",
-    "End"
-])
