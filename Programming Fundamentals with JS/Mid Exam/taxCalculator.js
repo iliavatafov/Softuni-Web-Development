@@ -34,5 +34,3 @@ function solve(input) {
 
     console.log(`The National Revenue Agency will collect ${totalRevenue.toFixed(2)} euros in taxes.`)
 }
-
-solve(['family 5 3210>>pickUp 1 1345>>heavyDuty 7 21000>>sports 5 9410>>family 3 9012'])
