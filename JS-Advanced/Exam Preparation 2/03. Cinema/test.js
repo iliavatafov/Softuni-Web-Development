@@ -34,9 +34,8 @@ describe("cinema", function() {
     describe("swapSeatsInHall", function() {
 
         it("return the correct result when place exchange is not submitted", function() {
-            expect(cinema.swapSeatsInHall(1)).to.equal(`Unsuccessful change of seats in the hall.`);
             expect(cinema.swapSeatsInHall(`a`, 2.55)).to.equal(`Unsuccessful change of seats in the hall.`);
-            expect(cinema.swapSeatsInHall(2.55)).to.equal(`Unsuccessful change of seats in the hall.`);
+            expect(cinema.swapSeatsInHall(1)).to.equal(`Unsuccessful change of seats in the hall.`);
             expect(cinema.swapSeatsInHall(1.55, 2.55)).to.equal(`Unsuccessful change of seats in the hall.`);
             expect(cinema.swapSeatsInHall(-1, 19)).to.equal(`Unsuccessful change of seats in the hall.`);
             expect(cinema.swapSeatsInHall(1, 21)).to.equal(`Unsuccessful change of seats in the hall.`);
