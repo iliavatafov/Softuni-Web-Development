@@ -8,74 +8,59 @@ class VegetableStore {
 
     loadingVegetables(vegetables) {
 
-        let addedProducts = [];
-
         for (let element of vegetables) {
-
             let [type, quantity, price] = element.split(` `);
 
             price = Number(price);
             quantity = Number(quantity);
 
-            if (this._products.includes(type)) {
+            const targetProduct = this.availableProducts.find(pro => pro.type == type);
 
-                this.availableProducts.forEach(p => {
+            if (!targetProduct) {
+                const newProduct = {
+                    type,
+                    price,
+                    quantity,
+                };
 
-                    let product = Object.values(p)[0];
-
-                    if (product == type) {
-
-                        addedProducts.push(type);
-
-                        p.quantity += quantity;
-
-                        if (p.price < price) {
-                            p.price = price;
-                        }
-                    }
-                });
+                this.availableProducts.push(newProduct);
             } else {
-                addedProducts.push(type);
-                this.availableProducts.push({ type, quantity, price });
-                this._products.push(type);
+                const currentPrice = targetProduct.price;
+
+                if (currentPrice < price) {
+                    targetProduct.price = price;
+                }
+
+                targetProduct.quantity += quantity;
             }
         }
 
-        let uniq = [...new Set(addedProducts)].join(`, `);
+        let uniq = [...new Set(this.availableProducts.map(p => p.type))].join(`, `);
 
-        return `Successfully added ${uniq}`;
-
+        return `Successfully added ${this.availableProducts.map(p => p.type).join(', ')}`;
     }
 
-
     buyingVegetables(selectedProducts) {
-
         let totalPrice = 0;
 
         for (let element of selectedProducts) {
-
             let [type, quantity] = element.split(` `);
+            quantity = Number(quantity);
 
-            if (!this._products.includes(type)) {
+            const targetProduct = this.availableProducts.find(pro => pro.type == type);
+
+            if (!targetProduct) {
                 throw new Error(`${type} is not available in the store, your current bill is $${totalPrice.toFixed(2)}.`)
+            }
+
+            let currentQuantity = targetProduct.quantity;
+            let price = targetProduct.price;
+
+            if (currentQuantity < quantity) {
+                throw new Error(`The quantity ${quantity} for the vegetable ${type} is not available in the store, your current bill is $${totalPrice.toFixed(2)}.`);
             } else {
-                this.availableProducts.forEach(p => {
-
-                    let product = Object.values(p)[0];
-                    let currentQuantity = Object.values(p)[1];
-                    let price = Object.values(p)[2];
-
-                    if (product == type) {
-
-                        if (currentQuantity <= Number(quantity)) {
-                            throw new Error(`The quantity ${quantity} for the vegetable ${type} is not available in the store, your current bill is $${totalPrice.toFixed(2)}.`);
-                        } else {
-                            p.quantity -= Number(quantity);
-                            totalPrice += price * Number(quantity);
-                        }
-                    }
-
-                });
+                targetProduct.quantity -= quantity;
+                totalPrice += price * quantity;
             }
         }
 
@@ -83,28 +68,26 @@ class VegetableStore {
     }
 
     rottingVegetable(type, quantity) {
-
         let result = ``;
 
-        if (!this._products.includes(type)) {
+        const targetProduct = this.availableProducts.find(pro => pro.type == type);
+
+        if (!targetProduct) {
             throw new Error(`${type} is not available in the store.`);
         } else {
-            this.availableProducts.forEach(p => {
+            let product = targetProduct.type;
+            let availableQuantity = targetProduct.quantity;
 
-                let product = Object.values(p)[0];
-                let availableQuantity = Object.values(p)[1];
+            if (product == type) {
 
-                if (product == type) {
-
-                    if (availableQuantity <= quantity) {
-                        p.quantity = 0;
-                        result = `The entire quantity of the ${type} has been removed.`;
-                    } else {
-                        p.quantity -= quantity;
-                        result = `Some quantity of the ${type} has been removed.`;
-                    }
+                if (availableQuantity < quantity) {
+                    targetProduct.quantity = 0;
+                    result = `The entire quantity of the ${type} has been removed.`;
+                } else {
+                    targetProduct.quantity -= quantity;
+                    result = `Some quantity of the ${type} has been removed.`;
                 }
-            });
+            }
 
             return result;
         }
@@ -125,9 +108,7 @@ class VegetableStore {
 
         return result.join(`\n`);
     }
-
 }
-
 
 
 let vegStore = new VegetableStore('Jerrie Munro', '1463 Pette Kyosheta, Sofia');
