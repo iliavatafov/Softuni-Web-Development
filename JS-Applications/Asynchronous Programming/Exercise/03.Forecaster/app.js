@@ -1,149 +1,88 @@
+const getData = async(uri) => {
+    const data = await fetch(`http://localhost:3030/jsonstore/forecaster/${uri}`)
+    if (!data.ok) throw new Error()
+    const deserialized = data.json()
+    if (!deserialized) throw new Error()
+
+    return deserialized
+}
+
+const getCode = (arr, n) => {
+    const location = arr.find(x => x.name === n)
+
+    if (location === undefined) throw new Error()
+
+    return location.code
+}
+const symbols = {
+    Sunny: '&#x2600;',
+    'Partly sunny': '&#x26C5;',
+    Overcast: '&#x2601;',
+    Rain: '&#x2614;',
+    Degrees: '&#176;',
+}
+
+function tomorrowTemplate({ forecast, name }) {
+    const wrapper = document.createElement('div')
+    wrapper.className = 'forecasts'
+
+    wrapper.innerHTML = `<span class="condition symbol">${
+		symbols[forecast.condition]}</span><span class="condition"><span class="forecast-data">${
+		name}</span><span class="forecast-data">${
+		forecast.high}&#176;/${forecast.low}&#176;</span><span class="forecast-data">${
+		forecast.condition}</span></span>`
+
+    return wrapper
+}
+
+function dayTemplate({ condition, high, low }) {
+    const wrapper = document.createElement('span')
+    wrapper.className = 'upcoming'
+
+    wrapper.innerHTML = `<span class="symbol">${
+		symbols[condition]}</span><span class="forecast-data">${
+		high}&#176;/${low}&#176;</span><span class="forecast-data">${condition}</span>`
+
+    return wrapper
+}
+
+const outputVisibility = (display) => document.getElementById('forecast').style.display = display
+
+const clearSections = () => {
+    document.getElementById('current').innerHTML = `<div class="label">Current conditions</div>`
+    document.getElementById('upcoming').innerHTML = `<div class="label">Three-day forecast</div>`
+}
+
+async function displayData(name) {
+    const html = {
+        tmrwOutput: document.getElementById(`current`),
+        threeDayOutput: document.getElementById(`upcoming`),
+        forecastMain: document.getElementById('forecast'),
+    }
+
+    outputVisibility('block')
+    clearSections()
+
+    try {
+        const initialNfo = await getData('locations')
+        const code = getCode(initialNfo, name)
+        const tomorrowNfo = await getData(`today/${code}`)
+        const threeDayNfo = await getData(`upcoming/${code}`)
+
+        html.tmrwOutput.appendChild(tomorrowTemplate(tomorrowNfo))
+
+        Object.values(threeDayNfo.forecast)
+            .forEach(x => html.threeDayOutput.appendChild(dayTemplate(x)))
+
+    } catch (e) {
+        html.tmrwOutput.appendChild(document.createTextNode('Error'))
+    }
+}
+
 function attachEvents() {
-    document.getElementById(`submit`).addEventListener(`click`, display)
+    const inputField = document.getElementById('location')
+
+    document.getElementById('submit').addEventListener('click', () => displayData(inputField.value))
 }
 
-attachEvents();
-
-async function display() {
-
-    const initialData = await getInitialWeatherData();
-
-    const forcastDisplayElement = document.querySelector(`#forecast`);
-    const currentDivElement = document.querySelector(`#current`);
-    const upcomingDivElement = document.querySelector(`#upcoming`);
-
-    const data = await Promise.all([
-        currentCondition(initialData.code),
-        threeDayForecas(initialData.code)
-    ]);
-
-    const todaysCondition = data[0].forecast.condition;
-
-    let hexCode = ``;
-
-    switch (todaysCondition) {
-        case `Sunny`:
-            hexCode = `&#x2600;`;
-            break;
-        case `Partly sunny`:
-            hexCode = `&#x26C5;`;
-            break;
-        case `Overcast`:
-            hexCode = `&#x2601;`;
-            break;
-        case `Rain`:
-            hexCode = `&#x2614;`;
-            break;
-        case `Degrees`:
-            hexCode = `&#176;`;
-            break;
-    }
-
-    forcastDisplayElement.style.display = `block`;
-
-    e(`span`, hexCode, `class`, `condition symbol`, currentDivElement);
-    const condistionSpan = e(`span`, undefined, `class`, `condition`, currentDivElement);
-    e(`span`, data[0].name, `class`, `forecast-data`, condistionSpan);
-    e(`span`, `${data[0].forecast.low}${`&#176;`} / ${data[0].forecast.high}&#176;`, `class`, `forecast-data`, condistionSpan);
-    e(`span`, data[0].forecast.condition, `class`, `forecast-data`, condistionSpan);
-
-
-    console.log(currentDivElement);
-
-
-
-
-
-}
-
-async function getInitialWeatherData() {
-
-    const url = `http://localhost:3030/jsonstore/forecaster/locations`;
-    try {
-
-        const req = await fetch(url);
-
-        if (req.status != 200) {
-            throw new Error(`Error`);
-        }
-
-        const data = await req.json();
-
-        const location = data.filter(l => l.name == document.querySelector(`#location`).value);
-
-        if (location.length < 1) {
-            throw new Error(`Error`);
-        }
-
-        return location[0];
-
-    } catch (error) {
-        document.querySelector(`#forecast`).style.display = `block`;
-        document.querySelector(`.label`).firstChild.textContent = error;
-        document.querySelector(`#upcoming div`).lastChild.textContent = ``;
-    }
-
-}
-
-async function currentCondition(code) {
-
-    const url = `http://localhost:3030/jsonstore/forecaster/today/` + code;
-
-    try {
-
-        const req = await fetch(url);
-
-        if (req.status != 200) {
-            throw new Error(`Error`);
-        }
-
-        const data = await req.json();
-
-        return data
-
-    } catch (error) {
-        document.querySelector(`#forecast`).style.display = `inline-block`;
-        document.querySelector(`.label`).firstChild.textContent = error;
-        document.querySelector(`#upcoming div`).lastChild.textContent = ``;
-    }
-}
-
-async function threeDayForecas(code) {
-
-    const url = `http://localhost:3030/jsonstore/forecaster/upcoming/` + code;
-
-    try {
-
-        const req = await fetch(url);
-
-        if (req.status != 200) {
-            throw new Error(`Error`);
-        }
-
-        const data = await req.json();
-
-        return data
-
-    } catch (error) {
-        document.querySelector(`#forecast`).style.display = `inline-block`;
-        document.querySelector(`.label`).firstChild.textContent = error;
-        document.querySelector(`#upcoming div`).lastChild.textContent = ``;
-    }
-
-}
-
-function e(elementTyle, innerText, attribute, attributeText, parent) {
-
-    const element = document.createElement(elementTyle);
-    element.textContent = innerText;
-
-    if (attribute != undefined) {
-        element.setAttribute(attribute, attributeText);
-    }
-
-    if (parent != undefined) {
-        parent.appendChild(element);
-    }
-
-    return element;
-}
+attachEvents()
