@@ -1,91 +1,94 @@
-window.addEventListener('load', loadRecipes);
+window.addEventListener(`DOMContentLoaded`, start)
 
-function loadRecipes() {
+async function start() {
 
-    takeData();
+    const main = document.querySelector(`main`);
 
-    async function takeData() {
+    const recipes = await getRecipies();
+    main.replaceChildren();
 
-        const url = `http://localhost:3030/jsonstore/cookbook/recipes`;
+    recipes.map(createPreview).forEach(e => main.appendChild(e));
+}
 
-        try {
-            let response = await fetch(url);
+function createPreview(recipe) {
+    const element = document.createElement(`article`);
+    element.className = `preview`
 
-            if (response.status !== 200) {
-                throw new Error(`Error: ${response.status} (${response.statusText})`);
-            }
+    element.innerHTML = `<div class="title">
+    <h2>${recipe.name}</h2>
+</div>
+<div class="small">
+    <img src="${recipe.img}">
+</div>`
 
-            let data = await response.json();
+    element.addEventListener(`click`, () => {
+        element.querySelector(`h2`).textContent = `Lodaing...`
+        togglePreview(recipe._id, element);
 
+    });
 
-            for (let element of Object.values(data)) {
+    return element
+}
 
-                const article = e(`article`, undefined, `class`, `preview`, document.querySelector(`main`));
-                const titleDiv = e(`div`, undefined, `class`, `title`, article);
-                e(`h2`, element.name, undefined, undefined, titleDiv);
-                const imgDiv = e(`div`, undefined, `class`, `small`, article);
-                e(`img`, undefined, `src`, element.img, imgDiv);
+async function togglePreview(id, preview) {
+    const recipe = await getRecipiesById(id);
 
-                let resp = await fetch(`http://localhost:3030/jsonstore/cookbook/details/${element._id}`);
+    const element = document.createElement(`article`);
+    element.innerHTML = `<h2>${recipe.name}</h2>
+    <div class="band">
+        <div class="thumb">
+            <img src="${recipe.img}">
+        </div>
+        <div class="ingredients">
+            <h3>Ingredients:</h3>
+            <ul>
+            ${recipe.ingredients.map(i => `<li>${i}</li>`).join(``)}
+            </ul>
+        </div>
+    </div>
+    <div class="description">
+        <h3>Preparation:</h3>
+        <p>${recipe.steps.map(s => `<p>${s}</p>`).join(``)}</p>
+    </div>`
+    element.querySelector(`h2`).addEventListener(`click`, () => {
+        preview.querySelector(`h2`).textContent = `${recipe.name}`;
+        element.replaceWith(preview)
+    });
+    preview.replaceWith(element);
+}
 
-                let details = await resp.json();
+async function getRecipies() {
+    const url = `http://localhost:3030/jsonstore/cookbook/recipes/`;
 
-                const detailsArticle = e(`article`, undefined, undefined, undefined, document.querySelector(`main`));
-                detailsArticle.style.display = `none`;
-                let headerDetails = e(`h2`, details.name, undefined, undefined, detailsArticle);
-                let bandDiv = e(`div`, undefined, `class`, `band`, detailsArticle);
-                let imgDivEl = e(`div`, undefined, `class`, `thumb`, bandDiv);
-                e(`img`, undefined, `src`, details.img, imgDivEl);
-                let ingredientsDiv = e(`div`, undefined, `class`, `ingredients`, bandDiv);
-                e(`h3`, `Ingredients:`, undefined, undefined, ingredientsDiv);
-                let ul = e(`ul`, undefined, undefined, undefined, ingredientsDiv);
+    try {
+        const res = await fetch(url);
 
-                for (let ingridient of details.ingredients) {
-                    e(`li`, ingridient, undefined, undefined, ul);
-                }
-
-                article.addEventListener(`click`, () => {
-                    if (detailsArticle.style.display === `none`) {
-                        article.style.display = `none`;
-                        detailsArticle.style.display = `block`;
-                    }
-                });
-
-                headerDetails.addEventListener(`click`, () => {
-                    detailsArticle.style.display = `none`;
-                    article.style.display = `block`;
-
-                });
-
-                let descriptionDiv = e(`div`, undefined, `class`, `description`, detailsArticle);
-                e(`h3`, `Preparation:`, undefined, undefined, descriptionDiv);
-
-                for (let step of details.steps) {
-                    e(`p`, step, undefined, undefined, descriptionDiv);
-                }
-            }
-
-
-        } catch (err) {
-            console.log(err);
+        if (res.status !== 200) {
+            throw new Error(`Error ${res.statusText}`);
         }
+        const data = await res.json();
 
+        return Object.values(data);
+    } catch (error) {
+        console.log(error)
     }
 
-    function e(elementType, innerText, attribute, attributeText, parent) {
+}
 
-        let newElement = document.createElement(elementType);
-        newElement.textContent = innerText;
+async function getRecipiesById(id) {
+    const url = `http://localhost:3030/jsonstore/cookbook/details/` + id;
 
-        if (attribute) {
-            newElement.setAttribute(attribute, attributeText);
+    try {
+        const res = await fetch(url);
+
+        if (res.status !== 200) {
+            throw new Error(`Error ${res.statusText}`);
         }
+        const data = await res.json();
 
-        if (parent) {
-            parent.appendChild(newElement);
-        }
-
-        return newElement;
-
+        return data;
+    } catch (error) {
+        console.log(error)
     }
+
 }
