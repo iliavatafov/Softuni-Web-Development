@@ -71,12 +71,16 @@ aside {
     display: inline-block;
 }
 
-.update:disabled, .delete:disabled, .add:disabled {
+.update:disabled,
+.delete:disabled,
+.add:disabled {
     background-color: rgba(66, 66, 66, 0.38);
     color: rgba(66, 66, 66, 0.7);
 }
 
-.update:disabled:hover, .delete:disabled:hover, .add:disabled:hover {
+.update:disabled:hover,
+.delete:disabled:hover,
+.add:disabled:hover {
     cursor: no-drop;
 }
 
@@ -88,7 +92,8 @@ aside {
     background-color: rgb(207, 83, 52);
 }
 
-.add, .load {
+.add,
+.load {
     background-color: rgb(95, 207, 105);
 }
 
@@ -111,7 +116,8 @@ button {
     color: black;
 }
 
-#login button:hover, #register button:hover {
+#login button:hover,
+#register button:hover {
     background-color: rgb(95, 207, 105);
 }
 
@@ -147,7 +153,8 @@ legend {
     padding: 5px 10px;
 }
 
-#main, input {
+#main,
+input {
     text-align: center;
 }
 
@@ -178,14 +185,17 @@ main {
     min-height: 80vh;
 }
 
-#register-view, #login-view {
+#register-view,
+#login-view {
     display: flex;
     justify-content: flex-end;
     align-content: stretch;
     align-items: center;
     flex-direction: column;
 }
-#register-view h2, #login-view h2 {
+
+#register-view h2,
+#login-view h2 {
     margin-bottom: 50px;
     margin-top: 20px;
 }
