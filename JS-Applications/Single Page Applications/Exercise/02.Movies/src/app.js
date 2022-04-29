@@ -1,5 +1,4 @@
 import { showHome } from "./home.js";
-import { showDetails } from "./deteils.js";
 import { showLogin } from "./login.js";
 import { showRegister } from "./register.js";
 

@@ -1,7 +1,5 @@
 import { showCreate } from "./create.js";
-import { showView } from "./dom.js";
-import { e } from "./dom.js";
-import { onUpdate } from "./edit.js";
+import { showView, e } from "./dom.js";
 import { showHome } from "./home.js";
 
 const section = document.getElementById(`movie-details`);
