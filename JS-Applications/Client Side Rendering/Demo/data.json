@@ -1,0 +1,16 @@
+[{
+        "title": "First Article",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "author": "Ilia Vatafov"
+    },
+    {
+        "title": "Second Article",
+        "content": "Lorem Ipsum has been the ind.",
+        "author": "Tina Vatafova"
+    },
+    {
+        "title": "Third Article",
+        "content": "It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages.",
+        "author": "Mirela Vatafova"
+    }
+]
