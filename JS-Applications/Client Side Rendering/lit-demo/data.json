@@ -1,0 +1,23 @@
+[{
+        "title": "First Article",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "author": "Ilia Vatafov",
+        "color": "red",
+        "comments": [],
+        "disabled": true
+    },
+    {
+        "title": "Second Article",
+        "content": "Lorem Ipsum has been the ind.",
+        "author": "Tina Vatafova",
+        "color": "green",
+        "comments": []
+    },
+    {
+        "title": "Third Article",
+        "content": "It was popularised in the 1960 s with the release of Letraset sheets containing Lorem Ipsum passages.",
+        "author": "Mirela Vatafova",
+        "color": "red",
+        "comments": []
+    }
+]
