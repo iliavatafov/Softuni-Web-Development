@@ -1,5 +1,6 @@
-import { post } from '../api/api.js';
+import { post, put } from '../api/api.js';
 import { html } from '../lib.js'
+import { getUserData } from '../util.js';
 
 const createPageTemplate = (onSubmit, errorMsg) => html `
             <section id="create">
@@ -46,7 +47,12 @@ export function createPage(ctx) {
                 throw new Error(`Description should be at least 10 symbols long!`);
             }
 
-            await post('/data/teams', { name, logoUrl, description });
+            const teamResponse = await post('/data/teams', { name, logoUrl, description });
+
+            const postMember = await post('/data/members', { teamId: teamResponse._id});
+
+            await put('/data/members/' + postMember._id, { status: 'member'})
+
             ctx.updateUserNav();
             ctx.page.redirect('/my-teams');
 

@@ -8,6 +8,7 @@ import { logout } from './api/api.js';
 import { browsePage } from './views/browseTeamsPage.js';
 import { createPage } from './views/createTeamPage.js';
 import { teamDetailsPage } from './views/teamDetailsPage.js';
+import { editPage } from './views/editTeamPage.js';
 
 export { html, render }
 from './lib.js'
@@ -24,6 +25,7 @@ page('/my-teams', myTeamsPage);
 page('/browse-teams', browsePage);
 page('/create', createPage);
 page('/team-details/:id', teamDetailsPage);
+page('/edit/:id', editPage);
 
 page.start();
 

@@ -1,4 +1,5 @@
 import { html } from '../lib.js'
+import { getTeamDetails } from '../api/data.js';
 
 const editPageTemplate = () => html `
             <section id="edit">
@@ -17,6 +18,22 @@ const editPageTemplate = () => html `
             </section>`
 
 
-export function editPage(ctx) {
+export async function editPage(ctx) {
     ctx.render(editPageTemplate());
+
+    const teamData = await getTeamData();
+
+    populateData();
+
+    async function getTeamData() {
+        const teamId = ctx.params.id
+        return await getTeamDetails(teamId);
+    }
+
+    function populateData() {
+        const editElement = document.getElementById('edit-form');
+        const formData = new FormData(editElement);
+
+        console.log(formData.username)
+    }
 }

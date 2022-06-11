@@ -12,7 +12,7 @@ const teamDetailsPageTemplate = (teamData, membersData, membresCount, userData, 
                         <span class="details">${membresCount}</span>
                         <div>
                             ${(userData && userData.id == teamData._ownerId) ? 
-                            html`<a href="#" class="action">Edit team</a>` : null}
+                            html`<a href="/edit/${teamData._id}" class="action">Edit team</a>` : null}
                             ${(userData && membersData.filter( m => m._ownerId == userData.id).length == 0) ?
                             html`<a @click="${join}" href="#" class="action">Join team</a>` : null}
                             ${(userData && userData.id != teamData._ownerId && membersData.filter( m => m._ownerId == userData.id && m.status != 'pending').length == 1) ?
@@ -39,7 +39,8 @@ const teamDetailsPageTemplate = (teamData, membersData, membresCount, userData, 
             </section>`
 
         const teamMemberTemplate = (memberData, teamData, userData, deleteItem) => html`
-        <li>${memberData.user.username}${userData && teamData._ownerId == userData.id && memberData._ownerId != teamData._ownerId ? html`<a @click="${deleteItem}" id="${memberData._id}" href="/team-details/${teamData._id}" class="tm-control action">Remove from team</a>` : null}</li>`
+        <li>${memberData.user.username}${userData && teamData._ownerId == userData.id && memberData._ownerId != teamData._ownerId ?
+         html`<a @click="${deleteItem}" id="${memberData._id}" href="/team-details/${teamData._id}" class="tm-control action">Remove from team</a>` : null}</li>`
         
         const penidngMembersTemplate = (data, approve, deleteItem) => html`
         <li>${data.user.username}<a @click="${approve}" href="/team-details/${data.teamId}" id="${data._id}" class="tm-control action">Approve</a><a id="${data._id}" @click="${deleteItem}" href="/team-details/${data.teamId}" class="tm-control action">Decline</a></li>`
@@ -80,5 +81,5 @@ export async function teamDetailsPage(ctx) {
     async function deleteItem(event) {
         await onDelete(event.target.id)
     }
-    
+
 }
