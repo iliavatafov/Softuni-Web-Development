@@ -16,7 +16,7 @@ function solve() {
         const description = document.getElementById('description');
         const price = document.getElementById('price');
 
-        if ((model.value != '' || year.value != '' || description.value != '' || price.value != '') && (year.value > 0 && price.value > 0) && (Number(year.value) != NaN && Number(price.value) != NaN)) {
+        if (model.value != '' && description.value != '' && year.value > 0 && price.value > 0) {
 
             const infoTr = e('tr', { class: 'info' });
             e('td', {}, model.value, infoTr);
