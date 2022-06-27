@@ -81,7 +81,7 @@ class ArtGallery {
             this.listOfArticles.forEach(a => result.push(`${a.articleModel} - ${a.articleName} - ${a.quantity}`));
         } else if (criteria == 'guest') {
             result.push('Guests information:');
-            this.guests.forEach(g => result.push(`${g.guestName} - ${g.purchaseArticle} `));
+            this.guests.forEach(g => result.push(`${g.guestName} - ${g.purchaseArticle}`));
         }
 
         return result.join('\n');
