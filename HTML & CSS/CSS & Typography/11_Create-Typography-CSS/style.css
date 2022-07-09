@@ -1,0 +1,56 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 80px;
+    border-style: solid;
+    border-color: black;
+}
+
+main {
+    margin: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgie, serif;
+}
+
+thead tr {
+    background-color: #615d5d;
+}
+
+tr:nth-child(odd) {
+    background-color: #c2c0c0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 300px;
+}
+
+tr {
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#block {
+    border-left-color: silver;
+    border-left-width: 4px;
+    border-left-style: outset;
+    font-style: italic;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.name {
+    text-align: right;
+}
