@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 100;
+    padding: 20px 50px;
+    border: 2px solid black;
+}
+
+h1,
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+div {
+    width: 600px;
+    display: inline-block;
+}
+
+aside {
+    width: 400px;
+    float: right;
+    display: inline-block;
+}
+
+article {
+    max-width: 1000px;
+    min-width: 1000px
+}
+
+img {
+    width: 500px;
+}
+
+section div {
+    margin: 8px 0;
+}
+
+footer div {
+    margin-top: 10px;
+}
