@@ -1,0 +1,12 @@
+body {
+    background-color: #778899;
+}
+
+section {
+    border: 2px solid #fff;
+    border-radius: 18px 46px;
+    color: #fff;
+    width: 300px;
+    background-color: #0F4069;
+    padding: 17px;
+}
