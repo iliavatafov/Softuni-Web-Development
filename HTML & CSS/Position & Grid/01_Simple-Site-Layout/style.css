@@ -23,6 +23,7 @@ aside {
 }
 
 main {
+    display: inline-block;
     grid-area: main;
 }
 
