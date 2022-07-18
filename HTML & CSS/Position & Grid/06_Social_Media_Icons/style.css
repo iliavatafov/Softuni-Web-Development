@@ -1,0 +1,44 @@
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #EEEEEE;
+    position: relative;
+}
+
+li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li a i {
+    color: black;
+}
+
+.fb-container :hover {
+    color: #3B5998;
+}
+
+.twiter-container :hover {
+    color: #00ACED;
+}
+
+.g-container :hover {
+    color: #DD4B39;
+}
+
+.linkedin-container :hover {
+    color: #007BB6;
+}
+
+.instagram-container :hover {
+    color: #7492AB;
+}
