@@ -1,0 +1,35 @@
+body,
+.list,
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.garllery {
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    justify-content: space-between;
+    padding: 100px;
+    list-style: none;
+}
+
+.list-item {
+    margin-top: 50px;
+    background-color: white;
+    padding: 10px;
+    border: 6px solid black;
+    justify-content: center;
+    align-items: center;
+}
