@@ -1,0 +1,256 @@
+:root {
+    --darkpink: #BB6C6C;
+    --lightpink: #E1B4B4;
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkgray: #544747;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #E2B8AB;
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+}
+
+.home-container {
+    margin: 0 auto;
+}
+
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--lightpink);
+    height: 120px;
+}
+
+.nav__title {
+    cursor: pointer;
+    width: 45vw;
+    padding-left: 5%;
+    font-family: Pattaya, cursive;
+    font-size: 46px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: -2px 3px 6px rgba(0, 0, 0, 0.42);
+}
+
+.nav-list {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list .list__item a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.about-me-container {
+    background-color: var(--darkpink);
+    height: 600px;
+}
+
+
+/* Home view main */
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.pic-container {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.pic-container img {
+    width: 80%;
+}
+
+.personal-info-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13%;
+    padding-right: 13%;
+    text-align: center;
+}
+
+.personal-info__title {
+    padding-bottom: 5%;
+    color: var(--white);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.personal-info__text {
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-bottom: 5%;
+}
+
+.personal-info__btn--chat {
+    width: 400px;
+    height: 80px;
+    background-color: var(--lightpink);
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    color: var(--darkgray);
+    letter-spacing: 5px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.personal-info__btn--chat :hover {
+    color: white;
+    background-color: lightpink;
+}
+
+.social-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/* Catalog view */
+
+.catalog-container {
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.catalog-container-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 60px;
+}
+
+#second .catalog-card-img__container {
+    margin-right: 150px;
+}
+
+.catalog-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.catalog-card-img__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--lightpink);
+    width: 25%;
+    height: 25%;
+}
+
+.catalog-card-content-container {
+    width: 60%;
+    padding-right: 20%;
+}
+
+.catalog-card-content-heading-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 8%;
+}
+
+.catalog-card-content__btn {
+    width: 18%;
+    height: 40px;
+    background-color: #E2B8AB;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.catalog-card-content-heading-container {
+    margin-bottom: 5%;
+    letter-spacing: 5px;
+}
+
+#second {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#second .catalog-card-content-container {
+    padding-right: 0;
+    padding-left: 20%;
+}
+
+
+/* Double cards view */
+
+.double-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 720px;
+    background-color: var(--lightpink);
+    gap: 5%;
+}
+
+.double-cards__card {
+    position: relative;
+    background-color: white;
+    width: 650px;
+    height: 580px
+}
+
+.double-cards__card_container {
+    margin: 17% 15%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.5px;
+}
+
+.contact--btn {
+    background-color: #E2B8AB;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 260px;
+    height: 60px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.double-cards__card__title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.double-cards__card_arrow i {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
