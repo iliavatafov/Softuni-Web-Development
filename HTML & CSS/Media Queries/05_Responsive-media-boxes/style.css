@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.text-container {
+    margin: 0 1.2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+button {
+    background-color: rgb(17, 163, 17);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 100;
+    width: 4.5rem;
+    height: 22%;
+    margin-left: 70%;
+}
+
+@media screen and (max-width: 400px) {
+    .text-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        margin: 0;
+        padding: 0.5rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .text-container {
+        margin: 0 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    button {
+        width: 5.5rem;
+        height: 22%;
+        font-size: 0.9rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    button {
+        width: 6rem;
+        height: 22%;
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .text-container {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    button {
+        width: 8rem;
+        height: 22%;
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .text-container {
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    button {
+        width: 10rem;
+        height: 22%;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .text-container {
+        margin: 0 3rem;
+        margin-bottom: 4.5rem;
+    }
+}
