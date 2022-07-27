@@ -1,0 +1,95 @@
+:root {
+    --whitegray: #f6f8f9;
+    --purple: #786eff;
+    --textgray: #7c868e;
+    --black: #2d3745;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#container {
+    position: relative;
+    height: 700px;
+    width: 85%;
+    margin: 3rem auto;
+    background-color: var(--whitegray);
+    border-radius: 0.5rem;
+}
+
+.text-container {
+    padding-top: 7rem;
+    padding-left: 6rem;
+    width: 50%;
+    height: 100%;
+}
+
+.text-container__sub-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.text-container__title {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: var(--black);
+}
+
+.text-container__text {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.06rem;
+    color: var(--textgray);
+}
+
+.text-container__button--purple,
+.text-container__button--white {
+    cursor: pointer;
+    margin-top: 3rem;
+    width: 36%;
+    height: 12%;
+    border-radius: 0.4rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-container__button--purple {
+    border: none;
+    background-color: var(--purple);
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.text-container__button--white {
+    border: 3px solid black;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 40%;
+}
+
+@media screen and (max-width: 1500px) {
+    .text-container__button--purple,
+    .text-container__button--white {
+        padding: 0;
+    }
+    .text-container {
+        padding-top: 4rem;
+    }
+    img {
+        width: 40%;
+    }
+}
