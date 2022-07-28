@@ -1,0 +1,284 @@
+:root {
+    --lightgray: #efefef;
+    --middlegray: #a1a1a1;
+    --incongray: #909090;
+    --black: #222222;
+    --darkblack: #111111;
+    --textback: #191919;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+}
+
+
+/* Hero view */
+
+.container {
+    position: relative;
+    width: 95%;
+    max-width: 1900px;
+    min-width: 1400px;
+    margin: 2rem auto;
+    height: 600px;
+    background-color: var(--lightgray);
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.container #text-container {
+    padding-left: 8rem;
+}
+
+.container #text-container .title {
+    font-weight: 100;
+    font-size: 2.5rem;
+    padding-bottom: 1.8rem;
+}
+
+.container #text-container .title span {
+    font-weight: bold;
+}
+
+.container #text-container .text {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.container #text-container .text--dash {
+    border-left: 2px solid var(--darkblack);
+    height: 4rem;
+    margin-top: 1.5rem;
+}
+
+.hero-img {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 45%;
+}
+
+.nav {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.nav .nav__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav i {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+
+/* Camera view */
+
+#camera {
+    display: flex;
+}
+
+#camera .img-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+#camera .img-container img {
+    width: 90%;
+}
+
+#camera .all-container #text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+#camera .all-container #text-container .icons {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#camera .all-container #text-container .title {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.title-container {
+    display: flex;
+    gap: 2rem
+}
+
+#camera .all-container #text-container .icons .icons__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 1px;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--incongray);
+}
+
+#camera .all-container #text-container .text {
+    font-size: 1.1rem;
+}
+
+#camera .all-container #text-container :nth-child(3) {
+    margin-bottom: 1.2rem;
+}
+
+#camera .all-container #text-container .text-dash--vertical {
+    border-bottom: 2px solid var(--darkblack);
+    width: 4rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    bottom: 1.8rem;
+    color: var(--black);
+}
+
+
+/* Picture */
+
+#picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Ut emin */
+
+#ut-emin {
+    display: flex;
+}
+
+#ut-emin .featuren-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+#ut-emin .featuren-img-container .featuren-img__img {
+    width: 80%;
+}
+
+#ut-emin .text {
+    padding-right: 2.5rem;
+}
+
+
+/* Pictures */
+
+#pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pictures img {
+    width: 26%;
+}
+
+#pictures :nth-child(2) {
+    transform: scale(1.5);
+}
+
+
+/* Send message */
+
+#message .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 68%;
+    height: 100%;
+}
+
+#message .content h1,
+#message .content .text {
+    text-align: center;
+}
+
+#message .content .text {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+#message .content h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+#message .content h1 span {
+    font-weight: bold;
+}
+
+.form {
+    margin: 0 auto;
+    display: grid;
+    width: 60%;
+    gap: 1.5rem;
+    grid-template-areas: "email subject" "textarea textarea" "sendbtn sendbtn";
+}
+
+#email {
+    background-color: transparent;
+    border: 1.6px solid var(--darkblack);
+    height: 2.5rem;
+    grid-area: email;
+}
+
+::placeholder {
+    color: black;
+    padding-left: 1rem;
+}
+
+#subject {
+    background-color: transparent;
+    border: 1.6px solid var(--darkblack);
+    grid-area: subject;
+}
+
+#textarea {
+    background-color: transparent;
+    border: 1.6px solid var(--darkblack);
+    grid-area: textarea;
+}
+
+.button--send {
+    height: 2.5rem;
+    grid-area: sendbtn;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    position: absolute;
+    bottom: 0.8rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
