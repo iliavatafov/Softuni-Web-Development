@@ -1,0 +1,87 @@
+body {
+    font-family: Poppins;
+    background-color: #202020;
+}
+
+:root {
+    --green: #a3c438;
+    --lightgray: #f7f7f7;
+    --darkgray: #6e6e6e;
+    --black: #22262a;
+    --white: #f5f8ea;
+}
+
+#container {
+    max-width: 1600px;
+    max-height: 780px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#container .title {
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+#container .title .title--green {
+    color: var(--green);
+}
+
+#container .subtitle {
+    text-align: center;
+    color: var(--darkgray);
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+#container .catalog-container .catalog-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+#container .catalog-container .catalog-list .list__item {
+    width: 21%;
+    height: 27rem;
+    background-color: var(--lightgray);
+}
+
+#container .catalog-container .catalog-list .list__item h2,
+#container .catalog-container .catalog-list .list__item p {
+    line-height: 2;
+    padding-left: 1.8rem;
+}
+
+#container .catalog-container .catalog-list .list__item h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+#container .catalog-container .catalog-list .list__item p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--darkgray);
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    color: white;
+    background-color: var(--green);
+    border-radius: 1.2rem;
+    height: 2rem;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 1.8rem;
+    margin-bottom: 1.5rem;
+}
