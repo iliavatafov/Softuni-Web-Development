@@ -1,0 +1,340 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    max-width: 1600px;
+    min-width: 1400px;
+    margin: 0 auto;
+    background-color: #202020;
+}
+
+
+/* Home page */
+
+#home-container {
+    position: relative;
+    z-index: 0;
+    height: 720px;
+    background-color: white;
+}
+
+#home-container .home-header .nav {
+    display: flex;
+    height: 4.5rem;
+    align-items: center;
+    margin: 0 20%;
+}
+
+#home-container .home-header .nav img {
+    width: 8rem;
+}
+
+#home-container .home-header .nav .nav-list {
+    display: flex;
+    justify-content: right;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #082454;
+    gap: 2rem;
+    width: 100%;
+}
+
+.home-main {
+    display: flex;
+}
+
+.home-main .img--background {
+    position: absolute;
+    z-index: -1;
+    width: 1600px;
+    height: 580px;
+}
+
+.home-main .img--dog {
+    position: relative;
+    justify-content: left;
+    width: 800px;
+}
+
+.home-main .img--dog img {
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+}
+
+.home-main .header-content {
+    display: flex;
+    justify-content: right;
+    width: 600px;
+    padding-top: 8rem;
+}
+
+.home-main .header-content article {
+    width: 20rem;
+    line-height: 1.2;
+}
+
+.home-main .header-content article .title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+.home-main .header-content article .title .span--bold {
+    font-weight: bold;
+}
+
+.home-main .header-content article .text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 1rem;
+}
+
+.home-main .header-content article .btn--white {
+    border: none;
+    border-radius: 2rem;
+    width: 10rem;
+    height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #ff3b0d;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+
+/* Catalog */
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    height: 720px;
+    background-color: white;
+}
+
+.catalog-container .title {
+    font-size: 2.7rem;
+    color: #121731;
+}
+
+.catalog-container .subtitle {
+    color: #919193;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    width: 39%;
+    text-align: center;
+}
+
+.catalog-container .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding-top: 5rem;
+}
+
+.catalog-container .list .list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 0.5rem;
+    border: 0.5px solid #fc8850de;
+}
+
+.catalog-container .list .list-item :nth-child(1) {
+    padding-top: 4rem;
+    width: 8.5rem;
+}
+
+.catalog-container .list .list-item :nth-child(2) {
+    position: absolute;
+    top: 6rem;
+    width: 4.7rem;
+}
+
+.catalog-container .list .list-item .card__title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-top: 2.3rem;
+}
+
+.catalog-container .list .list-item .card__text {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    width: 15rem;
+    color: #919193;
+}
+
+
+/* Cat layout */
+
+.cat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    height: 720px;
+    background-color: white;
+}
+
+.cat-container .img-container {
+    width: 60%;
+}
+
+.cat-container .img-container img {
+    padding-left: 18rem;
+    width: 87%;
+}
+
+.cat-container .content-container {
+    width: 50%;
+    padding-right: 17rem;
+}
+
+.cat-container .content-container .title {
+    font-weight: 300;
+    font-size: 3.1rem;
+}
+
+.cat-container .content-container .title--bold {
+    font-weight: 700;
+}
+
+.cat-container .content-container .text {
+    margin-top: 1rem;
+    color: #919193;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cat-container .content-container .btn--orange {
+    border: none;
+    border-radius: 2rem;
+    width: 10rem;
+    height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ff3b0d;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+
+/* Contact page */
+
+.contact-page-container {
+    padding-top: 2%;
+    height: 720px;
+    background-color: white;
+}
+
+.contact-page-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 452px;
+    z-index: 1;
+}
+
+.contact-page-container .header .header--backgound {
+    position: absolute;
+    top: 0.5rem;
+    z-index: -1;
+}
+
+.contact-page-container .header .title {
+    font-size: 2.2rem;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+.contact-page-container .header .text {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    width: 34%;
+    padding-bottom: 2rem;
+}
+
+.contact-page-container .header .btn-white {
+    border: none;
+    border-radius: 2rem;
+    width: 10rem;
+    height: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #ff3b0d;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+.contact-page-container .header .btn-container .contact {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0.7rem;
+}
+
+.contact-page-container .header .btn-container .contact .phone {
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+.footer {
+    padding-top: 2.3rem;
+    height: 242px;
+}
+
+.footer .list {
+    padding-top: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footer .list .list-item .list--internal .internal-list__item {
+    color: #919193;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.footer .list .list-item .list--internal :nth-child(1) {
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #121731;
+    padding-bottom: 1.2rem;
+}
+
+#footer--logo {
+    width: 7rem;
+    padding-bottom: 0;
+}
+
+.last-li {}
