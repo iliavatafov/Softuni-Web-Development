@@ -1,1 +1,27 @@
-/* TODO: Add the responsive styles here */
+@media screen and (max-width: 600px) {
+    .w3-top .w3-right {
+        display: none;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .w3-col.m6 {
+        width: auto;
+    }
+    #about .w3-opacity-min {
+        display: none;
+    }
+    #menu .w3-col.l6 {
+        width: auto;
+    }
+    #menu .w3-opacity-min {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu .w3-col.l6 {
+        float: none;
+    }
+}
