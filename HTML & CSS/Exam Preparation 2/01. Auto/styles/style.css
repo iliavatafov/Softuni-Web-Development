@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-container {
+    margin: 4rem auto;
+    display: flex;
+    max-width: 1600px;
+    min-width: 1400px;
+}
+
+.page-container .content-container {
+    width: 50%;
+    padding-left: 10.2rem;
+    padding-right: 2rem;
+}
+
+.page-container .img-container {
+    width: 50%;
+}
+
+.page-container .content-container .content__title {
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.page-container .content-container .content__text {
+    color: darkgray;
+    font-size: 0.9rem;
+}
+
+.page-container .content-list {
+    padding-top: 1rem;
+}
+
+.page-container .content-list .content-list__item {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.page-container .content-list .content-list__item img {
+    width: 3.2rem;
+}
+
+.page-container .content-list .content-list__item .content {
+    padding-left: 1rem;
+}
+
+.page-container .content-list .content-list__item .content .title {
+    font-size: 1rem;
+}
+
+.page-container .content-list .content-list__item .content .text {
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+.page-container .img-container img {
+    height: 100%;
+}
