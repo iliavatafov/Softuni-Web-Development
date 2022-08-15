@@ -1,0 +1,232 @@
+:root {
+    --black: #2b373a;
+    --orange: #e24e2a;
+    --navgray: #ececec;
+    --darkgray: #383838;
+    --lightgray: #676557;
+    --white: #fff;
+    --green: #1b9772;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    max-width: 1600px;
+    min-width: 1400px;
+    margin: 0 auto;
+    background-color: var(--black);
+}
+
+#home-page .header .nav {
+    display: flex;
+    height: 7.5rem;
+    background-color: white;
+}
+
+#home-page .header .nav .title {
+    align-self: center;
+    padding-right: 1rem;
+    padding-left: 3.5rem;
+    height: 50%;
+    font-size: 2.7rem;
+    color: var(--black);
+    font-weight: 600;
+    border-right: 2px solid #ccc;
+}
+
+#home-page .header .nav .subtitle {
+    color: var(--black);
+    align-self: center;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    color: gray;
+}
+
+#home-page .header .nav .logo-container {
+    display: flex;
+    width: 40%;
+}
+
+#home-page .header .nav .nav-list {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: right;
+    gap: 2px;
+    width: 60%;
+    padding-right: 2rem;
+    color: var(--black);
+}
+
+#home-page .header .nav .nav-list .list__item {
+    background-color: var(--navgray);
+    height: 4.5rem;
+    width: 11rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page .header .nav .nav-list li :hover {
+    color: var(--white);
+    background-color: var(--orange);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    object-fit: cover;
+    width: 100%;
+    height: 568px;
+}
+
+.main .content--orange {
+    background-color: var(--orange);
+    height: 230px;
+    color: #f5bca2;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 4rem 10rem;
+    width: 100%;
+}
+
+.main .content--orange p {
+    display: inline;
+}
+
+.main .content--orange p .p--white {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgray);
+    height: 500px;
+}
+
+.footer .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.footer .list .list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    width: 22%;
+}
+
+.footer .list .list__item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--orange);
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer .list .list__item .icon i {
+    font-size: 4rem;
+}
+
+.footer .list .list__item .title {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 1.2rem;
+}
+
+.footer .list .list__item .content {
+    border-top: 1px solid gray;
+    padding-top: 1.2rem;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+#catalog .header {
+    background-color: white;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#catalog .header .title {
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: var(--lightgray);
+}
+
+#catalog .header .subtitle {
+    font-weight: 200;
+    color: #a4a4a4;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+#catalog .header .btn {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    width: 20rem;
+    height: 4.3rem;
+}
+
+#catalog #main {
+    height: 440px;
+    background-color: var(--darkgray);
+}
+
+#catalog #main .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+#catalog #main .list .list__item {
+    width: 22%;
+    text-align: center;
+}
+
+#catalog #main .list .list__item .title {
+    color: white;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+#catalog #main .list .list__item .text {
+    color: gray;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#catalog .footer {
+    background-color: #1b9772;
+    height: 250px;
+    color: #8bc9b7;
+}
+
+#catalog .footer p {
+    letter-spacing: 2px;
+}
+
+#catalog .footer span {
+    color: white;
+}
