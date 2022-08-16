@@ -1,0 +1,297 @@
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 1600px;
+    min-width: 1400px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-container .header {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    background-color: white;
+}
+
+.page-container .header .img-container {
+    width: 50%;
+    padding-left: 6rem;
+}
+
+.page-container .header .nav {
+    width: 50%;
+}
+
+.page-container .header .nav .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6rem;
+    color: #54546d;
+    gap: 1rem;
+}
+
+.page-container .header .img-container img {
+    width: 9rem;
+}
+
+.page-container .background {
+    position: relative;
+    height: 25rem;
+    background-color: #54546d;
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.page-container .background img {
+    position: absolute;
+    top: 5rem;
+    left: -4.8rem;
+    width: 11.5rem;
+}
+
+.main .plans-container {
+    height: 660px;
+}
+
+.main .plans-container .list {
+    position: relative;
+    bottom: 15rem;
+    left: 6.5rem;
+    display: flex;
+    gap: 2rem
+}
+
+.main .plans-container .list .list__item,
+.main .plans-container .list .list__item--double {
+    position: relative;
+    background-color: white;
+    width: 28rem;
+    height: 25.5rem;
+    box-shadow: 0px 4px 11px -2px rgba(0, 0, 0, 0.59);
+    border-radius: 1rem;
+}
+
+.main .plans-container .list .list__item .item__price--green,
+.main .plans-container .list .list__item--double .item_price--blue,
+.main .plans-container .list .list__item--double .item-price--purple {
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main .plans-container .list .list__item--double .item_price--blue,
+.main .plans-container .list .list__item--double .item-price--purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .plans-container .list .list__item .item__price--green {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #029A3C;
+    background: -moz-linear-gradient(left, #029A3C 0%, #69CD8F 50%, #4bd680 100%);
+    background: -webkit-linear-gradient(left, #029A3C 0%, #69CD8F 50%, #4bd680 100%);
+    background: linear-gradient(to right, #029A3C 0%, #69CD8F 50%, #4bd680 100%);
+    color: white;
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+}
+
+.main .plans-container .list .list__item--double .item_price--blue {
+    background: #4C6B87;
+    background: -moz-linear-gradient(left, #4C6B87 0%, #1C6EA4 50%, #629ACF 100%);
+    background: -webkit-linear-gradient(left, #4C6B87 0%, #1C6EA4 50%, #629ACF 100%);
+    background: linear-gradient(to right, #4C6B87 0%, #1C6EA4 50%, #629ACF 100%);
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+}
+
+.main .plans-container .list .list__item--double .item-price--purple {
+    background: #4A37A5;
+    background: -moz-linear-gradient(left, #4A37A5 0%, #1C6EA4 50%, #8C7DE1 100%);
+    background: -webkit-linear-gradient(left, #4A37A5 0%, #1C6EA4 50%, #8C7DE1 100%);
+    background: linear-gradient(to right, #4A37A5 0%, #1C6EA4 50%, #8C7DE1 100%);
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+}
+
+.main .plans-container .list .list__item--double .item_price--blue .item__container,
+.main .plans-container .list .list__item--double .item-price--purple .item__container {
+    width: 50%;
+    text-align: center;
+    color: white;
+    height: 6rem;
+}
+
+.main .plans-container .list .list__item--double .item_price--blue .item__container:nth-child(1),
+.main .plans-container .list .list__item--double .item-price--purple .item__container:nth-child(1) {
+    border-right: 1.5px solid white;
+}
+
+.main .plans-container .list .list__item .item__price--green .item__price,
+.main .plans-container .list .list__item--double .item_price--blue .item__price,
+.main .plans-container .list .list__item--double .item-price--purple .item__price {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.main .plans-container .list .item__details {
+    font-size: 1.1rem;
+}
+
+.main .plans-container .list .list__item,
+.main .plans-container .list .list__item--double {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .plans-container .item__title {
+    color: #54546d;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.main .plans-container .item__subtitle {
+    width: 90%;
+    text-align: center;
+    color: #54546d;
+    font-size: 1.18rem;
+}
+
+#one {
+    padding-bottom: 0;
+}
+
+#two {
+    padding-bottom: 3rem;
+}
+
+.main .plans-container .btn {
+    border: none;
+    background-color: #9a5dc6;
+    color: white;
+    width: 14rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.table-container {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container .title {
+    color: #54546d;
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-bottom: 1.5rem;
+}
+
+.table-container .text {
+    color: #54546d;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 2.5rem;
+}
+
+.table-container .table {
+    border-collapse: collapse;
+}
+
+.table-container .table .table__row {
+    height: 4rem;
+    color: #54546d;
+    font-size: 1.2rem;
+}
+
+.table-container .table tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+.table-container .table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.table-container .table .table__row :nth-child(1) {
+    width: 70%;
+}
+
+.table-container .table .table__row :nth-child(2),
+.table-container .table .table__row :nth-child(3) {
+    margin: 0 auto;
+    width: 15%;
+}
+
+.table-container .table .table__row .table__item img {
+    width: 1.60rem;
+}
+
+.postbank-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 8rem;
+}
+
+.postbank-container .text-container {
+    width: 65%;
+}
+
+.postbank-container .text-container .postbank__title {
+    color: #54546d;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+
+.postbank-container .text-container .postbank__text {
+    color: #54546d;
+    font-size: 1.1rem;
+}
+
+.postbank-container .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding-left: 4rem;
+}
+
+.postbank-container .logo-container img {
+    width: 90%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #54546d;
+    height: 6rem;
+}
+
+.footer p {
+    color: #8a87a2;
+    font-size: 1.2rem;
+}
