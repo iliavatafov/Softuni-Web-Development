@@ -1,0 +1,106 @@
+body {
+    margin: 6rem auto;
+    height: 711px;
+    max-width: 1600px;
+    min-width: 1400px;
+    background-color: #222;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.enroll-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    height: 75%;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem
+}
+
+.container .content {
+    width: 45%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    padding-left: 2rem;
+    background-color: #e3f3fd;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.44);
+}
+
+.enroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #44a9f8;
+    width: 45%;
+    height: 75%;
+    margin-right: 6rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.44);
+}
+
+.container .content .content__title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #596778;
+    padding-bottom: 1.4rem;
+}
+
+.container .content .list__item {
+    padding-bottom: 0.9rem;
+    font-size: 1.15rem;
+    color: gray;
+}
+
+.container .content .list__item i {
+    color: #44a9f8;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.enroll-container .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 1.9rem;
+    color: gray;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.38)
+}
+
+.enroll-container .price .price--blue {
+    color: #44a9f8;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.38)
+}
+
+.enroll-container .text {
+    padding-bottom: 2rem;
+    color: #596778;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.38)
+}
+
+.enroll-container .btn {
+    color: white;
+    background-color: #44a9f8;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    height: 2.8rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.44);
+}
