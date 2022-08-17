@@ -1,0 +1,94 @@
+:root {
+    --titleSize: 2.5rem;
+    --subtitleSize: 1.5rem;
+    --textSize: 1.15rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+    main {
+        width: 100vw;
+    }
+    .left-to-right:first-child {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+    }
+    main .left-to-right article {
+        padding: 25px;
+        border-radius: 3rem;
+        border-radius: 6rem;
+    }
+    main .left-to-right article header h1 {
+        font-size: var(--titleSize);
+    }
+    main .left-to-right article header p {
+        font-size: var(--subtitleSize);
+    }
+    main .left-to-right article p {
+        font-size: var(--textSize);
+        padding-left: 1.5rem;
+    }
+    main .left-to-right article button {
+        display: none;
+    }
+    main :nth-child(2) {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main section:nth-child(2) article {
+        margin: 0;
+        padding: 0 3rem;
+    }
+    main :nth-child(2) article header h1 {
+        font-size: var(--titleSize);
+    }
+    main :nth-child(2) article header p {
+        font-size: var(--subtitleSize);
+    }
+    main :nth-child(2) article p {
+        font-size: 1rem;
+    }
+    main :nth-child(2) article button {
+        display: none;
+    }
+    main section:nth-child(4) article {
+        width: 100%;
+    }
+    main section:nth-child(2) article img,
+    main section:nth-child(4) article img {
+        width: 100%;
+    }
+    main section:nth-child(4) article {
+        margin: 0;
+    }
+    main section:nth-child(4) article form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    main section:nth-child(4) article form input,
+    main section:nth-child(4) article form textarea {
+        width: 25rem;
+        line-height: 2;
+        font-size: var(--textSize);
+    }
+    main section:nth-child(4) article form textarea {
+        height: 15rem;
+    }
+    #send {
+        padding: 0;
+        width: 8rem;
+        height: 3rem;
+    }
+    main section:nth-child(4) article form :last-child {}
+}
