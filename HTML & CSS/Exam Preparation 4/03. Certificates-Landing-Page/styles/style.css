@@ -1,0 +1,283 @@
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+    min-width: 1400px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-container header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: 92%;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+header .nav {
+    display: flex;
+    width: 100%;
+}
+
+header .softuni-logo {
+    width: 50%;
+    padding-left: 2rem;
+}
+
+header .softuni-logo img {
+    width: 8rem;
+}
+
+header .nav .list {
+    display: flex;
+    gap: 1.3rem;
+    padding-left: 5rem;
+}
+
+header .nav .list .list__item {
+    color: #515e6d;
+    font-size: 1.2rem;
+}
+
+header .nav .list .list__item--initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #42abf8;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    width: 2.5rem;
+    box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+.certificates-container .backgound-img {
+    width: 100%;
+    max-width: 1600px;
+    opacity: 0.1;
+    height: 520px;
+    position: absolute;
+    z-index: -1;
+}
+
+.certificates-container {
+    display: flex;
+}
+
+.certificates-container .certificateste-data {
+    width: 49%;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    height: 340px;
+    margin-top: 5.5rem;
+    margin-left: 7rem;
+    background-color: #29394b;
+    color: white;
+    border-radius: 0.7rem;
+    box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+.certificates-container .certificateste-data .title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.certificates-container .certificateste-data .text {
+    font-size: 1.1rem;
+}
+
+.certificates-container .bottom__text {
+    color: #29394b;
+    font-size: 1.1rem;
+    padding-top: 2rem;
+    padding-left: 0;
+    font-style: italic;
+    position: relative;
+    right: 24px;
+}
+
+.certificates-container .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+}
+
+.certificates-container .img-container .diploma__one {
+    width: 33%;
+    height: 65%
+}
+
+.certificates-container .img-container .diploma__two {
+    width: 38%;
+    height: 74%;
+}
+
+.diploma {
+    margin: 12rem auto;
+    width: 85%;
+    margin-bottom: 7rem;
+}
+
+.diploma .title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #3f4d5e;
+    padding-bottom: 3rem;
+}
+
+.diploma .text-container {
+    background-color: #f4f5f7;
+    height: 260px;
+    padding-left: 1.5rem;
+    padding-top: 1.2rem;
+}
+
+.diploma .text-container .text {
+    color: #475464;
+    font-size: 1.1rem;
+}
+
+.diploma .bottom__text {
+    color: #475464;
+    font-size: 1.1rem;
+    padding-top: 1.2rem;
+}
+
+.apply-container {
+    position: relative;
+    margin: 0 auto;
+    height: 260px;
+    width: 83%;
+    border-radius: 0.7rem;
+    opacity: 0.9;
+    box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+    background-image: url('/images/sign-up-prompt-background.jpg');
+}
+
+.backgound-fone {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 0.7rem;
+}
+
+.apply-container .background {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply-container .background .title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.apply-container .background .text {
+    color: white;
+    font-size: 1.1rem;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.apply-container .background .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.apply-container .background .buttons .line {
+    border-right: 2px solid white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn--white {
+    width: 8.5rem;
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    color: #4db0f8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.btn--transperant {
+    width: 15rem;
+    height: 2.9rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+footer {
+    margin: 4rem auto;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid black;
+    width: 83%;
+    display: flex;
+}
+
+footer .left-side {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+}
+
+footer .right-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+footer .left-side .text {
+    color: lightgray;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .right-side .list-text {
+    display: flex;
+    gap: 1rem;
+    color: gray;
+    font-size: 1rem;
+}
+
+footer .right-side .list-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .right-side .list-icons__item i {
+    color: #3e4c5d;
+}
+
+footer .left-side .logo {
+    width: 9rem;
+}
