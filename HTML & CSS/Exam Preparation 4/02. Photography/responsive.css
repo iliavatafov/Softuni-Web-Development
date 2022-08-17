@@ -1,1 +1,55 @@
-/* TODO: Add media queries */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.4rem;
+        width: 89%;
+        margin: 0 auto;
+    }
+    header .avatar {
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 4rem;
+        margin-top: 5rem;
+    }
+    header .avatar img {
+        width: 95%;
+    }
+    header .icons {
+        padding-top: 2rem;
+    }
+    header .icons li {
+        width: 5rem;
+        height: 5rem;
+    }
+    header .icons li a {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto;
+        display: flex;
+    }
+    .icon.style2::before {
+        padding-left: 0.8rem;
+        padding-top: 0.5rem;
+    }
+    .thumbnails {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .thumbnails div {
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .thumbnails div a {
+        height: 20rem;
+    }
+    .thumbnails div a img {
+        height: 80%;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+}
