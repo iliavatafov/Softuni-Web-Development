@@ -1,0 +1,76 @@
+        @media screen and (max-width: 600px) {
+            header {
+                height: 565px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 1rem;
+            }
+            nav ul li {
+                padding-top: 0.5rem;
+                font-size: 1.2rem;
+            }
+            .header-title h1 {
+                font-size: 38px;
+            }
+            .header-title {
+                padding-top: 1rem;
+            }
+            .about-us {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .about-us p:nth-child(3) {
+                margin: unset;
+                width: 95%;
+            }
+            .team-description-wrapper ul {
+                display: grid;
+                grid-template-columns: 250px 250px;
+                grid-template-rows: 300px 300px;
+                gap: 1rem;
+                grid-template-areas: "li-1 li-2" "li-3 li-4";
+            }
+            .team-description-wrapper ul :nth-child(1) {
+                grid-area: li-1;
+            }
+            .team-description-wrapper ul :nth-child(2) {
+                grid-area: li-2;
+            }
+            .team-description-wrapper ul :nth-child(3) {
+                grid-area: li-3;
+            }
+            .team-description-wrapper ul :nth-child(4) {
+                grid-area: li-4;
+            }
+            .team-description-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .choose-us ul {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .choose-us ul li {
+                width: 70%;
+            }
+            .blog-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.5rem;
+            }
+            .blog-list li {
+                width: 80%;
+            }
+        }
