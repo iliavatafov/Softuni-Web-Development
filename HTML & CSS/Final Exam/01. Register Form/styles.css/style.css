@@ -1,131 +1,131 @@
 :root {
-    --red: #ae3c33;
-    --black: #4d3333;
-    --gray: #a5a5a5;
-    --bodyblack: #0e0e0e;
+  --red: #ae3c33;
+  --black: #4d3333;
+  --gray: #a5a5a5;
+  --bodyblack: #0e0e0e;
 }
 
 body {
-    font-family: 'Mulish', sans-serif;
-    max-width: 1600px;
-    min-width: 1400px;
-    margin: 0 auto;
-    background-color: var(--bodyblack);
+  font-family: "Mulish", sans-serif;
+  max-width: 1920px;
+  min-width: 1080px;
+  margin: 0 auto;
+  background-color: var(--bodyblack);
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 720px;
 }
 
 .container .background {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 720px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 720px;
 }
 
 .container .form-container {
-    width: 45%;
-    height: 68%;
-    padding: 2rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  width: 45%;
+  height: 68%;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .container .form-container .form-backgound {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5rem;
-    box-shadow: 5px 7px 10px 6px rgba(0, 0, 0, 0.56);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 5px 7px 10px 6px rgba(0, 0, 0, 0.56);
 }
 
 .container .form-container .form {
-    width: 60%;
-    padding-left: 3rem;
+  width: 60%;
+  padding-left: 3rem;
 }
 
 .container .form-container .form .form__title {
-    color: var(--black);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
+  color: var(--black);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 .container .form-container .form div,
 .container .form-container .form input {
-    width: 95%;
+  width: 95%;
 }
 
 .form-group__names {
-    display: flex;
+  display: flex;
 }
 
 .container .form-container .form-group__names .form__element {
-    width: 49%;
+  width: 49%;
 }
 
 .form-group__names label {
-    display: block;
-    color: var(--gray);
-    font-size: 0.6rem;
+  display: block;
+  color: var(--gray);
+  font-size: 0.6rem;
 }
 
 .form-group__email label {
-    color: var(--gray);
-    font-size: 0.6rem;
+  color: var(--gray);
+  font-size: 0.6rem;
 }
 
 .form-group__email input,
 .form-group__names input {
-    border: 1px solid var(--gray);
-    border-radius: 1rem;
-    height: 2rem;
-    padding-top: 0.7rem;
+  border: 1px solid var(--gray);
+  border-radius: 1rem;
+  height: 2rem;
+  padding-top: 0.7rem;
 }
 
 .check-box {
-    padding-bottom: 1rem;
-    padding-top: 0.7rem;
-    font-size: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .check-box label {
-    display: flex;
-    align-items: center;
-    width: 30rem;
-    height: 1rem;
-    font-size: 0.6rem;
-    color: var(--gray);
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  height: 1rem;
+  font-size: 0.6rem;
+  color: var(--gray);
 }
 
 #btn {
-    border: none;
-    border-radius: 1rem;
-    width: 7rem;
-    height: 1.8rem;
-    color: white;
-    background-color: var(--red);
-    font-weight: 500;
-    font-size: 0.8rem;
-    margin-top: 0.3rem;
-    margin-left: 5rem;
+  border: none;
+  border-radius: 1rem;
+  width: 7rem;
+  height: 1.8rem;
+  color: white;
+  background-color: var(--red);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-left: 5rem;
 }
 
 #checkbox {
-    width: 10%;
+  width: 10%;
 }
