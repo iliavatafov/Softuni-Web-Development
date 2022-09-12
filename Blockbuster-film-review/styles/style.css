@@ -399,7 +399,7 @@ p {
 
 .movies-ranking-container .container .slider-container .movie-container {
   height: 16rem;
-  width: 10rem;
+  width: 22%;
 }
 
 .movies-ranking-container
@@ -491,3 +491,122 @@ p {
 }
 
 /* Movie rankigns end */
+
+/*  Footer start */
+
+.home-footer {
+  position: relative;
+  background-image: url("../imges/home/background-img.jpg");
+  height: 480px;
+}
+
+.home-footer .container {
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  max-width: 1200px;
+  display: flex;
+  gap: 7rem;
+}
+
+.home-footer .contact-data-container {
+  width: 32%;
+}
+
+.home-footer .contact-data-container .contact-data__address-one {
+  color: var(--text-blue);
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+.home-footer .contact-data-container .contact-data__address-two {
+  color: var(--text-blue);
+  font-size: 0.9rem;
+}
+
+.home-footer .contact-data-container .contact-data__phone {
+  margin-top: 1rem;
+  color: var(--text-blue);
+  font-size: 0.9rem;
+}
+
+.home-footer .contact-data-container .contact-data__phone a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.home-footer .links-container .links__title {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.home-footer .links-container .links-list .links-list__item {
+  margin-bottom: 0.5rem;
+  width: 6rem;
+}
+
+.home-footer .links-container .links-list .links-list__item :hover {
+  color: yellow;
+}
+
+.home-footer .links-container .links-list .links-list__item a {
+  color: var(--text-blue);
+}
+
+.home-footer .links-container .newsletter__text {
+  color: var(--text-blue);
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+.home-footer .links-container input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--text-blue);
+  width: 100%;
+  height: 2.2rem;
+  color: var(--text-blue);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+::placeholder {
+  color: var(--text-blue);
+  font-size: 0.8rem;
+}
+
+.fa-regular {
+  right: 10rem;
+  bottom: 16.3rem;
+  position: absolute;
+  color: var(--text-blue);
+}
+
+.home-footer .links-container .subscribe-btn {
+  color: var(--red);
+  font-family: var(--font-dosis);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.copyrigths {
+  position: absolute;
+  color: #fff;
+  background-color: #020d18;
+  bottom: 0;
+  padding-top: 1.6em;
+  opacity: 0.6;
+  height: 4rem;
+  width: 100%;
+  color: var(--text-blue);
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+/* Footer edin */
