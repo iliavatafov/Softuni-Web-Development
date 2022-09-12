@@ -4,11 +4,19 @@
   --white: #ffffff;
   --search-blue: #233a50;
   --search-border-black: #020d18;
+  --ganre-blue: #1692bb;
+  --genre-orange: #f5b50a;
+  --genre-green: #a6bb16;
+  --genre-darkorange: #ec5a1a;
   --font-dosis: Dosis, sans-serif;
   --font-nunito: Nunito, sans-serif;
 }
 
-body {
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 h1,
@@ -24,9 +32,9 @@ p {
 
 /* Home header start */
 
-.home-container {
+.home-container .slider-movie-container {
   background-image: url("../imges/home/background-img.jpg");
-  height: 720px;
+  height: 840px;
   width: 100vw;
 }
 
@@ -64,6 +72,10 @@ p {
   grid-area: left-nav;
 }
 
+.home-container .container .nav .nav-list :hover {
+  color: yellow;
+}
+
 .home-container .container .nav .nav-authentincation-list {
   display: flex;
   justify-content: end;
@@ -92,6 +104,10 @@ p {
   color: var(--white);
 }
 
+.home-container .nav-authentincation-list :hover {
+  color: yellow;
+}
+
 .home-container .container a {
   color: var(--text-blue);
   text-decoration: none;
@@ -107,7 +123,7 @@ p {
 
 .top-search select {
   border: none;
-
+  outline: none;
   width: 18%;
   background-color: var(--search-blue);
   color: white;
@@ -118,10 +134,13 @@ p {
 }
 
 .top-search input {
+  caret-color: white;
+  outline: none;
   border: none;
   border-left: 1px solid black;
   width: 78%;
   background-color: var(--search-blue);
+  padding-left: 0.5rem;
 }
 
 .top-search ::placeholder {
@@ -129,14 +148,10 @@ p {
   font-family: var(--font-nunito);
   font-weight: 400;
   font-size: 1rem;
-  padding-left: 0.5rem;
 }
 
-.top-search a {
+.top-search .fa-magnifying-glass {
   align-self: center;
-}
-
-.top-search a .fa-magnifying-glass {
   font-size: 1.6rem;
   color: white;
 }
@@ -163,4 +178,316 @@ p {
   color: yellow;
 }
 
+.slider-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.slider-container .movie-container {
+  position: relative;
+  width: 23%;
+  height: 26rem;
+  border: none;
+}
+
+.slider-container .movie-container img {
+  object-fit: cover;
+}
+
+.slider-container .movie-container .data-container {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.8rem;
+}
+
+.slider-container .movie-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container .movie-container .data-container .movie__genre--blue {
+  color: #fff;
+  font-family: var(--font-dosis);
+  font-size: 0.8rem;
+  width: fit-content;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  background-color: var(--ganre-blue);
+}
+
+.slider-container .movie-container .data-container .movie__genre--orange {
+  color: #fff;
+  font-family: var(--font-dosis);
+  font-size: 0.8rem;
+  width: fit-content;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  background-color: var(--genre-orange);
+}
+
+.slider-container .movie-container .data-container .movie__genre--green {
+  color: #fff;
+  font-family: var(--font-dosis);
+  font-size: 0.8rem;
+  width: fit-content;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  background-color: var(--genre-green);
+}
+
+.slider-container .movie-container .data-container .movie__genre--darkorange {
+  color: #fff;
+  font-family: var(--font-dosis);
+  font-size: 0.8rem;
+  width: fit-content;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  background-color: var(--genre-darkorange);
+}
+
+.slider-container .movie-container .data-container .movie__name {
+  color: #fff;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+.slider-container .movie-container .data-container a :hover {
+  color: yellow;
+}
+
+.slider-container .movie-container .data-container i {
+  color: #f5b50a;
+}
+
+.slider-container .movie-container .data-container .movie__rating {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.slider-container .movie-container .data-container .movie__rating span {
+  font-size: 1.1rem;
+}
+
+.slider-manipulator-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.slider-manipulator-list .slider-malipulator__item button {
+  border-radius: 100%;
+  height: 0.7rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.slider-manipulator-list
+  .slider-malipulator__item
+  .slider-manipulator__btn--yellow {
+  background-color: yellow;
+}
+
 /* Movie slider end */
+
+/* Movie rankings start */
+
+.movies-ranking-container {
+  background-color: #020d18;
+  height: 980px;
+}
+
+.movies-ranking-container .container {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+}
+
+.ratings-container {
+  width: 60%;
+}
+
+.movies-ranking-container .celebrities-aside-container {
+  padding-left: 7rem;
+  width: 40%;
+}
+
+.movies-ranking-container .container .ranking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.movies-ranking-container .container .ranking-header .ranking-header__title {
+  color: #fff;
+}
+
+.movies-ranking-container .container .ranking-header .raniking-header--viewall {
+  color: var(--text-blue);
+  font-family: var(--font-dosis);
+  font-weight: 600;
+  text-decoration: none;
+  direction: flex;
+}
+
+.movies-ranking-container
+  .container
+  .ranking-header
+  .raniking-header--viewall
+  span
+  i {
+  font-size: 0.8rem;
+}
+
+.movies-ranking-container .container .ranking-header div :hover {
+  color: yellow;
+}
+
+.movies-ranking-container .container .rankings-list-container .rankings-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.movies-ranking-container
+  .container
+  .rankings-list-container
+  .rankings-list
+  .ranking-list__item
+  a {
+  text-decoration: none;
+  color: var(--text-blue);
+  font-family: var(--font-dosis);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.movies-ranking-container
+  .container
+  .rankings-list-container
+  .rankings-list
+  .ranking-list__item
+  :hover {
+  color: yellow;
+}
+
+.rankings-container .rankings-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rankings-container
+  .rankings-list-container
+  .ranking-btns-container
+  .ranking-btn {
+  border-radius: 100%;
+  height: 0.7rem;
+  border: none;
+}
+
+.rankings-container .rankings-list-container .ranking-btns-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rankings-container .rankings-list-container .ranking-btns-container :hover {
+  background-color: yellow;
+}
+
+.movies-ranking-container .container .slider-container .movie-container {
+  height: 16rem;
+  width: 10rem;
+}
+
+.movies-ranking-container
+  .container
+  .slider-container
+  .movie-container
+  .data-container
+  .movie__name {
+  font-size: 0.9rem;
+}
+
+.movies-ranking-container .slider-container .movie-container .data-container {
+  bottom: 1.3rem;
+  left: 1.5em;
+}
+
+.movies-ranking-container .celebrities-aside-container .celebrities-title {
+  color: #fff;
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .celebrities-list
+  .celebrities-list__item {
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .celebrities-list
+  .celebrities-list__item
+  img {
+  border-radius: 0.2rem;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .celebrities-list
+  .celebrities-list__item
+  .name {
+  font-size: 0.8rem;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .celebrities-list
+  .celebrities-list__item
+  :hover {
+  color: yellow;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .celebrities-list
+  .celebrities-list__item
+  .activity {
+  font-size: 0.8rem;
+  color: var(--text-blue);
+  font-weight: 300;
+}
+
+.movies-ranking-container .celebrities-aside-container .see-all-btn-container {
+  padding-top: 2rem;
+}
+
+.movies-ranking-container .celebrities-aside-container .aside-seeall--btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-blue);
+  font-family: var(--font-dosis);
+  margin-top: 3rem;
+}
+
+.movies-ranking-container
+  .celebrities-aside-container
+  .see-all-btn-container
+  :hover {
+  color: yellow;
+}
+
+/* Movie rankigns end */

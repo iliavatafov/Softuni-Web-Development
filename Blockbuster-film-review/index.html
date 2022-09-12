@@ -22,65 +22,321 @@
 
   <section class="home-container">
 
-    <div class="container">
+    <div class="slider-movie-container">
 
-      <!-- Hader Start -->
+      <div class="container">
 
-      <header class="home-header">
-        <nav class="nav">
-          <div class="nav__logo">
-            <a href="#"><img src="./imges/home/logo1.png" alt=""></a>
+        <!-- Hader Start -->
+
+        <header class="home-header">
+          <nav class="nav">
+            <div class="nav__logo">
+              <a href="#"><img src="./imges/home/logo1.png" alt=""></a>
+            </div>
+            <ul role="list" class="nav-list">
+              <li class="list__item"><a href="#">HOME</a></li>
+              <li class="list__item"><a href="#">MOVIES</a></li>
+              <li class="list__item"><a href="#">CELEBRITIES</a></li>
+              <li class="list__item"><a href="#">BLOG</a></li>
+              <li class="list__item"><a href="#">FAVORITES</a></li>
+            </ul>
+            <ul role="list" class="nav-authentincation-list">
+              <li class="list__item--btn--transperant"><a class="login-btn" href="#">LOG IN</a></li>
+              <li class="list__item-btn--red"><a class="singup-btn--red" href="#">SING UP</a></li>
+            </ul>
+          </nav>
+          <div class="top-search">
+            <select>
+              <option value="movies">MOVIES</option>
+              <option value="tv-shows">TV SHOWS</option>
+              <option value="others">OTHERS</option>
+            </select>
+            <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <ul role="list" class="nav-list">
-            <li class="list__item"><a href="#">HOME</a></li>
-            <li class="list__item"><a href="#">MOVIES</a></li>
-            <li class="list__item"><a href="#">CELEBRITIES</a></li>
-            <li class="list__item"><a href="#">BLOG</a></li>
-            <li class="list__item"><a href="#">FAVORITES</a></li>
+        </header>
+
+        <!-- Header End -->
+
+        <!-- Slider Start -->
+
+        <div class="movie-items-slider">
+          <div class="social-links">
+            <p>FOLLOW US:</p>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="slider-container">
+            <div class="movie-container">
+              <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <p class="movie__genre--blue">SCI-FI</p>
+                </a>
+                <a href="#">
+                  <h2 class="movie__name">INTERSTELER</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <p class="movie__genre--orange">ACTION</p>
+                </a>
+                <a href="#">
+                  <h2 class="movie__name">THE REVENANT</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <p class="movie__genre--green">COMEDY</p>
+                </a>
+                <a href="#">
+                  <h2 class="movie__name">DIE HARD</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <p class="movie__genre--darkorange">ADVENTURE</p>
+                </a>
+                <a href="#">
+                  <h2 class="movie__name">THE WALK</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+          </div>
+          <ul role="list" class="slider-manipulator-list">
+            <li class="slider-malipulator__item">
+              <button class="slider-manipulator__btn--yellow"></button>
+            </li>
+            <li class="slider-malipulator__item">
+              <button class="slider-manipulator__btn"></button>
+            </li>
+            <li class="slider-malipulator__item">
+              <button class="slider-manipulator__btn"></button>
+            </li>
           </ul>
-          <ul role="list" class="nav-authentincation-list">
-            <li class="list__item--btn--transperant"><a class="login-btn" href="#">LOG IN</a></li>
-            <li class="list__item-btn--red"><a class="singup-btn--red" href="#">SING UP</a></li>
-          </ul>
-        </nav>
-        <div class="top-search">
-          <select>
-            <option value="movies">MOVIES</option>
-            <option value="tv-shows">TV SHOWS</option>
-            <option value="others">OTHERS</option>
-          </select>
-          <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-      </header>
 
-      <!-- Header End -->
-
-      <!-- Main Start -->
-
-      <div class="movie-items-slider">
-        <div class="social-links">
-          <p>FOLLOW US:</p>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <!-- Slider End -->
         </div>
       </div>
 
-      <!-- Main End -->
+  </section>
 
-      <!-- Footer Start -->
+  <!-- Movies Ranking Start -->
 
-      <footer class="home-footer">
+  <div class="movies-ranking-container">
 
-      </footer>
+    <div class="container">
 
-      <!-- Footer End -->
+      <div class="ratings-container">
+        <div class="theater-container">
+          <div class="rankings-container">
+            <div class="ranking-header">
+              <h2 class="ranking-header__title">IN THEATER</h2>
+              <div><a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="rankings-list-container">
+              <ul role="list" class="rankings-list">
+                <li class="ranking-list__item">
+                  <a href="#">#POPULAR</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#COMING SOON</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#TOP RATED</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#MOST REVIEWED</a>
+                </li>
+              </ul>
+              <ul class="ranking-btns-container">
+                <button class="ranking-btn"></button>
+                <button class="ranking-btn"></button>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="slider-container">
+            <div class="movie-container">
+              <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">INTERSTELER</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">THE REVENANT</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">DIE HARD</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">THE WALK</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tv-container">
+          <div class="rankings-container">
+            <div class="ranking-header">
+              <h2 class="ranking-header__title">ON TV</h2>
+              <div> <a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="rankings-list-container">
+              <ul role="list" class="rankings-list">
+                <li class="ranking-list__item">
+                  <a href="#">#POPULAR</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#COMING SOON</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#TOP RATED</a>
+                </li>
+                <li class="ranking-list__item">
+                  <a href="#">#MOST REVIEWED</a>
+                </li>
+              </ul>
+              <ul class="ranking-btns-container">
+                <button class="ranking-btn"></button>
+                <button class="ranking-btn"></button>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="slider-container">
+            <div class="movie-container">
+              <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">INTERSTELER</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">THE REVENANT</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">DIE HARD</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+            <div class="movie-container">
+              <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
+              <div class="data-container">
+                <a href="#">
+                  <h2 class="movie__name">THE WALK</h2>
+                </a>
+                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="celebrities-aside-container">
+        <h2 class="celebrities-title">SPOTLIGHT CELEBRITIES</h2>
+        <ul role="list" class="celebrities-list">
+          <li class="celebrities-list__item">
+            <img src="./imges/home/Samuel N. Jack.jpg" alt="Samuel N. Jack">
+            <div class="content">
+              <h3 class="name">Samuel N. Jack</h3>
+              <p class="activity">ACTOR</p>
+            </div>
+          </li>
+          <li class="celebrities-list__item">
+            <img src="./imges/home/Benjamin Carroll.jpg" alt="Benjamin Carroll">
+            <div class="content">
+              <h3 class="name">Benjamin Carroll</h3>
+              <p class="activity">ACTOR</p>
+            </div>
+          </li>
+          <li class="celebrities-list__item">
+            <img src="./imges/home/Beverly Griffin.jpg" alt="Beverly Griffin">
+            <div class="content">
+              <h3 class="name">Beverly Griffin</h3>
+              <p class="activity">ACTOR</p>
+            </div>
+          </li>
+          <li class="celebrities-list__item">
+            <img src="./imges/home/Justin Weaver.jpg" alt="Justin Weaver">
+            <div class="content">
+              <h3 class="name">Justin Weaver</h3>
+              <p class="activity">ACTOR</p>
+            </div>
+          </li>
+        </ul>
+        <div class="see-all-btn-container">
+          <a href="#" class="aside-seeall--btn">SEE ALL CELEBRITIES <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </aside>
 
     </div>
 
-  </section>
+
+
+  </div>
+
+  <!-- Movies Ranking End -->
+
+
+  <!-- Footer Start -->
+
+  <footer class="home-footer">
+
+  </footer>
+
+  <!-- Footer End -->
 
   <!-- Home Page End -->
 
