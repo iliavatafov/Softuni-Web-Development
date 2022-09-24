@@ -12,6 +12,10 @@
   --font-nunito: Nunito, sans-serif;
 }
 
+body {
+  max-height: 500px;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -32,9 +36,17 @@ p {
 
 /* Home header start */
 
+.home-container {
+  min-height: 100vh;
+}
+
+.nav-btn {
+  display: none;
+}
+
 .home-container .slider-movie-container {
   background-image: url("../imges/home/background-img.jpg");
-  height: 840px;
+  height: 780px;
   width: 100vw;
 }
 
@@ -560,10 +572,6 @@ p {
   width: 100%;
 }
 
-.input-container {
-  position: relative;
-}
-
 .home-footer .links-container input {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -574,6 +582,11 @@ p {
   color: var(--text-blue);
   font-size: 1rem;
   padding-left: 1rem;
+  outline: none;
+}
+
+.home-footer .container :nth-child(5) {
+  position: relative;
 }
 
 ::placeholder {
@@ -582,9 +595,9 @@ p {
 }
 
 .fa-regular {
-  right: 10rem;
-  bottom: 16.3rem;
   position: absolute;
+  right: 1rem;
+  bottom: 16.2rem;
   color: var(--text-blue);
 }
 

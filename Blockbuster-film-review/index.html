@@ -12,7 +12,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="stylesheet" href="./styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/responsive.css">
   <title>Blockbuster</title>
 </head>
 
@@ -44,6 +45,7 @@
               <li class="list__item--btn--transperant"><a class="login-btn" href="#">LOG IN</a></li>
               <li class="list__item-btn--red"><a class="singup-btn--red" href="#">SING UP</a></li>
             </ul>
+            <a href="#" class="nav-btn"><i class="fa-solid fa-bars"></i></a>
           </nav>
           <div class="top-search">
             <select>
@@ -133,259 +135,258 @@
           <!-- Slider End -->
         </div>
       </div>
+    </div>
+
+
+
+    <!-- Movies Ranking Start -->
+
+    <div class="movies-ranking-container">
+
+      <div class="container">
+
+        <div class="ratings-container">
+          <div class="theater-container">
+            <div class="rankings-container">
+              <div class="ranking-header">
+                <h2 class="ranking-header__title">IN THEATER</h2>
+                <div><a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="rankings-list-container">
+                <ul role="list" class="rankings-list">
+                  <li class="ranking-list__item">
+                    <a href="#">#POPULAR</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#COMING SOON</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#TOP RATED</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#MOST REVIEWED</a>
+                  </li>
+                </ul>
+                <ul class="ranking-btns-container">
+                  <button class="ranking-btn"></button>
+                  <button class="ranking-btn"></button>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="slider-container">
+              <div class="movie-container">
+                <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">INTERSTELER</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">THE REVENANT</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">DIE HARD</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">THE WALK</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-container">
+            <div class="rankings-container">
+              <div class="ranking-header">
+                <h2 class="ranking-header__title">ON TV</h2>
+                <div> <a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="rankings-list-container">
+                <ul role="list" class="rankings-list">
+                  <li class="ranking-list__item">
+                    <a href="#">#POPULAR</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#COMING SOON</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#TOP RATED</a>
+                  </li>
+                  <li class="ranking-list__item">
+                    <a href="#">#MOST REVIEWED</a>
+                  </li>
+                </ul>
+                <ul class="ranking-btns-container">
+                  <button class="ranking-btn"></button>
+                  <button class="ranking-btn"></button>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="slider-container">
+              <div class="movie-container">
+                <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">INTERSTELER</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">THE REVENANT</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">DIE HARD</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+              <div class="movie-container">
+                <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
+                <div class="data-container">
+                  <a href="#">
+                    <h2 class="movie__name">THE WALK</h2>
+                  </a>
+                  <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="celebrities-aside-container">
+          <h2 class="celebrities-title">SPOTLIGHT CELEBRITIES</h2>
+          <ul role="list" class="celebrities-list">
+            <li class="celebrities-list__item">
+              <img src="./imges/home/Samuel N. Jack.jpg" alt="Samuel N. Jack">
+              <div class="content">
+                <h3 class="name">Samuel N. Jack</h3>
+                <p class="activity">ACTOR</p>
+              </div>
+            </li>
+            <li class="celebrities-list__item">
+              <img src="./imges/home/Benjamin Carroll.jpg" alt="Benjamin Carroll">
+              <div class="content">
+                <h3 class="name">Benjamin Carroll</h3>
+                <p class="activity">ACTOR</p>
+              </div>
+            </li>
+            <li class="celebrities-list__item">
+              <img src="./imges/home/Beverly Griffin.jpg" alt="Beverly Griffin">
+              <div class="content">
+                <h3 class="name">Beverly Griffin</h3>
+                <p class="activity">ACTOR</p>
+              </div>
+            </li>
+            <li class="celebrities-list__item">
+              <img src="./imges/home/Justin Weaver.jpg" alt="Justin Weaver">
+              <div class="content">
+                <h3 class="name">Justin Weaver</h3>
+                <p class="activity">ACTOR</p>
+              </div>
+            </li>
+          </ul>
+          <div class="see-all-btn-container">
+            <a href="#" class="aside-seeall--btn">SEE ALL CELEBRITIES <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- Movies Ranking End -->
+
+
+    <!-- Footer Start -->
+
+    <footer class="home-footer">
+      <div class="container">
+        <div class="contact-data-container">
+          <img src="./imges/home/logo1.png" alt="blockbuster-logo">
+          <p class="contact-data__address-one">72 Mur str.</p>
+          <p class="contact-data__address-two">Sofia 1404</p>
+          <p class="contact-data__phone">Contact us: <a href="#">(+359) 882 037 375</a></p>
+        </div>
+        <div class="links-container">
+          <h2 class="links__title">Resources</h2>
+          <ul role="list" class="links-list">
+            <li class="links-list__item"><a href="#">About</a></li>
+            <li class="links-list__item"><a href="#">Blockbuster</a></li>
+            <li class="links-list__item"><a href="#">Contact Us</a></li>
+            <li class="links-list__item"><a href="#">Forums</a></li>
+            <li class="links-list__item"><a href="#">Blog</a></li>
+            <li class="links-list__item"><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="links-container">
+          <h2 class="links__title">Leagal</h2>
+          <ul role="list" class="links-list">
+            <li class="links-list__item"><a href="#">Terms of Use</a></li>
+            <li class="links-list__item"><a href="#">Privacy Policy</a></li>
+            <li class="links-list__item"><a href="#">Security</a></li>
+          </ul>
+        </div>
+        <div class="links-container">
+          <h2 class="links__title">Account</h2>
+          <ul role="list" class="links-list">
+            <li class="links-list__item"><a href="#">My Account</a></li>
+            <li class="links-list__item"><a href="#">Watchlist</a></li>
+            <li class="links-list__item"><a href="#">Collections</a></li>
+            <li class="links-list__item"><a href="#">User Guide</a></li>
+          </ul>
+        </div>
+        <div class="links-container newsletter">
+          <h2 class="links__title">Newsletter</h2>
+          <p class="newsletter__text">Subscribe to our newsletter system now
+            to get latest news from us.</p>
+          <div class="subscribe-input">
+            <input type="email" placeholder="Enter your email...">
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+          <a href="#" class="subscribe-btn">SUBSCRIBE NOW</a>
+        </div>
+      </div>
+      <p class="copyrigths">&copy; 2017 Blockbuster. All Rights Reserved. Designed by leehari</p>
+    </footer>
+
+    <!-- Footer End -->
 
   </section>
 
-  <!-- Movies Ranking Start -->
-
-  <div class="movies-ranking-container">
-
-    <div class="container">
-
-      <div class="ratings-container">
-        <div class="theater-container">
-          <div class="rankings-container">
-            <div class="ranking-header">
-              <h2 class="ranking-header__title">IN THEATER</h2>
-              <div><a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-            </div>
-            <div class="rankings-list-container">
-              <ul role="list" class="rankings-list">
-                <li class="ranking-list__item">
-                  <a href="#">#POPULAR</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#COMING SOON</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#TOP RATED</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#MOST REVIEWED</a>
-                </li>
-              </ul>
-              <ul class="ranking-btns-container">
-                <button class="ranking-btn"></button>
-                <button class="ranking-btn"></button>
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="slider-container">
-            <div class="movie-container">
-              <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">INTERSTELER</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">THE REVENANT</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">DIE HARD</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">THE WALK</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tv-container">
-          <div class="rankings-container">
-            <div class="ranking-header">
-              <h2 class="ranking-header__title">ON TV</h2>
-              <div> <a href="#" class="raniking-header--viewall">VIEW ALL <i class="fa-solid fa-angle-right"></i></a>
-              </div>
-            </div>
-            <div class="rankings-list-container">
-              <ul role="list" class="rankings-list">
-                <li class="ranking-list__item">
-                  <a href="#">#POPULAR</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#COMING SOON</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#TOP RATED</a>
-                </li>
-                <li class="ranking-list__item">
-                  <a href="#">#MOST REVIEWED</a>
-                </li>
-              </ul>
-              <ul class="ranking-btns-container">
-                <button class="ranking-btn"></button>
-                <button class="ranking-btn"></button>
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="slider-container">
-            <div class="movie-container">
-              <img src="./imges/home/intersteller-test.jpg" alt="Intersteler" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">INTERSTELER</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/the revenant.jpg" alt="The Revenant" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">THE REVENANT</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/diehard.jpg" alt="Die hard" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">DIE HARD</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-            <div class="movie-container">
-              <img src="./imges/home/thewalk.jpg" alt="The Walk" class="movie__img">
-              <div class="data-container">
-                <a href="#">
-                  <h2 class="movie__name">THE WALK</h2>
-                </a>
-                <p class="movie__rating"><i class="fa-solid fa-star"></i><span>7.4</span>/10</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <aside class="celebrities-aside-container">
-        <h2 class="celebrities-title">SPOTLIGHT CELEBRITIES</h2>
-        <ul role="list" class="celebrities-list">
-          <li class="celebrities-list__item">
-            <img src="./imges/home/Samuel N. Jack.jpg" alt="Samuel N. Jack">
-            <div class="content">
-              <h3 class="name">Samuel N. Jack</h3>
-              <p class="activity">ACTOR</p>
-            </div>
-          </li>
-          <li class="celebrities-list__item">
-            <img src="./imges/home/Benjamin Carroll.jpg" alt="Benjamin Carroll">
-            <div class="content">
-              <h3 class="name">Benjamin Carroll</h3>
-              <p class="activity">ACTOR</p>
-            </div>
-          </li>
-          <li class="celebrities-list__item">
-            <img src="./imges/home/Beverly Griffin.jpg" alt="Beverly Griffin">
-            <div class="content">
-              <h3 class="name">Beverly Griffin</h3>
-              <p class="activity">ACTOR</p>
-            </div>
-          </li>
-          <li class="celebrities-list__item">
-            <img src="./imges/home/Justin Weaver.jpg" alt="Justin Weaver">
-            <div class="content">
-              <h3 class="name">Justin Weaver</h3>
-              <p class="activity">ACTOR</p>
-            </div>
-          </li>
-        </ul>
-        <div class="see-all-btn-container">
-          <a href="#" class="aside-seeall--btn">SEE ALL CELEBRITIES <i class="fa-solid fa-angle-right"></i></a>
-        </div>
-      </aside>
-
-    </div>
-
-
-
-  </div>
-
-  <!-- Movies Ranking End -->
-
-
-  <!-- Footer Start -->
-
-  <footer class="home-footer">
-    <div class="container">
-      <div class="contact-data-container">
-        <img src="./imges/home/logo1.png" alt="blockbuster-logo">
-        <p class="contact-data__address-one">72 Mur str.</p>
-        <p class="contact-data__address-two">Sofia 1404</p>
-        <p class="contact-data__phone">Contact us: <a href="#">(+359) 882 037 375</a></p>
-      </div>
-      <div class="links-container">
-        <h2 class="links__title">Resources</h2>
-        <ul role="list" class="links-list">
-          <li class="links-list__item"><a href="#">About</a></li>
-          <li class="links-list__item"><a href="#">Blockbuster</a></li>
-          <li class="links-list__item"><a href="#">Contact Us</a></li>
-          <li class="links-list__item"><a href="#">Forums</a></li>
-          <li class="links-list__item"><a href="#">Blog</a></li>
-          <li class="links-list__item"><a href="#">Help Center</a></li>
-        </ul>
-      </div>
-      <div class="links-container">
-        <h2 class="links__title">Leagal</h2>
-        <ul role="list" class="links-list">
-          <li class="links-list__item"><a href="#">Terms of Use</a></li>
-          <li class="links-list__item"><a href="#">Privacy Policy</a></li>
-          <li class="links-list__item"><a href="#">Security</a></li>
-        </ul>
-      </div>
-      <div class="links-container">
-        <h2 class="links__title">Account</h2>
-        <ul role="list" class="links-list">
-          <li class="links-list__item"><a href="#">My Account</a></li>
-          <li class="links-list__item"><a href="#">Watchlist</a></li>
-          <li class="links-list__item"><a href="#">Collections</a></li>
-          <li class="links-list__item"><a href="#">User Guide</a></li>
-        </ul>
-      </div>
-      <div class="links-container newsletter">
-        <h2 class="links__title">Newsletter</h2>
-        <p class="newsletter__text">Subscribe to our newsletter system now
-          to get latest news from us.</p>
-        <div class="input-container">
-          <input type="email" placeholder="Enter your email...">
-          <a href="#"><i class="fa-regular fa-envelope"></i></a>
-        </div>
-        <a href="#" class="subscribe-btn">SUBSCRIBE NOW</a>
-      </div>
-    </div>
-    <p class="copyrigths">&copy; 2017 Blockbuster. All Rights Reserved. Designed by leehari</p>
-  </footer>
-
-  <!-- Footer End -->
-
   <!-- Home Page End -->
-
 
 </body>
 
