@@ -1,0 +1,32 @@
+.book-item {
+  background-color: gray;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: antiquewhite;
+}
+
+button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: darkgoldenrod;
+  color: antiquewhite;
+  margin-top: 1rem;
+}
+
+div {
+  font-size: 1.4rem;
+}
