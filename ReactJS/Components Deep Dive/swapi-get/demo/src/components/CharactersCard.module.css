@@ -1,0 +1,22 @@
+.list__item {
+  background-color: green;
+  list-style: none;
+  height: 16rem;
+  width: 15rem;
+}
+
+.list__item .item__name {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.list__item .character-details-list {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.list__item .character-details-list li {
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+}
