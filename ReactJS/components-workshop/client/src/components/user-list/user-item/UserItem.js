@@ -6,7 +6,7 @@ export const UserItem = ({
   email,
   phoneNumber,
   createdAt,
-  onInfoClick,
+  onActionClick,
 }) => {
   const profileAvatar =
     "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png";
@@ -63,7 +63,7 @@ export const UserItem = ({
         <button
           className="btn info-btn"
           title="Info"
-          onClick={() => onInfoClick(_id)}
+          onClick={() => onActionClick(_id, "details")}
         >
           <svg
             aria-hidden="true"
