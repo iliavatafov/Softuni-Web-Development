@@ -5,6 +5,7 @@ import * as userService from "../services/userService";
 import { UserCreate } from "./user-create/UserCreate";
 import { UserDetails } from "./user-details/UserDetails";
 import { UserItem } from "./user-item/UserItem";
+import { UserActions } from "./UserListConstants";
 
 export const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -31,13 +32,13 @@ export const UserList = () => {
   return (
     <>
       <div className="table-wrapper">
-        {userAction.action === "edit" && (
+        {userAction.action === UserActions.Edit && (
           <UserCreate
             user={userAction.user.user}
             onCloseClick={onCloseHandler}
           />
         )}
-        {userAction.action === "details" && (
+        {userAction.action === UserActions.Details && (
           <UserDetails
             user={userAction.user.user}
             onCloseClick={onCloseHandler}
