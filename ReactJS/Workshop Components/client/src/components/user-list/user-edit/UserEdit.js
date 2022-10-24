@@ -1,4 +1,29 @@
+import { useState } from "react";
+import * as validationService from "../../../services/validationService";
+
 export const UserEdit = ({ user, onClose, onEdit }) => {
+  const [errors, setErrors] = useState({});
+  const [inputValues, setInputValues] = useState({
+    firstName: user.firstName,
+    lastName: user.lastName,
+    email: user.email,
+    phoneNumber: user.phoneNumber,
+    imageUrl: user.imageUrl,
+    country: user.address.country,
+    city: user.address.city,
+    street: user.address.street,
+    streetNumber: user.address.streetNumber,
+  });
+
+  const changeHandler = (e) => {
+    setInputValues((state) => ({
+      ...state,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const isError = Object.values(errors).some((x) => x === true);
+
   return (
     <div className="overlay">
       <div className="backdrop" onClick={onClose}></div>
@@ -24,7 +49,7 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
               </svg>
             </button>
           </header>
-          <form onSubmit={onEdit}>
+          <form onSubmit={(e) => onEdit(e, inputValues)}>
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="firstName">First name</label>
@@ -36,12 +61,16 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="firstName"
                     name="firstName"
                     type="text"
-                    defaultValue={user.firstName}
+                    onChange={changeHandler}
+                    value={inputValues.firstName}
+                    onBlur={(e) => validationService.minLength(e, 3, setErrors)}
                   />
                 </div>
-                <p className="form-error">
-                  First name should be at least 3 characters long!
-                </p>
+                {errors.firstName && (
+                  <p className="form-error">
+                    First name should be at least 3 characters long!
+                  </p>
+                )}
               </div>
               <div className="form-group">
                 <label htmlFor="lastName">Last name</label>
@@ -53,12 +82,16 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="lastName"
                     name="lastName"
                     type="text"
-                    defaultValue={user.lastName}
+                    onChange={changeHandler}
+                    value={inputValues.lastName}
+                    onBlur={(e) => validationService.minLength(e, 3, setErrors)}
                   />
                 </div>
-                <p className="form-error">
-                  Last name should be at least 3 characters long!
-                </p>
+                {errors.lastName && (
+                  <p className="form-error">
+                    Last name should be at least 3 characters long!
+                  </p>
+                )}
               </div>
             </div>
 
@@ -73,10 +106,20 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="email"
                     name="email"
                     type="text"
-                    defaultValue={user.email}
+                    onChange={changeHandler}
+                    value={inputValues.email}
+                    onBlur={(e) =>
+                      validationService.emailValidation(
+                        e,
+                        inputValues.email,
+                        setErrors
+                      )
+                    }
                   />
                 </div>
-                <p className="form-error">Email is not valid!</p>
+                {errors.email && (
+                  <p className="form-error">Email is not valid!</p>
+                )}
               </div>
               <div className="form-group">
                 <label htmlFor="phoneNumber">Phone number</label>
@@ -88,10 +131,20 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="phoneNumber"
                     name="phoneNumber"
                     type="text"
-                    defaultValue={user.phoneNumber}
+                    onChange={changeHandler}
+                    value={inputValues.phoneNumber}
+                    onBlur={(e) =>
+                      validationService.phoneValidation(
+                        e,
+                        inputValues.phoneNumber,
+                        setErrors
+                      )
+                    }
                   />
                 </div>
-                <p className="form-error">Phone number is not valid!</p>
+                {errors.phoneNumber && (
+                  <p className="form-error">Phone number is not valid!</p>
+                )}
               </div>
             </div>
 
@@ -105,10 +158,20 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                   id="imageUrl"
                   name="imageUrl"
                   type="text"
-                  defaultValue={user.imageUrl}
+                  onChange={changeHandler}
+                  value={inputValues.imageUrl}
+                  onBlur={(e) =>
+                    validationService.imgValidation(
+                      e,
+                      inputValues.imageUrl,
+                      setErrors
+                    )
+                  }
                 />
               </div>
-              <p className="form-error">ImageUrl is not valid!</p>
+              {errors.imageUrl && (
+                <p className="form-error">ImageUrl is not valid!</p>
+              )}
             </div>
 
             <div className="form-row">
@@ -122,12 +185,16 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="country"
                     name="country"
                     type="text"
-                    defaultValue={user.address.country}
+                    onChange={changeHandler}
+                    value={inputValues.country}
+                    onBlur={(e) => validationService.minLength(e, 2, setErrors)}
                   />
                 </div>
-                <p className="form-error">
-                  Country should be at least 2 characters long!
-                </p>
+                {errors.country && (
+                  <p className="form-error">
+                    Country should be at least 2 characters long!
+                  </p>
+                )}
               </div>
               <div className="form-group">
                 <label htmlFor="city">City</label>
@@ -139,12 +206,16 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="city"
                     name="city"
                     type="text"
-                    defaultValue={user.address.city}
+                    onChange={changeHandler}
+                    value={inputValues.city}
+                    onBlur={(e) => validationService.minLength(e, 3, setErrors)}
                   />
                 </div>
-                <p className="form-error">
-                  City should be at least 3 characters long!
-                </p>
+                {errors.city && (
+                  <p className="form-error">
+                    City should be at least 3 characters long!
+                  </p>
+                )}
               </div>
             </div>
 
@@ -159,12 +230,16 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="street"
                     name="street"
                     type="text"
-                    defaultValue={user.address.street}
+                    onChange={changeHandler}
+                    value={inputValues.street}
+                    onBlur={(e) => validationService.minLength(e, 3, setErrors)}
                   />
                 </div>
-                <p className="form-error">
-                  Street should be at least 3 characters long!
-                </p>
+                {errors.street && (
+                  <p className="form-error">
+                    Street should be at least 3 characters long!
+                  </p>
+                )}
               </div>
               <div className="form-group">
                 <label htmlFor="streetNumber">Street number</label>
@@ -176,16 +251,31 @@ export const UserEdit = ({ user, onClose, onEdit }) => {
                     id="streetNumber"
                     name="streetNumber"
                     type="text"
-                    defaultValue={user.address.streetNumber}
+                    onChange={changeHandler}
+                    value={inputValues.streetNumber}
+                    onBlur={(e) =>
+                      validationService.isPositiveValidator(
+                        e,
+                        inputValues.streetNumber,
+                        setErrors
+                      )
+                    }
                   />
                 </div>
-                <p className="form-error">
-                  Street number should be a positive number!
-                </p>
+                {errors.streetNumber && (
+                  <p className="form-error">
+                    Street number should be a positive number!
+                  </p>
+                )}
               </div>
             </div>
             <div id="form-actions">
-              <button id="action-save" className="btn" type="submit">
+              <button
+                id="action-save"
+                className="btn"
+                type="submit"
+                disabled={isError}
+              >
                 Save
               </button>
               <button

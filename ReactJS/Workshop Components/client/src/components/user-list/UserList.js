@@ -20,12 +20,18 @@ export const UserList = () => {
   }, []);
 
   const userActionClickHandler = (userId, actionType) => {
-    userService.getOne(userId).then((user) => {
+    if (userId === null) {
       setUserAction({
-        user,
         action: actionType,
       });
-    });
+    } else {
+      userService.getOne(userId).then((user) => {
+        setUserAction({
+          user,
+          action: actionType,
+        });
+      });
+    }
   };
 
   const closeHandler = () => {
@@ -40,13 +46,13 @@ export const UserList = () => {
     closeHandler();
   };
 
-  const userCreateHandler = (e) => {
+  const userCreateHandler = (e, data) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    data = Object.entries(data);
 
     const { firstName, lastName, email, imageUrl, phoneNumber, ...address } =
-      Object.fromEntries(formData);
+      Object.fromEntries(data);
 
     const userData = {
       firstName,
@@ -58,23 +64,22 @@ export const UserList = () => {
     };
 
     userService.create(userData).then((user) => {
-      setUsers((state) =>
-        state.map((x) => {
-          console.log(x);
-          console.log(user);
-        })
-      );
+      setUsers((state) => ({
+        ...state,
+        user,
+      }));
+
       closeHandler();
     });
   };
 
-  const userEditHandler = (e) => {
+  const userEditHandler = (e, data) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    data = Object.entries(data);
 
     const { firstName, lastName, email, imageUrl, phoneNumber, ...address } =
-      Object.fromEntries(formData);
+      Object.fromEntries(data);
 
     const userData = {
       firstName,
@@ -218,8 +223,8 @@ export const UserList = () => {
           </thead>
           <tbody>
             {/* <!-- Table row component --> */}
-            {users.length > 1 &&
-              users.map((user) => {
+            {Object.values(users).length > 1 &&
+              Object.values(users).map((user) => {
                 return (
                   <tr key={user._id}>
                     <UserItem
