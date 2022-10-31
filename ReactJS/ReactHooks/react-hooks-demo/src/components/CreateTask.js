@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const CreateTask = ({ createTaskHandler }) => {
+const CreateTask = ({ onCreate }) => {
   const [task, setTask] = useState("");
 
   const onChangeHandler = (e) => {
@@ -9,7 +9,7 @@ const CreateTask = ({ createTaskHandler }) => {
 
   return (
     <div>
-      <form onSubmit={createTaskHandler}>
+      <form onSubmit={(e) => onCreate(e, task, setTask)}>
         <input
           type="text"
           name="task"
@@ -18,8 +18,8 @@ const CreateTask = ({ createTaskHandler }) => {
           value={task}
           onChange={onChangeHandler}
         />
+        <button>Add</button>
       </form>
-      <button>Add</button>
     </div>
   );
 };
