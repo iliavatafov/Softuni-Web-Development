@@ -1,8 +1,8 @@
 <h1 align="center"><i>SoftUni JS Web Development</i></h1>
 
-**_<p align="center">In this repo you can find the full history of my training at SoftUni. So far I have completed the following courses - JS Basics, JS Fundamentals, JS Advanced, JS Applications, HTML & CSS and ReactJS. I am currently developing my portfolio, and from January I am starting a new course related to JS Back-End.
+<p align="center">In this repo you can find the full history of my training at SoftUni. So far I have completed the following courses - JS Basics, JS Fundamentals, JS Advanced, JS Applications, HTML & CSS and ReactJS. I am currently developing my portfolio, and from January I am starting a new course related to JS Back-End.
 
-</p>_**
+</p>
 
   <hr />
   
