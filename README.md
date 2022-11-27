@@ -4,7 +4,7 @@
 </p>
 
 <hr /> 
- <h1 align="center"><i>Certificates</i></h1>
+ <p align="center">__Certificates__</p>
 <hr />
  <p align="center">
   <a href="">
