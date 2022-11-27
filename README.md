@@ -4,7 +4,7 @@
 </p>
 
 <hr /> 
- <h1 align="center"><i>Certificates</i></h1>
+ <h3 align="center"><i>Certificates</i></h3>
 <hr />
 <h2 align="center"><i>JS Basics</i></h2>
 <hr />
