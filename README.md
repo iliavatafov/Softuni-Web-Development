@@ -4,7 +4,7 @@
 </p>
 
 <hr /> 
- __Certificates__
+ <h2 align="center">Certificates</h2>
 <hr />
  <p align="center">
   <a href="">
