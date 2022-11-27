@@ -3,8 +3,7 @@
 <p align="center">In this repo you can find the full history of my training at SoftUni. So far I have completed the following courses - JS Basics, JS Fundamentals, JS Advanced, JS Applications, HTML & CSS and ReactJS. I am currently developing my portfolio, and from January I am starting a new course related to JS Back-End.
 </p>
 
-<hr /> 
- <h3 align="center"><i>Certificates</i></h3>
+<h3 align="center"><i>Certificates</i></h3>
 <hr />
 <h3 align="center"><i>JS Basics</i></h3>
 <hr />
