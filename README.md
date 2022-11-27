@@ -10,16 +10,22 @@
   
    <hr />
    <p align="center">
-  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-5b6094fc-2177-4cd2-aaeb-6c996791d48e.jpg?v=1669569109000">
+  <a href="">
     <img src="./certificates/Programming Basics - September 2021 - Certificate.jpeg" />
-    <hr />
-    <img src="./certificates/Programming Fundamentals with JS - January 2022 - Certificate" />
-    <hr />
-    <img src="./certificates/JSAdvanced-May-2022 - Certificate.jpeg" />
-    <hr />
-    <img src="./certificates/JS Applications - June 2022 - Certificate.jpeg" />
-    <hr />
   </a>
+  <hr />
+  <a href="">
+    <img src="./certificates/Programming Fundamentals with JS - January 2022 - Certificate.jpeg" />
+  </a>
+    <hr />
+  <a href="">
+    <img src="./certificates/JSAdvanced-May-2022 - Certificate.jpeg" />
+  </a>
+    <hr />
+  <a href="">
+    <img src="./certificates/JS Applications - June 2022 - Certificate.jpeg" />
+  </a>
+    <hr />
 <p>
   <hr />
   
