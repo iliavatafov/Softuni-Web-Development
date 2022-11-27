@@ -6,7 +6,7 @@
 <hr /> 
  <h3 align="center"><i>Certificates</i></h3>
 <hr />
-<h2 align="center"><i>JS Basics</i></h2>
+<h3 align="center"><i>JS Basics</i></h3>
 <hr />
  <p align="center">
   <a href="">
@@ -14,7 +14,7 @@
   </a>
  <p>
   <hr />
-  <h2 align="center"><i>JS Fundamentals</i></h2>
+  <h3 align="center"><i>JS Fundamentals</i></h3>
   <hr />
  <p align="center">
   <a href="">
@@ -22,7 +22,7 @@
   </a>
  <p>
     <hr />
-     <h2 align="center"><i>JS Advanced</i></h2>
+     <h3 align="center"><i>JS Advanced</i></h3>
     <hr />
   <p align="center">
   <a href="">
@@ -30,7 +30,7 @@
   </a>
  <p>
     <hr />
-        <h2 align="center"><i>JS Applications</i></h2>
+        <h3 align="center"><i>JS Applications</i></h3>
     <hr />
  <p align="center">
   <a href="">
