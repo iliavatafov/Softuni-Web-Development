@@ -7,23 +7,30 @@
  __Certificates__
 <hr />
  <p align="center">
-  <a align="center" href="">
+  <a href="">
     <img src="./certificates/Programming Basics - September 2021 - Certificate.jpeg" />
   </a>
+ <p>
   <hr />
-  <a align="center" href="">
+ <p align="center">
+  <a href="">
     <img src="./certificates/Programming Fundamentals with JS - January 2022 - Certificate.jpeg" />
   </a>
+ <p>
     <hr />
-  <a align="center" href="">
+  <p align="center">
+  <a href="">
     <img src="./certificates/JSAdvanced-May-2022 - Certificate.jpeg" />
   </a>
+ <p>
     <hr />
-  <a align="center" href="">
+ <p align="center">
+  <a href="">
     <img src="./certificates/JS Applications - June 2022 - Certificate.jpeg" />
   </a>
+ <p>
     <hr />
-<p>
+
 
   
  
