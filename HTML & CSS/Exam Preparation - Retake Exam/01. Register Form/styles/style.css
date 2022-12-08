@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mulish/v12/1Ptyg83HX_SGhgqO0yLcmjzUAuWexZNR8aevGw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+* {
+  font-family: Mulish;
+}
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-element {
+  align-items: center;
+  background-image: url(/images/background.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  background-image: url(/images/form-background.png);
+  background-size: cover;
+  border-radius: 1.2rem;
+  height: 65%;
+  width: 45%;
+  -webkit-box-shadow: 10px 11px 9px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 11px 9px 2px rgba(0, 0, 0, 0.47);
+}
+
+.form-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  padding: 6%;
+  height: 100%;
+  width: 55%;
+}
+
+.form-content .form-title {
+  color: rgb(59, 58, 56);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  padding-top: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.form-content .registration-from .form-row-one {
+  display: flex;
+  gap: 3%;
+}
+
+.form-content .registration-from .form-row-one div input {
+  width: 100%;
+}
+
+label {
+  color: gray;
+  display: block;
+  padding-bottom: 0.2rem;
+  font-size: 0.5rem;
+}
+
+input {
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(0deg 0% 90%);
+  width: 100%;
+  margin-bottom: 0.5rem;
+  height: 1.5rem;
+}
+
+.form-row-terms {
+  display: flex;
+  align-items: center;
+}
+
+.form-row-terms label {
+  display: inline;
+  padding-left: 0.1rem;
+}
+
+.form-row-terms input {
+  width: 4%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: hsl(4deg 55% 44%);
+  color: #fff;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  justify-self: center;
+  width: 50%;
+}
+
+@media screen and (min-height: 530px) {
+  .form-container {
+    width: 55%;
+  }
+}
+
+@media screen and (min-height: 650px) {
+  .form-container {
+    width: 55%;
+  }
+}
+
+@media screen and (min-height: 720px) {
+  .form-content .form-title {
+    font-size: 1.2rem;
+  }
+
+  label,
+  input[type="submit"] {
+    font-size: 0.8rem;
+  }
+
+  input {
+    height: 2rem;
+  }
+
+  .button-container #button {
+    height: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .form-content .form-title {
+    font-size: 1.6rem;
+  }
+
+  label,
+  input[type="submit"] {
+    font-size: 1.1rem;
+  }
+
+  input {
+    height: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .form-content {
+    width: 100%;
+  }
+
+  .button-container #button {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-content .form-title {
+    font-size: 1rem;
+  }
+
+  label,
+  input[type="submit"] {
+    font-size: 0.6rem;
+  }
+
+  input {
+    height: 2rem;
+  }
+
+  .button-container #button {
+    height: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-content .form-title {
+    font-size: 0.8rem;
+  }
+
+  label,
+  input[type="submit"] {
+    font-size: 0.5rem;
+  }
+
+  input {
+    height: 1.8rem;
+  }
+
+  .button-container #button {
+    height: 1.9rem;
+    width: 30%;
+  }
+}
