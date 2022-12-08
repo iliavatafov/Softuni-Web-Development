@@ -1,0 +1,199 @@
+* {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface";
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+
+.top-container {
+  margin: 0 auto;
+  background-image: url(/image/image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 3rem;
+  padding-left: 4rem;
+}
+
+.title-container {
+  width: 320px;
+  height: 260px;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  -webkit-box-shadow: 3px 5px 19px -2px #000000;
+  box-shadow: 3px 5px 19px -2px #000000;
+}
+
+.title-container .title {
+  font-size: 3rem;
+  color: hsl(0deg 2% 21%);
+}
+
+.title-container .subtitle {
+  font-size: 1.2rem;
+  color: hsl(324deg 3% 38%);
+}
+
+.hr-white {
+  border: 1px solid #fff;
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.info-container {
+  position: absolute;
+  right: 2rem;
+  width: 400px;
+  height: 320px;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: right;
+  background: #4a4b4d;
+  background: -moz-linear-gradient(left, #4a4b4d 0%, #acacac 54%, #dadada 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #4a4b4d 0%,
+    #acacac 54%,
+    #dadada 100%
+  );
+  background: linear-gradient(to right, #4a4b4d 0%, #acacac 54%, #dadada 100%);
+  background: linear-gradient(to right, #6c6c6c 0%, #b3b3b3 0%, #e4e4e4 100%);
+  text-shadow: 1px 3px 4px rgba(13, 6, 3, 0.49);
+  -webkit-box-shadow: 3px 5px 19px -2px #000000;
+  box-shadow: 3px 5px 19px -2px #000000;
+}
+
+.double-quotes i {
+  color: hsl(20deg 4% 49%);
+}
+
+.bottob-container {
+  display: flex;
+}
+
+.our-services {
+  background-color: hsl(280deg 11% 95%);
+  width: 80%;
+}
+
+.services {
+  padding: 3.5rem 5rem;
+}
+
+.services .title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: hsl(0deg 0% 20%);
+}
+
+.our-services-list .list-item {
+  font-size: 1.2rem;
+  color: hsl(20deg 4% 49%);
+  padding-bottom: 1rem;
+}
+
+.our-services-list .list-item i {
+  color: hsl(0deg 0% 20%);
+}
+
+.our-services-list .list-item strong {
+  color: hsl(0deg 0% 20%);
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+}
+
+.contacts .title {
+  font-size: 2.5rem;
+  color: hsl(0deg 0% 20%);
+  padding-left: 5rem;
+  text-transform: uppercase;
+}
+
+.contacts .contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 5rem;
+  padding-top: 1rem;
+}
+
+.contacts .contact-list .list-item strong {
+  font-style: italic;
+}
+
+.hr-gray {
+  color: hsl(0deg 0% 20%);
+}
+
+.get-started {
+  display: flex;
+  gap: 1rem;
+  padding-left: 5rem;
+  margin: 2rem 0;
+}
+
+.contacts input {
+  border: none;
+  border-radius: 0.3rem;
+  width: 22rem;
+  height: 3rem;
+  background-color: hsl(18deg 9% 70%);
+}
+
+.contacts input::placeholder {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.contacts button {
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: hsl(84deg 22% 39%);
+  color: #fff;
+}
+
+.statistics {
+  background-color: hsl(18deg 9% 70%);
+  width: 30%;
+}
+
+.statistics ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-top: 4rem;
+}
+
+.statistics ul li {
+  padding-left: 2rem;
+}
+
+.statistics ul li .numbers {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 200;
+}
+
+.statistics ul li .description {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: hsl(0deg 0% 20%);
+  font-weight: 400;
+}
