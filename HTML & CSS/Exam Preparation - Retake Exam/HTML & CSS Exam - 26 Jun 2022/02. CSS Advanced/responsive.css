@@ -1,0 +1,101 @@
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  main {
+    width: 100vw;
+  }
+  main .left-to-right {
+    width: 100vw;
+    padding: 0;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .left-to-right:first-child {
+    padding: 0;
+    padding-top: 3rem;
+    height: 480px;
+  }
+  main .left-to-right article {
+    width: 80%;
+    padding: 2rem 2rem;
+    height: 320px;
+    width: 320px;
+    border-radius: 4rem;
+  }
+
+  main header h1 {
+    font-size: 2rem;
+  }
+  main header p {
+    font-size: 1rem;
+  }
+  main .left-to-right article > p {
+    font-size: 0.9rem;
+  }
+
+  main .left-to-right article button {
+    display: none;
+  }
+  main section:nth-child(2),
+  main section:nth-child(4) {
+    flex-direction: column;
+  }
+
+  main section:nth-child(2) article header h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+  main section:nth-child(2) article header p {
+    font-size: 1rem;
+  }
+  main section:nth-child(2) article p {
+    font-size: 0.9rem;
+    padding: 0 2rem;
+  }
+  main section:nth-child(2) article button {
+    display: none;
+  }
+  main section.left-to-right:nth-child(3) {
+    padding: 0;
+  }
+  main section.left-to-right:nth-child(3) article {
+    width: 290px;
+    height: 320px;
+    border-radius: 4rem;
+  }
+  main section.left-to-right:nth-child(3) article header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  main section.left-to-right:nth-child(3) article p {
+    font-size: 0.9rem;
+  }
+  main section:nth-child(4) article {
+    margin: 0;
+  }
+  main section:nth-child(4) article form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section:nth-child(4) article form label input,
+  main section:nth-child(4) article form label textarea {
+    width: 350px;
+  }
+  main section:nth-child(4) article form label input[type="submit"] {
+    width: 110px;
+  }
+  main section:nth-child(4) article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section:nth-child(4) article img {
+    width: 350px;
+  }
+}
