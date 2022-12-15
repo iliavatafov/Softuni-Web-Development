@@ -1,0 +1,19 @@
+
+
+
+
+
+  
+USERNAME 
+antoniyaat
+
+EMAIL 
+a.atanasova@softuni.bg
+
+PASSWORD 
+********
+
+REPEAT PASSWORD 
+********
+
+I am already a ninja

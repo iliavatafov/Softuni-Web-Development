@@ -1,0 +1,127 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sing-up-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0deg 0% 91%);
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+
+.sing-up-container {
+  width: 53%;
+  height: 70vh;
+  display: flex;
+}
+
+.right {
+  background-color: #fff;
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(black, rgba(14, 13, 13, 0)),
+    url(/image/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(10%);
+  width: 50%;
+}
+
+.softuni-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  align-self: flex-start;
+  padding: 1.5rem;
+}
+
+.left .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: hsl(0deg 17% 98%);
+}
+
+.left .subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: hsl(0deg 17% 98%);
+}
+
+.links-list {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.links-list .list-item {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form label {
+  color: hsl(21deg 18% 70%);
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.form input {
+  color: hsl(15deg 2% 65%);
+  height: 2.5rem;
+  padding-left: 1rem;
+  border: none;
+  border-bottom: 1px solid hsl(21deg 18% 70%);
+}
+
+form .buttons-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+form .buttons-container .btn-black {
+  background-color: black;
+  border-radius: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+form .buttons-container .btn-text {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: underline;
+  border: navy;
+  font-size: 0.8rem;
+  width: 100%;
+}
