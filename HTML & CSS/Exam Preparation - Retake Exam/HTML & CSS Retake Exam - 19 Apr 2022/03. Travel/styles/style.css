@@ -1,0 +1,268 @@
+* {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+.header .site-logo {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 10.8rem;
+  background: #d2a938;
+  background: -moz-linear-gradient(top, #d2a938 0%, #a6862c 50%, #947827 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #d2a938 0%,
+    #a6862c 50%,
+    #947827 100%
+  );
+  background: linear-gradient(to bottom, #d2a938 0%, #a6862c 50%, #947827 100%);
+  -webkit-box-shadow: 0px 0px 16px -6px #000000;
+  box-shadow: 0px 0px 16px -6px #000000;
+}
+
+.first-line-nav-list,
+.down-nav-list {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.first-line-nav-list .first-line-nav-list-item {
+  margin-top: 1rem;
+  height: 6rem;
+  width: 9rem;
+  text-align: center;
+}
+
+.first-line-nav-list .first-line-nav-list-item:hover {
+  background-color: #d2a938;
+}
+
+.first-line-nav-list .first-line-nav-list-item a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(223deg 20% 38%);
+}
+
+.first-line-nav-list .first-line-nav-list-item i {
+  font-size: 1.7rem;
+  padding: 1rem;
+  display: block;
+}
+
+.down-nav-list li {
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.down-nav-list li:hover {
+  background-color: #d2a938;
+}
+
+.down-nav-list li a {
+  text-decoration: none;
+  color: hsl(223deg 20% 38%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.slider {
+  background-image: url(/image/slider.jpg);
+  background-size: contain;
+  background-position: 50% 52%;
+  background-size: auto;
+  height: 38rem;
+  width: 100vw;
+}
+
+.slider article {
+  position: relative;
+  top: 14rem;
+  left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 34%;
+  height: 45%;
+  color: #fff;
+}
+
+.slider article h2 {
+  font-size: 1.7rem;
+}
+
+.slider article p {
+  font-size: 1.15rem;
+}
+
+.slider article button {
+  cursor: pointer;
+  width: 40%;
+  height: 20%;
+  border: 4px solid #fff;
+  background-color: transparent;
+  color: hsl(36deg 89% 51%);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.slider article button:hover {
+  background-color: #fff;
+}
+
+.card {
+  padding: 0 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 29rem;
+  background: #b07b1d;
+  background: -moz-linear-gradient(left, #947827 0%, #a6862c 50%, #d2a938 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #b07b1d 0%,
+    #bd841f 50%,
+    #d79f3c 100%
+  );
+  background: linear-gradient(to right, #947827 0%, #a6862c 50%, #d2a938 100%);
+}
+
+.card h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card .card-list {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.card button {
+  cursor: pointer;
+  border: 4px solid #fff;
+  background-color: transparent;
+  width: 9rem;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background-color: #fff;
+  color: #a6862c;
+}
+
+.landmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35rem;
+}
+
+.landmarks h1 {
+  text-align: center;
+  color: hsl(223deg 20% 38%);
+  font-size: 2.7rem;
+  font-weight: 100;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.landmarks .subtitle {
+  color: hsl(223deg 20% 38%);
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+}
+
+.landmarks .landmarks-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.landmarks .landmarks-list .landmarks-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 15rem;
+}
+
+.landmarks .landmarks-list .landmarks-list-item img {
+  border-radius: 100%;
+  border: 3px solid hsl(238deg 15% 39%);
+  color: hsl(223deg 20% 38%);
+  padding: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.landmarks .landmarks-list .landmarks-list-item p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  height: 6rem;
+  background: #b07b1d;
+  background: -moz-linear-gradient(left, #d2a938 0%, #a6862c 50%, #947827 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #b07b1d 0%,
+    #bd841f 50%,
+    #d79f3c 100%
+  );
+  background: linear-gradient(to right, #d2a938 0%, #a6862c 50%, #947827 100%);
+}
+
+.newsletter .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.newsletter button {
+  cursor: pointer;
+  height: 3.6rem;
+  border: 4px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 11rem;
+  margin-top: 1rem;
+}
+
+.newsletter button:hover {
+  background-color: #fff;
+  color: #947827;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
