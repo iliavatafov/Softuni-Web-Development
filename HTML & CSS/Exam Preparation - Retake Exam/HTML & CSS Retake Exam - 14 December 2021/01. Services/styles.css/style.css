@@ -1,0 +1,82 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.services-header h1 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.services-header h1 span {
+  color: hsl(74deg 55% 50%);
+}
+
+.services-header p {
+  margin: 0.3rem 0;
+  color: hsl(0deg 0% 41%);
+  font-size: 0.9rem;
+}
+
+.services-list {
+  margin-top: 4rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.services-list-item {
+  width: 28%;
+  background-color: hsl(0deg 0% 97%);
+}
+
+.services-list-item img {
+  width: 100%;
+}
+
+.services-list-item .content {
+  padding: 1.5rem;
+  padding-top: 0.8rem;
+}
+
+.services-list-item .content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.services-list-item .content p {
+  color: hsl(0deg 0% 41%);
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.services-list-item .content button {
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(74deg 55% 50%);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 50%;
+  height: 2.3rem;
+}
