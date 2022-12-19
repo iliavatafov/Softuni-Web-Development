@@ -1,0 +1,88 @@
+@media screen and (max-width: 600px) {
+  .parallax-window {
+    height: 600px;
+  }
+  .col-12 img {
+    width: 5rem;
+  }
+  .col-12 article h1 {
+    font-size: 3rem;
+  }
+  .col-12 article h6 {
+    font-size: 1.5rem;
+  }
+  .tm-nav {
+    width: 100%;
+  }
+  .col-12 .tm-nav-ul {
+    width: 100%;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+  }
+  .tm-welcome-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .tm-welcome-section h2 {
+    width: 80%;
+    margin-left: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .tm-welcome-section p {
+    width: 98%;
+    font-size: 1.5rem;
+  }
+  .tm-paging-links nav ul li {
+    border: 2px solid #2f956d;
+  }
+  .tm-paging-links nav ul li a {
+    padding: 17px 50px;
+  }
+  .tm-gallery {
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+  }
+  .tm-gallery div {
+    width: 60%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tm-gallery div article {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tm-gallery div article figure img {
+    width: 100%;
+  }
+  .tm-gallery div article figure figcaption h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .tm-gallery div article figure figcaption .tm-gallery-description {
+    font-size: 1.3rem;
+  }
+  .tm-gallery div article figure figcaption .tm-gallery-price {
+    font-size: 1.6rem;
+  }
+  .tm-cta-section {
+    width: 100vw;
+  }
+  .tm-cta-section article {
+    flex-direction: column;
+  }
+
+  .tm-cta-section article h4 {
+    font-size: 1.8rem;
+  }
+  .tm-cta-section article p,
+  .tm-cta-section article a {
+    font-size: 1.3rem;
+  }
+  footer p {
+    font-size: 1.3rem;
+  }
+}
