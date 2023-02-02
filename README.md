@@ -1,6 +1,6 @@
 <h1 align="center"><i>SoftUni JS Web Development</i></h1>
 
-<p align="center">In this repo you can find the full history of my training at SoftUni. So far I have completed the following courses - JS Basics, JS Fundamentals, JS Advanced, JS Applications, HTML & CSS and ReactJS. I am currently developing my portfolio, and from January I am starting a new course related to JS Back-End.
+<p align="center">As a motivated learner at SoftUni, I have honed my skills in a range of cutting-edge technologies, including JavaScript, HTML & CSS, and ReactJS. My extensive portfolio showcases the depth of my knowledge and the results of my hard work. I am now poised to take on the challenges of a new course in JS Back-End, and I am eager to continue my journey of professional growth and development.
 </p>
 
 <br/>
@@ -39,7 +39,11 @@
   </a>
  <p>
     <hr />
-
-
-  
- 
+        <h3 align="center"><i>HTML & CSS</i></h3>
+    <hr />
+  <p align="center">
+  <a href="https://softuni.bg/certificates/details/153393/675c46de">
+    <img src="./certificates/HTML & CSS - September 2022 - Certificate.jpeg" />
+  </a>
+ <p>
+    <hr />
