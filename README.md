@@ -5,7 +5,7 @@
 
 <br/>
 
-<h3 align="center" style="font-size: 32px;"><i>My Learning Journey</i></h3>
+<h3 align="center" style="font-size: 32px;">My Learning Journey</h3>
 <hr />
 <h3 align="center"><i>JS Basics</i></h3>
 <hr />
