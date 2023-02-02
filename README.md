@@ -1,6 +1,6 @@
 <h1 align="center"><i>Software University - JS Web Development</i></h1>
 
-<p align="center">As a motivated learner at Software University, I have honed my skills in a range of cutting-edge technologies, including JavaScript, HTML & CSS, and ReactJS. My extensive portfolio showcases the depth of my knowledge and the results of my hard work. I am now poised to take on the challenges of a new course in JS Back-End, and I am eager to continue my journey of professional growth and development.
+<p align="center" style="font-size: 32px;">>As a motivated learner at Software University, I have honed my skills in a range of cutting-edge technologies, including JavaScript, HTML & CSS, and ReactJS. My extensive portfolio showcases the depth of my knowledge and the results of my hard work. I am now poised to take on the challenges of a new course in JS Back-End, and I am eager to continue my journey of professional growth and development.
 </p>
 
 <br/>
