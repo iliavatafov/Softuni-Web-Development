@@ -1,0 +1,34 @@
+{
+  "q2f567t9": {
+    "name": "Widget",
+    "price": 12
+  },
+  "1d3a67f9": {
+    "name": "Widget",
+    "price": 25
+  },
+  "1a3t67m9": {
+    "name": "Widget",
+    "price": 86
+  },
+  "d46aae41": {
+    "name": "fds",
+    "price": null,
+    "promoted": true
+  },
+  "599c9a8a": {
+    "name": "fds",
+    "price": 43,
+    "promoted": true
+  },
+  "406d0275": {
+    "name": "Banani",
+    "price": 10,
+    "promoted": false
+  },
+  "9f494830": {
+    "name": "Portokali",
+    "price": 10,
+    "promoted": true
+  }
+}

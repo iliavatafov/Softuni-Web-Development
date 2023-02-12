@@ -1,0 +1,16 @@
+<h1>Create Product</h1>
+<a href="/catalog">Back to catalog</a>
+<form action="/catalog/{{_id}}" method="POST">
+  <label>Name:
+    <input type="text" name="name" value={{name}} /></label>
+  <label>Price:
+    <input type="text" name="price" value={{price}} /></label>
+  <label>Promoted:
+    {{#if promoted}}
+      <input type="checkbox" name="promoted" checked />
+    {{else}}
+      <input type="checkbox" name="promoted" />
+    {{/if}}
+  </label>
+  <input type="submit" value="Save" />
+</form>
