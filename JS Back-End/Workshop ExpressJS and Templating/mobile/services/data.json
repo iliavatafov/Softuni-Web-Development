@@ -1,0 +1,14 @@
+{
+  "e024ce78-555": {
+    "name": "Audi",
+    "description": "Lorem",
+    "imageUrl": "audi.jpg",
+    "price": 45000
+  },
+  "19b6233f-1d2": {
+    "name": "Pagani Zonda",
+    "description": "Lorem ipsun dolores amit ...",
+    "imageUrl": "pagani.jpg",
+    "price": 280000
+  }
+}
