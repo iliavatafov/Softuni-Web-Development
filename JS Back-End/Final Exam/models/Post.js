@@ -35,8 +35,13 @@ const postSchema = new Schema({
     minlength: [5, "Min length 5"],
     maxlength: [50, "Max length 50"],
   },
-  commentList: { type: [ObjectId], ref: "User", default: [] },
-  owner: { type: ObjectId, ref: "User", requred: true },
+  commentList: [
+    {
+      user: { type: ObjectId, ref: "User" },
+      text: String,
+    },
+  ],
+  owner: { type: ObjectId, ref: "User" },
 });
 
 const Post = model("Post", postSchema);

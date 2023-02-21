@@ -10,10 +10,11 @@ async function getPosts() {
 }
 
 async function getPostById(id) {
-  console.log(
-    await Post.findById(id).populate("owner").populate("commentList")
-  );
-  return Post.findById(id).populate("owner").populate("commentList");
+  return Post.findById(id).populate("owner").populate("commentList.user");
+}
+
+async function getUserPosts(userId) {
+  return Post.find({ owner: userId }).populate("owner");
 }
 
 async function deletePost(id) {
@@ -21,7 +22,7 @@ async function deletePost(id) {
 }
 
 async function updatePost(id, post) {
-  const existing = await Post.findById(id).populate("commentList");
+  const existing = await Post.findById(id).populate("owner");
 
   existing.name = post.name;
   existing.image = post.image;
@@ -40,4 +41,5 @@ module.exports = {
   getPostById,
   deletePost,
   updatePost,
+  getUserPosts,
 };

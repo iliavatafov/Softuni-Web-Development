@@ -99,7 +99,10 @@ router.post("/comment/:id", isUser(), async (req, res) => {
   const id = req.params.id;
   const existing = postViewModel(await getPostById(id));
 
-  existing.commentList.push(req.body.comment);
+  existing.commentList.push({
+    user: req.session.user._id,
+    text: req.body.comment,
+  });
 
   try {
     await updatePost(id, existing);

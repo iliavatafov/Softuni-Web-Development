@@ -1,5 +1,5 @@
 const { isUser } = require("../middleware/guards");
-const { getPosts, getPostById } = require("../services/post");
+const { getPosts, getPostById, getUserPosts } = require("../services/post");
 const { postViewModel } = require("../util/mappers");
 
 const router = require("express").Router();
@@ -15,7 +15,9 @@ router.get("/catalog", async (req, res) => {
 
 router.get("/details/:id", async (req, res) => {
   const id = req.params.id;
-  const post = postViewModel(await getPostById(id));
+  const existing = postViewModel(await getPostById(id));
+
+  const post = JSON.parse(JSON.stringify(existing));
 
   if (req.session.user) {
     post.hasUser = true;
@@ -28,15 +30,11 @@ router.get("/details/:id", async (req, res) => {
 
 router.get("/profile", isUser(), async (req, res) => {
   const user = req.session.user;
-  const posts = (await getPosts()).map(postViewModel);
+  const posts = (await getUserPosts(user._id)).map(postViewModel);
 
-  const userPosts = posts.filter((p) => p._id == user._id);
+  user.postsCount = posts.length;
 
-  const data = {
-    ...user,
-  };
-
-  res.render("profile");
+  res.render("profile", { posts, user });
 });
 
 module.exports = router;
