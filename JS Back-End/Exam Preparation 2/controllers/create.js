@@ -10,12 +10,13 @@ router.get("/create", (req, res) => {
 
 router.post("/create", isUser(), async (req, res) => {
   const userId = req.session.user._id;
-  const post = postViewModel({ ...req.body, creator: userId });
+  const post = postViewModel({ ...req.body, creator: userId }, (create = true));
 
   try {
     await createPost(post);
     res.redirect("/catalog");
   } catch (error) {
+    console.log(error);
     const errors = mapErrors(error);
     res.render("create", {
       data: {

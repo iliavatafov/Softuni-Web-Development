@@ -10,7 +10,7 @@ function mapErrors(err) {
   }
 }
 
-function postViewModel(post) {
+function postViewModel(post, create) {
   return {
     _id: post._id,
     startPoint: post.startPoint,
@@ -21,8 +21,16 @@ function postViewModel(post) {
     carBrand: post.carBrand,
     seats: post.seats,
     price: post.price,
-    creator: post.creator,
     description: post.description,
+    creator: create ? post.creator : mapCreator(post.creator),
+    buddies: post.buddies,
+  };
+}
+
+function mapCreator(creator) {
+  return {
+    _id: creator._id,
+    email: creator.email,
   };
 }
 
