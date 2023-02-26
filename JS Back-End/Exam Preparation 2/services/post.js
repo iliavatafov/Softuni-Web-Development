@@ -6,7 +6,7 @@ async function createPost(post) {
 }
 
 async function getPosts() {
-  return Post.find({});
+  return Post.find({}).populate("creator");
 }
 
 async function getPostById(postId) {
@@ -16,7 +16,6 @@ async function getPostById(postId) {
 async function updatePost(id, post) {
   const existing = await Post.findById(id);
 
-  existing._id = post._id;
   existing.startPoint = post.startPoint;
   existing.endPoint = post.endPoint;
   existing.date = post.date;
@@ -27,7 +26,6 @@ async function updatePost(id, post) {
   existing.price = post.price;
   existing.description = post.description;
   existing.creator = post.creator;
-  existing.buddies = post.buddies;
 
   await existing.save();
 }
