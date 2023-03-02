@@ -46,4 +46,13 @@
     <img src="./certificates/HTML & CSS - September 2022 - Certificate.jpeg" />
   </a>
  <p>
+ <p>
+    <hr />
+        <h3 align="center"><i>JS Back-End</i></h3>
+    <hr />
+  <p align="center">
+  <a href="https://softuni.bg/certificates/details/162725/b0728062">
+    <img src="./certificates/JS Back-End - January 2023 - Certificate.jpeg" />
+  </a>
+ <p>
     <hr />
