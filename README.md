@@ -54,4 +54,13 @@
     <img src="./certificates/JS Back-End - January 2023 - Certificate.jpeg" />
   </a>
  <p>
+  <p>
+    <hr />
+        <h3 align="center"><i>ReactJS</i></h3>
+    <hr />
+  <p align="center">
+  <a href="https://softuni.bg/certificates/details/168633/321793fc">
+    <img src="./certificates/ReactJS - February 2023 - Certificate.jpeg" />
+  </a>
+ <p>
     <hr />
