@@ -63,4 +63,22 @@
     <img src="./certificates/ReactJS - February 2023 - Certificate.jpeg" />
   </a>
  <p>
+  <p>
+    <hr />
+        <h3 align="center"><i>Agile Essentials with Scrum</i></h3>
+    <hr />
+  <p align="center">
+  <a href="https://softuni.bg/certificates/details/164279/769fea5b">
+    <img src="./certificates/Agile Essentials with Scrum - February 2023 - Certificate.jpeg" />
+  </a>
+ <p>
+   <p>
+    <hr />
+        <h3 align="center"><i>Agile Advanced with Scrum</i></h3>
+    <hr />
+  <p align="center">
+  <a href="https://softuni.bg/certificates/details/171068/5b7ef577">
+    <img src="./certificates/Agile Advanced with Scrum - March 2023 - Certificate.jpeg" />
+  </a>
+ <p>
     <hr />
